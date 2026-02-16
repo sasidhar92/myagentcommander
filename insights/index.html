@@ -691,15 +691,15 @@
 <body>
   <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">My Agent Commander</a>
+      <a href="/" class="nav__logo">My Agent Commander</a>
       <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav__links">
-        <li><a href="live-office.html">Live Office</a></li>
-        <li><a href="insights.html" class="active">Insights</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
-        <li><a href="index.html#contact" class="nav__cta">Get Started</a></li>
+        <li><a href="/live-office/">Live Office</a></li>
+        <li><a href="/insights/" class="active">Insights</a></li>
+        <li><a href="/team/">Team</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/#contact" class="nav__cta">Get Started</a></li>
       </ul>
     </div>
   </nav>
@@ -1174,7 +1174,7 @@
       if (oldScript) oldScript.remove();
       var s = document.createElement('script');
       s.id = 'mc-data-script';
-      s.src = 'data.js?t=' + Date.now();
+      s.src = '../data.js?t=' + Date.now();
       s.onload = function() {
         if (typeof MC_DATA !== 'undefined') {
           data = MC_DATA;
