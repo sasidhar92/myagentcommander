@@ -461,6 +461,21 @@
             border-color: #888;
         }
 
+        .pricing-card--custom .price-cta {
+            background: #555;
+        }
+
+        .pricing-card--custom .price-cta:hover {
+            background: #333;
+        }
+
+        .custom-label {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
         .custom-examples {
             list-style: none;
             text-align: left;
@@ -481,6 +496,14 @@
             color: #111;
             font-weight: 700;
             font-family: monospace;
+        }
+
+        .pricing-header {
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .price {
@@ -696,17 +719,26 @@
         @media (max-width: 768px) {
             .nav__toggle { display: block; }
             .nav__inner { position: relative; }
-            .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; gap: 4px; border-bottom: 1px solid #e5e5e5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+            .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; gap: 4px; border-bottom: 1px solid #e5e5e5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); z-index: 100; }
             .nav__links.open { display: flex; }
-            .nav__links a { font-size: 1rem; padding: 8px 0; }
+            .nav__links a { font-size: 1rem; padding: 12px 0; }
+            .hero { padding: 60px 0 48px; }
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.5rem; }
             .steps { grid-template-columns: 1fr; gap: 32px; }
             .features-grid { grid-template-columns: 1fr; }
             .diff-grid { grid-template-columns: 1fr; }
-            .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 440px; }
             .pricing-card { padding: 28px 20px; }
-            .footer__inner { flex-direction: column; gap: 16px; text-align: center; }
-            .hero { padding: 60px 0 48px; }
+            .pricing-header { min-height: auto; }
+            .price { font-size: 2.8rem; }
+            .price-cta { padding: 16px; font-size: 1.05rem; }
+            .faq-question { font-size: 0.95rem; padding: 16px 0; }
+            .contact-form { margin-top: 32px; }
+            .form-group input, .form-group textarea { font-size: 16px; }
             .live-status { flex-wrap: wrap; gap: 12px; }
+            .footer__inner { flex-direction: column; gap: 16px; text-align: center; }
+            .footer__links { flex-wrap: wrap; justify-content: center; }
         }
     </style>
 </head>
@@ -1166,8 +1198,10 @@
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="price">$50</div>
-                    <div class="price-label">One-time setup fee</div>
+                    <div class="pricing-header">
+                        <div class="price">$50</div>
+                        <div class="price-label">One-time setup fee</div>
+                    </div>
                     <ul class="price-features">
                         <li>Interactive setup wizard — deploy in 5 minutes</li>
                         <li>Configurable agent team (3, 4, 6, or custom)</li>
@@ -1181,15 +1215,17 @@
                 </div>
 
                 <div class="pricing-card pricing-card--custom">
-                    <div class="price" style="font-size:2.5rem;">Custom</div>
-                    <div class="price-label">Reach out for a quote</div>
+                    <div class="pricing-header">
+                        <div class="price">Custom</div>
+                        <div class="price-label">Reach out for a quote</div>
+                    </div>
                     <ul class="price-features">
                         <li>Tailored setup for your specific workflow</li>
                         <li>Connect external tools and services</li>
                         <li>Custom agent behaviors and triggers</li>
                         <li>Hands-on pairing with our team</li>
                     </ul>
-                    <p style="font-size:0.8rem;color:#888;text-align:left;margin-bottom:20px;">Popular requests:</p>
+                    <p class="custom-label">Popular requests:</p>
                     <ul class="custom-examples">
                         <li>Slack integration</li>
                         <li>Email / Gmail access</li>
@@ -1197,7 +1233,7 @@
                         <li>Custom API endpoints</li>
                         <li>Multi-user setups</li>
                     </ul>
-                    <a href="#contact" class="price-cta" style="background:#555;">Request Consultation</a>
+                    <a href="#contact" class="price-cta">Request Consultation</a>
                 </div>
             </div>
         </div>
