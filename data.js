@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T03:03:26.537Z",
+    "updated_at": "2026-02-16T04:37:23.158Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass.",
+      "last_event_summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 59,
-      "event_count_total": 228,
+      "event_count_24h": 63,
+      "event_count_total": 229,
       "is_active": false,
-      "total_sessions": 93,
+      "total_sessions": 95,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 1
+          "count": 5
         }
       ]
     },
@@ -162,10 +162,10 @@ var MC_DATA = {
       "tone": "Curious, data-driven, well-traveled",
       "quirk": "Always knows something relevant. \"I've seen this pattern before.\"",
       "model": "sonnet",
-      "last_event_summary": "projects/ideas/monetization-research.md",
+      "last_event_summary": "Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution.",
       "last_event_narrative": "Narada wrote monetization market research report.",
-      "event_count_24h": 3,
-      "event_count_total": 8,
+      "event_count_24h": 5,
+      "event_count_total": 10,
       "is_active": false,
       "total_sessions": 5,
       "last_active": "2026-02-15 14:09:16",
@@ -196,7 +196,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 0
+          "count": 2
         }
       ]
     },
@@ -1349,6 +1349,26 @@ var MC_DATA = {
       "ended_at": "2026-02-16 03:03:23",
       "duration_sec": 16,
       "summary": "Proactive check — all routines already ran. No unread from Sasi. No queued work. Clean pass."
+    },
+    {
+      "id": "session-db-106",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "message",
+      "started_at": "2026-02-16 03:49:23",
+      "ended_at": "2026-02-16T03:56:26Z",
+      "duration_sec": null,
+      "summary": "message session"
+    },
+    {
+      "id": "session-db-107",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "message",
+      "started_at": "2026-02-16 03:50:06",
+      "ended_at": "2026-02-16 03:56:08",
+      "duration_sec": 362,
+      "summary": "Message trigger: Sasi deployed MAC, requested Dwarka packaging + Slack + iMessage group research. Spawned 3 Narada agents in parallel. Delivered: research/slack-agents-integration.md, research/imessage-group-multi-user.md, analyzed MAC prod site. Created mission 8 with 6 steps."
     }
   ],
   "tasks": [
@@ -1484,51 +1504,28 @@ var MC_DATA = {
           "at": "2026-02-12 00:02:55"
         }
       ]
+    },
+    {
+      "id": "task-m8",
+      "title": "Dwarka Packaging + Slack + iMessage Group Research",
+      "description": "Mission from krishna",
+      "status": "IN_PROGRESS",
+      "assignee": "krishna",
+      "tags": [
+        "mission"
+      ],
+      "created_at": "2026-02-16 03:50:15",
+      "updated_at": "2026-02-16 03:50:15",
+      "history": [
+        {
+          "status": "IN_PROGRESS",
+          "by": "Krishna",
+          "at": "2026-02-16 03:50:15"
+        }
+      ]
     }
   ],
   "feed": [
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 13:36:17",
-      "narrative": "Krishna completed domain research and housekeeping tasks."
-    },
-    {
-      "type": "session_start",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 17:06:38",
-      "narrative": "Krishna started proactive check with no unread messages."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 17:06:44",
-      "narrative": "Krishna planned proactive session for system health and initiative."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 17:07:18",
-      "narrative": "Krishna fixed heartbeat logging and cleaned 805 noisy events."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 17:08:33",
-      "narrative": "Krishna enabled initiative capabilities with daily cap safeguards."
-    },
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 17:09:26",
-      "narrative": "Krishna fixed heartbeat noise and enabled initiative."
-    },
     {
       "type": "comment",
       "agent": "Krishna",
@@ -2886,9 +2883,121 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-16 03:03:11",
       "narrative": "Session 105: proactive — Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass."
+    },
+    {
+      "type": "message_received",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 03:50:11",
+      "narrative": "Sasi: MAC deployed + Dwarka packaging + Slack + iMessage group — Sasi deployed MyAgentCommander live. Requests: (1) Package Dwarka similarly for fresh customer installs with live office/team page, (2) Research Slack integration with agent bots, (3) Research iMessage group multi-user approach with per-person folders"
+    },
+    {
+      "type": "task_updated",
+      "agent": "Narada",
+      "agent_id": "narada",
+      "timestamp": "2026-02-16 03:55:43",
+      "narrative": "Slack Integration Research Complete — Comprehensive research doc at research/slack-agents-integration.md. Covers: 6 separate Slack apps (Socket Mode), Bolt SDK, work_queue integration, streaming responses, agent-to-agent coordination, cost analysis, 6-week roadmap."
+    },
+    {
+      "type": "task_updated",
+      "agent": "Narada",
+      "agent_id": "narada",
+      "timestamp": "2026-02-16 03:55:43",
+      "narrative": "iMessage Group Multi-User Research Complete — Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution."
+    },
+    {
+      "type": "task_updated",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 03:55:43",
+      "narrative": "MyAgentCommander Analysis Complete — Analyzed MAC production site (4 pages: landing, live-office, team, insights + data.js), setup.sh wizard (1566 lines), workspace structure. Ready to blueprint Dwarka packaging."
+    },
+    {
+      "type": "message_sent",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 03:56:08",
+      "narrative": "Replied to Sasi: Research deliverables ready — Sent summary of 3 research docs (Slack, iMessage group, MAC analysis) and asked which to prioritize."
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 03:56:08",
+      "narrative": "Session 107 complete — Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis"
     }
   ],
   "pulse": [
+    {
+      "id": 1865,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "Session 107 complete",
+      "summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
+      "tags": null,
+      "created_at": "2026-02-16 03:56:08",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1864,
+      "kind": "message_sent",
+      "agent_id": "krishna",
+      "title": "Replied to Sasi: Research deliverables ready",
+      "summary": "Sent summary of 3 research docs (Slack, iMessage group, MAC analysis) and asked which to prioritize.",
+      "tags": "[\"message\",\"sasi\"]",
+      "created_at": "2026-02-16 03:56:08",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1863,
+      "kind": "step_completed",
+      "agent_id": "krishna",
+      "title": "MyAgentCommander Analysis Complete",
+      "summary": "Analyzed MAC production site (4 pages: landing, live-office, team, insights + data.js), setup.sh wizard (1566 lines), workspace structure. Ready to blueprint Dwarka packaging.",
+      "tags": "[\"research\",\"mac\",\"packaging\"]",
+      "created_at": "2026-02-16 03:55:43",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1862,
+      "kind": "step_completed",
+      "agent_id": "narada",
+      "title": "iMessage Group Multi-User Research Complete",
+      "summary": "Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution.",
+      "tags": "[\"research\",\"imessage\",\"multi-user\",\"narada\"]",
+      "created_at": "2026-02-16 03:55:43",
+      "agent_name": "Narada"
+    },
+    {
+      "id": 1861,
+      "kind": "step_completed",
+      "agent_id": "narada",
+      "title": "Slack Integration Research Complete",
+      "summary": "Comprehensive research doc at research/slack-agents-integration.md. Covers: 6 separate Slack apps (Socket Mode), Bolt SDK, work_queue integration, streaming responses, agent-to-agent coordination, cost analysis, 6-week roadmap.",
+      "tags": "[\"research\",\"slack\",\"narada\"]",
+      "created_at": "2026-02-16 03:55:43",
+      "agent_name": "Narada"
+    },
+    {
+      "id": 1860,
+      "kind": "message_received",
+      "agent_id": "krishna",
+      "title": "Sasi: MAC deployed + Dwarka packaging + Slack + iMessage group",
+      "summary": "Sasi deployed MyAgentCommander live. Requests: (1) Package Dwarka similarly for fresh customer installs with live office/team page, (2) Research Slack integration with agent bots, (3) Research iMessage group multi-user approach with per-person folders",
+      "tags": "[\"message\",\"sasi\",\"mac\",\"slack\",\"imessage\"]",
+      "created_at": "2026-02-16 03:50:11",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1859,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-16 03:49:23",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1858,
       "kind": "session_start",
@@ -5188,36 +5297,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-09 09:08:48",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 111,
-      "kind": "state_checkpoint",
-      "agent_id": "krishna",
-      "title": "Message trigger - no new messages",
-      "summary": "Trigger fired (rowid 56269). No unread iMessages from Sasi. All recent messages already handled. False positive or already-processed trigger.",
-      "tags": null,
-      "created_at": "2026-02-09 03:26:33",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 103,
-      "kind": "bug_fix",
-      "agent_id": "krishna",
-      "title": "Fixed message trigger false positives",
-      "summary": "message.js included is_from_me=1 in query, causing outgoing Krishna iMessages to trigger new sessions. Changed to is_from_me=0 only. Also fixed precheck.sh .jarvis path to .dwarka.",
-      "tags": null,
-      "created_at": "2026-02-09 03:19:51",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 101,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "Message trigger false positive",
-      "summary": "Session #3, work_id #2. Rowid 56269 was outgoing Krishna message, not new Sasi message. Fixing trigger to exclude is_from_me=1.",
-      "tags": null,
-      "created_at": "2026-02-09 03:19:03",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5600,6 +5679,48 @@ var MC_DATA = {
         "total": 3,
         "completed": 3
       }
+    },
+    {
+      "id": 8,
+      "title": "Dwarka Packaging + Slack + iMessage Group Research",
+      "status": "running",
+      "created_by": "krishna",
+      "steps": [
+        {
+          "kind": "research",
+          "status": "succeeded",
+          "reserved_by": null
+        },
+        {
+          "kind": "research",
+          "status": "succeeded",
+          "reserved_by": null
+        },
+        {
+          "kind": "research",
+          "status": "succeeded",
+          "reserved_by": null
+        },
+        {
+          "kind": "build",
+          "status": "queued",
+          "reserved_by": null
+        },
+        {
+          "kind": "build",
+          "status": "queued",
+          "reserved_by": null
+        },
+        {
+          "kind": "build",
+          "status": "queued",
+          "reserved_by": null
+        }
+      ],
+      "progress": {
+        "total": 6,
+        "completed": 3
+      }
     }
   ],
   "daily_stats": [
@@ -5629,7 +5750,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 1
+      "count": 8
     }
   ],
   "agent_activity": {
@@ -5720,7 +5841,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 1
+        "count": 5
       }
     ],
     "narada": [
@@ -5750,7 +5871,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 0
+        "count": 2
       }
     ],
     "vidura": [
@@ -5815,27 +5936,26 @@ var MC_DATA = {
     ]
   },
   "stats": {
-    "total_tasks": 7,
-    "in_progress": 0,
+    "total_tasks": 8,
+    "in_progress": 1,
     "completed_today": 0,
     "completed_all_time": 7,
     "agents_active": 0,
-    "total_sessions": 105,
-    "total_events": 283,
-    "events_today": 1,
+    "total_sessions": 107,
+    "total_events": 287,
+    "events_today": 8,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_start": 15,
-      "bug_fix": 2,
-      "state_checkpoint": 6,
-      "step_completed": 20,
-      "message_sent": 15,
-      "session_end": 29,
+      "session_start": 14,
+      "step_completed": 23,
+      "message_sent": 16,
+      "session_end": 30,
       "task_completed": 7,
-      "message_received": 16,
+      "message_received": 17,
       "session_plan": 13,
+      "state_checkpoint": 5,
       "progress": 1,
       "mission_completed": 6,
       "message_response": 5,
@@ -5845,7 +5965,7 @@ var MC_DATA = {
       "build": 8,
       "research": 1,
       "duplicate_trigger": 1,
-      "heartbeat": 38,
+      "heartbeat": 39,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -5856,15 +5976,16 @@ var MC_DATA = {
       "file_change": 71,
       "conversation": 1,
       "decision_made": 1,
+      "bug_fix": 1,
       "feedback_received": 1
     },
     "events_by_agent": {
-      "krishna": 228,
+      "krishna": 229,
       "chanakya": 5,
       "vidura": 2,
-      "narada": 8,
+      "narada": 10,
       "vishwa": 2,
-      "dwarka": 38
+      "dwarka": 39
     }
   }
 };
