@@ -94,6 +94,7 @@
         }
 
         .nav__links a:hover { color: #111; }
+        .nav__links a.active { color: #111; font-weight: 700; }
 
         .nav__cta {
             padding: 8px 20px;
@@ -674,77 +675,23 @@
         <div class="nav__inner">
             <a href="index.html" class="nav__logo">My Agent Commander</a>
             <ul class="nav__links">
+                <li><a href="live-office.html">Live Office</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="team.html">Team</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#compare">Compare</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="command/">Dashboard</a></li>
                 <li><a href="#contact" class="nav__cta">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero__badge">
-                <span class="hero__dot"></span>
-                Personal AI Agent Team
-            </div>
-            <h1>Build your own AI team. Deploy in minutes.</h1>
-            <p class="hero__subtitle">A team of AI agents that works while you sleep. Auto-learning memory, live dashboard, agent conversations, and iMessage control — all running locally on your Mac.</p>
-            <a href="#contact" class="hero__cta">
-                Get Started
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-            </a>
-        </div>
-    </section>
-
-    <!-- What You Get -->
-    <section id="features">
-        <div class="container">
-            <p class="section-label">What You Get</p>
-            <h2 class="section-title">An AI team that actually works for you.</h2>
-            <p class="section-subtitle">Not a chatbot. Not a copilot. A self-managing agent team that learns, proposes work, holds conversations, and reports via iMessage.</p>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">+</div>
-                    <h3>Browser-Based Setup</h3>
-                    <p>A 6-step visual wizard in your browser. Fill in your details, pick a team preset or build custom agents, configure policies — then paste one command into Terminal to deploy.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">@</div>
-                    <h3>Six Autonomous Triggers</h3>
-                    <p>Message response, proactive routines, standing orders, agent conversations, initiative proposals, and daily digests. Your team operates on six independent trigger loops.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&gt;</div>
-                    <h3>iMessage Control</h3>
-                    <p>Text your lead agent from your phone. Get status updates, make decisions, assign work. Your team detects new messages within 60 seconds.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">#</div>
-                    <h3>Memory That Learns</h3>
-                    <p>Auto-distills patterns, lessons, and insights from every session. Confidence-scored memories get injected into future agent prompts. Your team gets smarter over time.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">~</div>
-                    <h3>Runs 100% Locally</h3>
-                    <p>SQLite database, shell scripts, launchd daemon. Everything on your Mac. Your data never leaves your machine. Zero cloud infrastructure.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">/</div>
-                    <h3>Live Dashboard</h3>
-                    <p>Mission Control shows agent activity, mission progress, event feed, and team stats in real time. Pulse view gives you a raw event stream with session markers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Live Office -->
     <section class="live-section">
         <div class="container">
-            <p class="section-label">Live Right Now</p>
+            <div class="hero__badge">
+                <span class="hero__dot"></span>
+                Live Right Now
+            </div>
             <h2 class="section-title">Watch your AI team work in real time.</h2>
             <p class="section-subtitle" style="margin: 0 auto;">This is a real AI agent office. The data updates hourly from a live system.</p>
 
@@ -1030,10 +977,68 @@
               </div>
             </div>
 
-            <a href="command/" class="live-cta">View Full Dashboard &rarr;</a>
+            <a href="live-office.html" class="live-cta">View Full Dashboard &rarr;</a>
         </div>
     </section>
 
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__badge">
+                <span class="hero__dot"></span>
+                Personal AI Agent Team
+            </div>
+            <h1>Build your own AI team. Deploy in minutes.</h1>
+            <p class="hero__subtitle">A team of AI agents that works while you sleep. Auto-learning memory, live dashboard, agent conversations, and iMessage control — all running locally on your Mac.</p>
+            <a href="#contact" class="hero__cta">
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section id="features">
+        <div class="container">
+            <p class="section-label">What You Get</p>
+            <h2 class="section-title">An AI team that actually works for you.</h2>
+            <p class="section-subtitle">Not a chatbot. Not a copilot. A self-managing agent team that learns, proposes work, holds conversations, and reports via iMessage.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">+</div>
+                    <h3>Browser-Based Setup</h3>
+                    <p>A 6-step visual wizard in your browser. Fill in your details, pick a team preset or build custom agents, configure policies — then paste one command into Terminal to deploy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">@</div>
+                    <h3>Six Autonomous Triggers</h3>
+                    <p>Message response, proactive routines, standing orders, agent conversations, initiative proposals, and daily digests. Your team operates on six independent trigger loops.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&gt;</div>
+                    <h3>iMessage Control</h3>
+                    <p>Text your lead agent from your phone. Get status updates, make decisions, assign work. Your team detects new messages within 60 seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">#</div>
+                    <h3>Memory That Learns</h3>
+                    <p>Auto-distills patterns, lessons, and insights from every session. Confidence-scored memories get injected into future agent prompts. Your team gets smarter over time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">~</div>
+                    <h3>Runs 100% Locally</h3>
+                    <p>SQLite database, shell scripts, launchd daemon. Everything on your Mac. Your data never leaves your machine. Zero cloud infrastructure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">/</div>
+                    <h3>Live Dashboard</h3>
+                    <p>Mission Control shows agent activity, mission progress, event feed, and team stats in real time. Pulse view gives you a raw event stream with session markers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- How It Works -->
     <section id="how">
         <div class="container">
@@ -1107,38 +1112,6 @@
                 </table>
             </div>
 
-            <div class="diff-grid" style="margin-top: 60px;">
-                <div class="diff-card">
-                    <span class="tag">Privacy</span>
-                    <h3>Your data never leaves your machine.</h3>
-                    <p>No cloud. No third-party database. Your code, files, agent memory, and conversations live on your Mac. The only external call is to Claude through your own subscription.</p>
-                </div>
-                <div class="diff-card">
-                    <span class="tag">Communication</span>
-                    <h3>iMessage. Not another dashboard.</h3>
-                    <p>Your lead agent picks up texts within 60 seconds. Daily digests, decisions, status updates — all from the app already on your phone. A local dashboard is there when you want the full picture.</p>
-                </div>
-                <div class="diff-card">
-                    <span class="tag">Cost</span>
-                    <h3>$50 once. No subscription.</h3>
-                    <p>One payment. No monthly platform fees, no per-seat pricing, no usage charges. Your only recurring cost is your Claude Pro or Max plan — paid directly to Anthropic.</p>
-                </div>
-                <div class="diff-card">
-                    <span class="tag">Autonomy</span>
-                    <h3>Six triggers. Zero hand-holding.</h3>
-                    <p>Message response, proactive routines, standing orders, team conversations, initiative proposals, daily digests — six independent loops that keep your team working while you do other things.</p>
-                </div>
-                <div class="diff-card">
-                    <span class="tag">Memory</span>
-                    <h3>A team that learns from every session.</h3>
-                    <p>Every session produces events. Those events get auto-distilled into confidence-scored memories — patterns, lessons, insights. Future sessions pull from that knowledge. Your team compounds.</p>
-                </div>
-                <div class="diff-card">
-                    <span class="tag">Simplicity</span>
-                    <h3>SQLite, shell scripts, and nothing else.</h3>
-                    <p>No Docker. No Kubernetes. No Supabase. No cloud accounts. One SQLite file holds your entire state. A shell script runs the heartbeat. That's the whole infrastructure.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -1193,10 +1166,6 @@
                     <div class="faq-answer"><p>Yes. The setup wizard offers team presets (Standard 6, Solo Dev 3, Content 4) and a fully custom mode where you define each agent's name, role, tone, and personality. Each agent gets identity files, autonomy boundaries, and memory — all configurable in plain text.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">How does this compare to Devin or Cursor?</button>
-                    <div class="faq-answer"><p>Devin ($500/mo) and Cursor ($20/mo) are single-purpose tools. My Agent Commander gives you a configurable team of specialized agents — engineering, research, marketing, SEO, security — all coordinating via a closed-loop system. $50 one-time vs. hundreds per month. Different category entirely.</p></div>
-                </div>
-                <div class="faq-item">
                     <button class="faq-question">Does it work on Linux or Windows?</button>
                     <div class="faq-answer"><p>Currently Mac only, since it relies on iMessage. We're exploring alternative communication channels for other platforms.</p></div>
                 </div>
@@ -1243,10 +1212,11 @@
         <div class="footer__inner">
             <span class="footer__copy">&copy; 2026 My Agent Commander. Your own AI company.</span>
             <ul class="footer__links">
+                <li><a href="live-office.html">Live Office</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="team.html">Team</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#compare">Compare</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="command/">Dashboard</a></li>
             </ul>
         </div>
     </footer>

@@ -25,44 +25,33 @@
       color: var(--text);
       min-height: 100vh;
       overflow-y: auto;
-      padding-top: 56px;
+      padding-top: 0;
+      font-size: 16px;
+      line-height: 1.6;
     }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #bbb; }
 
-    .topbar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 24px;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      z-index: 100;
-    }
-
-    .topbar-left { display: flex; align-items: center; gap: 32px; }
-    .topbar-title { font-size: 14px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
-    .topbar-nav { display: flex; gap: 4px; }
-    .topbar-nav a {
-      font-size: 11px; padding: 5px 12px; border-radius: 4px;
-      color: var(--muted); text-decoration: none; transition: all 0.15s;
-    }
-    .topbar-nav a:hover { color: var(--text); }
-    .topbar-nav a.active { background: var(--text); color: var(--bg); }
-    .topbar-right { display: flex; align-items: center; gap: 20px; }
-    .topbar-stats { display: flex; gap: 8px; font-size: 11px; }
-    .topbar-stats span {
-      padding: 3px 10px; border: 1px solid var(--border);
-      border-radius: 12px; color: var(--muted);
-    }
-    .topbar-stats .val { color: var(--text); font-weight: 600; }
+    /* Shared nav */
+    .nav { border-bottom: 1px solid #e5e5e5; padding: 16px 0; position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); z-index: 100; }
+    .nav__inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+    .nav__logo { font-size: 1.125rem; font-weight: 700; text-decoration: none; letter-spacing: -0.03em; color: #111; }
+    .nav__links { display: flex; gap: 28px; list-style: none; align-items: center; }
+    .nav__links a { font-size: 0.875rem; text-decoration: none; color: #555; font-weight: 500; transition: color 0.15s; }
+    .nav__links a:hover { color: #111; }
+    .nav__links a.active { color: #111; font-weight: 700; }
+    .nav__cta { padding: 8px 20px; background: #111; color: #fff !important; border-radius: 6px; font-size: 0.875rem; font-weight: 600; transition: background 0.15s; }
+    .nav__cta:hover { background: #333 !important; color: #fff !important; }
+    .stats-bar { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 24px; border-bottom: 1px solid var(--border); font-size: 11px; max-width: 1080px; margin: 0 auto; }
+    .stats-bar > span { padding: 3px 10px; border: 1px solid var(--border); border-radius: 12px; color: var(--muted); }
+    .stats-bar .val { font-weight: 600; color: var(--text); }
+    .stats-bar .status-indicator { display: flex; align-items: center; gap: 6px; }
+    .status-indicator { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); }
+    .stats-bar .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text); position: static; }
+    .stats-bar .status-dot.stale { background: #ccc; }
+    .stats-bar .status-dot.offline { background: transparent; border: 1.5px solid var(--muted); }
     .clock {
       font-family: 'SF Mono', 'Menlo', monospace;
       font-size: 13px; font-variant-numeric: tabular-nums;
@@ -120,7 +109,7 @@
       color: var(--text-muted); display: inline-block;
       margin-bottom: 10px;
     }
-    .status-dot {
+    .agent-card .status-dot {
       position: absolute; top: 16px; right: 16px;
       width: 10px; height: 10px; border-radius: 50%;
     }
@@ -180,11 +169,17 @@
     .dept-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto auto;
       gap: 20px;
       max-width: 1000px;
       margin: 0 auto;
+      align-items: start;
     }
     .dept-box {
+      display: grid;
+      grid-row: span 3;
+      grid-template-rows: subgrid;
+      gap: 12px;
       background: var(--surface);
       border: 1px solid var(--card-border);
       border-radius: 12px;
@@ -195,11 +190,9 @@
       text-transform: uppercase; letter-spacing: 2px;
       color: var(--text-muted);
       text-align: center;
-      margin-bottom: 16px;
       padding-bottom: 12px;
       border-bottom: 1px solid var(--card-border);
     }
-    .dept-agents { display: flex; flex-direction: column; gap: 12px; }
 
     .agent-card {
       background: var(--bg);
@@ -329,24 +322,29 @@
 </head>
 <body>
 
-  <nav class="topbar">
-    <div class="topbar-left">
-      <a href="../" style="text-decoration:none;color:inherit"><span class="topbar-title">MY AGENT COMMANDER</span></a>
-      <div class="topbar-nav">
-        <a href="index.html">Command</a>
-        <a href="insights.html">Insights</a>
-        <a href="team.html" class="active">Team</a>
-      </div>
-    </div>
-    <div class="topbar-right">
-      <div class="topbar-stats">
-        <span>Agents <span class="val" id="stat-agents">6</span></span>
-        <span>Sessions <span class="val" id="stat-sessions">0</span></span>
-        <span>Events <span class="val" id="stat-events">0</span></span>
-      </div>
-      <div class="clock" id="clock">--:--:--</div>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">My Agent Commander</a>
+      <ul class="nav__links">
+        <li><a href="live-office.html">Live Office</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#contact" class="nav__cta">Get Started</a></li>
+      </ul>
     </div>
   </nav>
+  <div class="stats-bar">
+    <span>Agents <span class="val" id="stat-agents">0</span></span>
+    <span>Sessions <span class="val" id="stat-sessions">0</span></span>
+    <span>Events <span class="val" id="stat-events">0</span></span>
+    <span>Insights <span class="val" id="stat-insights">0</span></span>
+    <div class="status-indicator">
+      <span class="status-dot" id="status-dot"></span>
+      <span id="status-label">--</span>
+    </div>
+  </div>
 
   <div class="tree">
 
@@ -411,7 +409,6 @@
       <!-- INTELLIGENCE -->
       <div class="dept-box">
         <div class="dept-title">INTELLIGENCE</div>
-        <div class="dept-agents">
           <div class="agent-card" id="card-narada">
             <div class="status-dot idle" id="narada-dot"></div>
             <div class="agent-header">
@@ -435,13 +432,11 @@
               <div class="origin-bio">The wandering sage who traveled between all three worlds gathering information. The original intelligence agent — always showed up with exactly the right context.</div>
             </div>
           </div>
-        </div>
       </div>
 
       <!-- GROWTH & CONTENT -->
       <div class="dept-box">
         <div class="dept-title">GROWTH &amp; CONTENT</div>
-        <div class="dept-agents">
           <div class="agent-card" id="card-chanakya">
             <div class="status-dot idle" id="chanakya-dot"></div>
             <div class="agent-header">
@@ -488,13 +483,11 @@
               <div class="origin-bio">The wisest counselor in the Mahabharata, known for Vidura Niti. Spoke plainly, never wasted words, and his counsel was always grounded in truth.</div>
             </div>
           </div>
-        </div>
       </div>
 
       <!-- ENGINEERING & SECURITY -->
       <div class="dept-box">
         <div class="dept-title">ENGINEERING &amp; SECURITY</div>
-        <div class="dept-agents">
           <div class="agent-card" id="card-vishwa">
             <div class="status-dot idle" id="vishwa-dot"></div>
             <div class="agent-header">
@@ -541,7 +534,6 @@
               <div class="origin-bio">The devoted guardian who could not be defeated, corrupted, or turned. Burned Lanka to the ground when Sita was threatened. Vigilant, loyal, and indestructible.</div>
             </div>
           </div>
-        </div>
       </div>
 
     </div><!-- /dept-grid -->
@@ -614,11 +606,13 @@
     var data = null;
 
     function updateClock() {
+      var el = document.getElementById('clock');
+      if (!el) return;
       var now = new Date();
       var h = String(now.getHours()).padStart(2, '0');
       var m = String(now.getMinutes()).padStart(2, '0');
       var s = String(now.getSeconds()).padStart(2, '0');
-      document.getElementById('clock').textContent = h + ':' + m + ':' + s;
+      el.textContent = h + ':' + m + ':' + s;
     }
 
     function getAgentById(id) {
@@ -659,11 +653,22 @@
 
     function updateStats() {
       if (!data) return;
-      document.getElementById('stat-agents').textContent = data.agents ? data.agents.length : 6;
-      document.getElementById('stat-sessions').textContent =
-        (data.stats && data.stats.total_sessions) || 0;
-      document.getElementById('stat-events').textContent =
-        (data.stats && data.stats.total_events) || (data.pulse ? data.pulse.length : 0);
+      document.getElementById('stat-agents').textContent = data.agents ? data.agents.length : 0;
+      document.getElementById('stat-sessions').textContent = (data.stats && data.stats.total_sessions) || (data.recent_sessions ? data.recent_sessions.length : 0);
+      document.getElementById('stat-events').textContent = (data.stats && data.stats.total_events) || (data.pulse ? data.pulse.length : 0);
+      document.getElementById('stat-insights').textContent = data.insights ? data.insights.length : 0;
+
+      var dot = document.getElementById('status-dot');
+      var label = document.getElementById('status-label');
+      var ts = (data.meta && data.meta.updated_at) || data.generated_at;
+      if (ts) {
+        var diff = (new Date() - new Date(ts)) / 60000;
+        var diffSec = Math.floor((new Date() - new Date(ts)) / 1000);
+        var ago = diffSec < 60 ? 'now' : diffSec < 3600 ? Math.floor(diffSec / 60) + 'm ago' : diffSec < 86400 ? Math.floor(diffSec / 3600) + 'h ago' : Math.floor(diffSec / 86400) + 'd ago';
+        if (data.meta && data.meta.daemon_status === 'offline') { dot.className = 'status-dot offline'; label.textContent = 'Offline'; }
+        else if (diff < 30) { dot.className = 'status-dot'; label.textContent = 'Updated ' + ago; }
+        else { dot.className = 'status-dot stale'; label.textContent = 'Stale \u00b7 ' + ago; }
+      } else { dot.className = 'status-dot offline'; label.textContent = 'Offline'; }
     }
 
     function render() {
@@ -676,7 +681,7 @@
       if (old) old.remove();
       var s = document.createElement('script');
       s.id = 'mc-data-script';
-      s.src = '../data.js?t=' + Date.now();
+      s.src = 'data.js?t=' + Date.now();
       s.onload = function() {
         if (typeof MC_DATA !== 'undefined') { data = MC_DATA; render(); }
       };
