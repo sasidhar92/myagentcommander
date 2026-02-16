@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T10:42:38.890Z",
+    "updated_at": "2026-02-16T12:39:37.294Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -116,7 +116,7 @@ var MC_DATA = {
       "last_event_summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
       "event_count_24h": 30,
-      "event_count_total": 229,
+      "event_count_total": 228,
       "is_active": false,
       "total_sessions": 95,
       "last_active": "2026-02-15 16:28:55",
@@ -5287,16 +5287,6 @@ var MC_DATA = {
       "tags": "[\"ayurveda-grains\",\"telugu\",\"i18n\",\"deploy\"]",
       "created_at": "2026-02-09 11:23:31",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 125,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "Proactive session 6",
-      "summary": "Proactive check. Found unfinished Telugu request from Sasi (work_queue #4, session 5 died). Prioritizing that.",
-      "tags": null,
-      "created_at": "2026-02-09 09:08:48",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5942,16 +5932,16 @@ var MC_DATA = {
     "completed_all_time": 7,
     "agents_active": 0,
     "total_sessions": 107,
-    "total_events": 287,
+    "total_events": 286,
     "events_today": 8,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_start": 14,
       "step_completed": 23,
       "message_sent": 16,
       "session_end": 30,
+      "session_start": 13,
       "task_completed": 7,
       "message_received": 17,
       "session_plan": 13,
@@ -5980,7 +5970,7 @@ var MC_DATA = {
       "feedback_received": 1
     },
     "events_by_agent": {
-      "krishna": 229,
+      "krishna": 228,
       "chanakya": 5,
       "vidura": 2,
       "narada": 10,
