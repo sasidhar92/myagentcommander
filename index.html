@@ -441,12 +441,44 @@
         /* Pricing */
         .pricing-section { text-align: center; }
 
-        .pricing-card {
-            max-width: 440px;
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 880px;
             margin: 48px auto 0;
+        }
+
+        .pricing-card {
             padding: 40px;
             border: 2px solid #111;
             border-radius: 12px;
+        }
+
+        .pricing-card--custom {
+            border-color: #888;
+        }
+
+        .custom-examples {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .custom-examples li {
+            padding: 8px 0;
+            font-size: 0.85rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .custom-examples li::before {
+            content: '+';
+            color: #111;
+            font-weight: 700;
+            font-family: monospace;
         }
 
         .price {
@@ -667,6 +699,7 @@
             .steps { grid-template-columns: 1fr; gap: 32px; }
             .features-grid { grid-template-columns: 1fr; }
             .diff-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
             .pricing-card { padding: 28px 20px; }
             .footer__inner { flex-direction: column; gap: 16px; text-align: center; }
             .hero { padding: 60px 0 48px; }
@@ -1126,21 +1159,43 @@
     <section class="pricing-section" id="pricing">
         <div class="container">
             <p class="section-label">Pricing</p>
-            <h2 class="section-title">One price. No subscription.</h2>
+            <h2 class="section-title">Simple pricing. No subscription.</h2>
 
-            <div class="pricing-card">
-                <div class="price">$50</div>
-                <div class="price-label">One-time setup fee</div>
-                <ul class="price-features">
-                    <li>Interactive setup wizard — deploy in 5 minutes</li>
-                    <li>Configurable agent team (3, 4, 6, or custom)</li>
-                    <li>iMessage control + daily digest</li>
-                    <li>Auto-learning memory with distillation</li>
-                    <li>6 autonomous triggers (message, proactive, orders, conversations, initiatives, digest)</li>
-                    <li>Live dashboard with event feed</li>
-                    <li>Circuit breaker + 10-min session watchdog</li>
-                </ul>
-                <a href="#contact" class="price-cta">Get Started</a>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="price">$50</div>
+                    <div class="price-label">One-time setup fee</div>
+                    <ul class="price-features">
+                        <li>Interactive setup wizard — deploy in 5 minutes</li>
+                        <li>Configurable agent team (3, 4, 6, or custom)</li>
+                        <li>iMessage control + daily digest</li>
+                        <li>Auto-learning memory with distillation</li>
+                        <li>6 autonomous triggers (message, proactive, orders, conversations, initiatives, digest)</li>
+                        <li>Live dashboard with event feed</li>
+                        <li>Circuit breaker + 10-min session watchdog</li>
+                    </ul>
+                    <a href="#contact" class="price-cta">Get Started</a>
+                </div>
+
+                <div class="pricing-card pricing-card--custom">
+                    <div class="price">$100<span style="font-size:1rem;font-weight:400;color:#888">/hr</span></div>
+                    <div class="price-label">Custom integration consulting</div>
+                    <ul class="price-features">
+                        <li>Tailored setup for your specific workflow</li>
+                        <li>Connect external tools and services</li>
+                        <li>Custom agent behaviors and triggers</li>
+                        <li>Hands-on pairing with our team</li>
+                    </ul>
+                    <p style="font-size:0.8rem;color:#888;text-align:left;margin-bottom:20px;">Popular requests:</p>
+                    <ul class="custom-examples">
+                        <li>Slack integration</li>
+                        <li>Email / Gmail access</li>
+                        <li>CRM connections (HubSpot, Salesforce)</li>
+                        <li>Custom API endpoints</li>
+                        <li>Multi-user setups</li>
+                    </ul>
+                    <a href="#contact" class="price-cta" style="background:#555;">Request Consultation</a>
+                </div>
             </div>
         </div>
     </section>
