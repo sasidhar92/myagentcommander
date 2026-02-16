@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T17:15:34.050Z",
+    "updated_at": "2026-02-16T18:15:47.693Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
+      "last_event_summary": "Dashboard synced (107 sessions). Memory distilled (0 new). Spawned Narada for ASO research. All goals blocked/complete.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 30,
+      "event_count_24h": 31,
       "event_count_total": 221,
       "is_active": false,
-      "total_sessions": 95,
+      "total_sessions": 96,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 5
+          "count": 6
         }
       ]
     },
@@ -1369,6 +1369,16 @@ var MC_DATA = {
       "ended_at": "2026-02-16 03:56:08",
       "duration_sec": 362,
       "summary": "Message trigger: Sasi deployed MAC, requested Dwarka packaging + Slack + iMessage group research. Spawned 3 Narada agents in parallel. Delivered: research/slack-agents-integration.md, research/imessage-group-multi-user.md, analyzed MAC prod site. Created mission 8 with 6 steps."
+    },
+    {
+      "id": "session-db-108",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-16 17:36:06",
+      "ended_at": "2026-02-16 17:36:27",
+      "duration_sec": null,
+      "summary": "Proactive: dashboard synced, daily routine complete, spawned Narada for ASO research"
     }
   ],
   "tasks": [
@@ -1526,13 +1536,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 20:55:52",
-      "narrative": "Krishna checked domain availability for Sasi."
-    },
     {
       "type": "session_start",
       "agent": "Krishna",
@@ -2925,9 +2928,26 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-16 03:56:08",
       "narrative": "Session 107 complete — Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 17:36:16",
+      "narrative": "Proactive check + daily routine — Dashboard synced (107 sessions). Memory distilled (0 new). Spawned Narada for ASO research. All goals blocked/complete."
     }
   ],
   "pulse": [
+    {
+      "id": 1867,
+      "kind": "routine",
+      "agent_id": "krishna",
+      "title": "Proactive check + daily routine",
+      "summary": "Dashboard synced (107 sessions). Memory distilled (0 new). Spawned Narada for ASO research. All goals blocked/complete.",
+      "tags": null,
+      "created_at": "2026-02-16 17:36:16",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1866,
       "kind": "heartbeat",
@@ -5217,16 +5237,6 @@ var MC_DATA = {
       "tags": "[\"message\",\"strategy\",\"saas\"]",
       "created_at": "2026-02-09 19:24:00",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 330,
-      "kind": "task_completed",
-      "agent_id": "krishna",
-      "title": "Telugu default for ayurveda-grains",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-09 17:26:53",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5680,7 +5690,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 9
+      "count": 10
     }
   ],
   "agent_activity": {
@@ -5771,7 +5781,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 5
+        "count": 6
       }
     ],
     "narada": [
@@ -5871,14 +5881,13 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 7,
     "agents_active": 0,
-    "total_sessions": 107,
+    "total_sessions": 108,
     "total_events": 280,
-    "events_today": 9,
+    "events_today": 10,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "task_completed": 7,
       "message_received": 17,
       "session_plan": 13,
       "step_completed": 20,
@@ -5894,6 +5903,7 @@ var MC_DATA = {
       "session_start": 12,
       "build": 8,
       "research": 1,
+      "task_completed": 6,
       "duplicate_trigger": 1,
       "heartbeat": 40,
       "review_completed": 1,
@@ -5902,7 +5912,7 @@ var MC_DATA = {
       "maintenance": 1,
       "deploy": 1,
       "research_complete": 3,
-      "routine": 3,
+      "routine": 4,
       "file_change": 71,
       "conversation": 1,
       "decision_made": 1,
