@@ -112,6 +112,9 @@
 
         .nav__cta:hover { background: #333 !important; color: #fff !important; }
 
+        .nav__toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 101; }
+        .nav__toggle span { display: block; width: 20px; height: 2px; background: #111; margin: 4px 0; transition: 0.3s; }
+
         .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
         .container--narrow { max-width: 740px; margin: 0 auto; padding: 0 24px; }
 
@@ -656,8 +659,11 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav__links { gap: 16px; }
-            .nav__links li:nth-child(-n+2) { display: none; }
+            .nav__toggle { display: block; }
+            .nav__inner { position: relative; }
+            .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; gap: 4px; border-bottom: 1px solid #e5e5e5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+            .nav__links.open { display: flex; }
+            .nav__links a { font-size: 1rem; padding: 8px 0; }
             .steps { grid-template-columns: 1fr; gap: 32px; }
             .features-grid { grid-template-columns: 1fr; }
             .diff-grid { grid-template-columns: 1fr; }
@@ -665,10 +671,6 @@
             .footer__inner { flex-direction: column; gap: 16px; text-align: center; }
             .hero { padding: 60px 0 48px; }
             .live-status { flex-wrap: wrap; gap: 12px; }
-        }
-
-        @media (max-width: 480px) {
-            .nav__links li:not(:last-child) { display: none; }
         }
     </style>
 </head>
@@ -678,6 +680,7 @@
     <nav class="nav" aria-label="Main navigation">
         <div class="nav__inner">
             <a href="index.html" class="nav__logo">My Agent Commander</a>
+            <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
             <ul class="nav__links">
                 <li><a href="live-office.html">Live Office</a></li>
                 <li><a href="insights.html">Insights</a></li>
@@ -1779,6 +1782,15 @@
         }
     })();
     </script>
+
+<script>
+document.querySelector('.nav__toggle').addEventListener('click', function() {
+  document.querySelector('.nav__links').classList.toggle('open');
+});
+document.querySelectorAll('.nav__links a').forEach(function(a) {
+  a.addEventListener('click', function() { document.querySelector('.nav__links').classList.remove('open'); });
+});
+</script>
 
 </body>
 </html>

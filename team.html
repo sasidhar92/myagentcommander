@@ -44,6 +44,18 @@
     .nav__links a.active { color: #111; font-weight: 700; }
     .nav__cta { padding: 8px 20px; background: #111; color: #fff !important; border-radius: 6px; font-size: 0.875rem; font-weight: 600; transition: background 0.15s; }
     .nav__cta:hover { background: #333 !important; color: #fff !important; }
+    .nav__toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 101; }
+    .nav__toggle span { display: block; width: 20px; height: 2px; background: #111; margin: 4px 0; transition: 0.3s; }
+    @media (max-width: 768px) {
+      .nav__toggle { display: block; }
+      .nav__inner { position: relative; }
+      .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; gap: 4px; border-bottom: 1px solid #e5e5e5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+      .nav__links.open { display: flex; }
+      .nav__links a { font-size: 1rem; padding: 8px 0; }
+      .stats-bar { flex-wrap: wrap; justify-content: center; gap: 6px; padding: 8px 12px; }
+      .tree { padding: 24px 12px 0; }
+      .ceo-pill { padding: 12px 24px; }
+    }
     .stats-bar { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 24px; border-bottom: 1px solid var(--border); font-size: 11px; max-width: 1080px; margin: 0 auto; }
     .stats-bar > span { padding: 3px 10px; border: 1px solid var(--border); border-radius: 12px; color: var(--muted); }
     .stats-bar .val { font-weight: 600; color: var(--text); }
@@ -325,6 +337,7 @@
   <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">My Agent Commander</a>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav__links">
         <li><a href="live-office.html">Live Office</a></li>
         <li><a href="insights.html">Insights</a></li>
@@ -693,5 +706,13 @@
     loadData();
     setInterval(loadData, 30000);
   </script>
+<script>
+document.querySelector('.nav__toggle').addEventListener('click', function() {
+  document.querySelector('.nav__links').classList.toggle('open');
+});
+document.querySelectorAll('.nav__links a').forEach(function(a) {
+  a.addEventListener('click', function() { document.querySelector('.nav__links').classList.remove('open'); });
+});
+</script>
 </body>
 </html>
