@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T07:34:14.531Z",
+    "updated_at": "2026-02-16T10:42:38.890Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -115,7 +115,7 @@ var MC_DATA = {
       "model": "opus",
       "last_event_summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 63,
+      "event_count_24h": 30,
       "event_count_total": 229,
       "is_active": false,
       "total_sessions": 95,
