@@ -48,10 +48,11 @@
       .nav__links.open { display: flex; }
       .nav__links a { font-size: 1rem; padding: 8px 0; }
 
-      /* Break out of 100vh locked layout */
-      body { height: auto; overflow-y: auto; }
-      .main-container { flex-direction: column; overflow: visible; min-height: 0; }
-      .main-column { overflow: visible; min-height: 0; }
+      /* Break out of 100vh locked layout — switch to normal block flow */
+      body { height: auto; overflow-y: auto; display: block; }
+      .main-container { display: block; overflow: visible; }
+      .main-column { display: block; overflow: visible; }
+      .feed-panel { display: block; }
 
       /* Stats bar: compact single row */
       .stats-bar { flex-wrap: nowrap; justify-content: center; gap: 4px; padding: 6px 8px; font-size: 10px; }
