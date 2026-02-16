@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T21:16:29.493Z",
+    "updated_at": "2026-02-16T22:16:31.789Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -64,10 +64,10 @@ var MC_DATA = {
       "tone": "Vigilant, protective, thorough",
       "quirk": "Catches what others miss. \"I found a vulnerability.\"",
       "model": "sonnet",
-      "last_event_summary": null,
+      "last_event_summary": "Report at research/link-analysis/voxyz-openclaw-hanuman.md",
       "last_event_narrative": null,
-      "event_count_24h": 0,
-      "event_count_total": 0,
+      "event_count_24h": 2,
+      "event_count_total": 2,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-09 03:01:42",
@@ -98,7 +98,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 0
+          "count": 2
         }
       ]
     },
@@ -107,18 +107,18 @@ var MC_DATA = {
       "name": "Krishna",
       "role": "Chief of Staff",
       "level": "LEAD",
-      "status": "IDLE",
+      "status": "WORKING",
       "avatar": "K",
       "current_task": null,
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Sasi shared x.com tweet about Code Factory repo pattern. Analyzed and compared to Dwarka closed-loop architecture.",
+      "last_event_summary": "https://x.com/voxyz_ai/status/Sasi487812729",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 15,
-      "event_count_total": 214,
-      "is_active": false,
-      "total_sessions": 97,
+      "event_count_24h": 13,
+      "event_count_total": 208,
+      "is_active": true,
+      "total_sessions": 98,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 9
+          "count": 10
         }
       ]
     },
@@ -211,10 +211,10 @@ var MC_DATA = {
       "tone": "Clear, persuasive, measured",
       "quirk": "Words matter. \"Let me find the right way to say this.\"",
       "model": "sonnet",
-      "last_event_summary": "Created 2436-line SEO content page with 25 AI agent prompts across 6 categories (Coding, Research, Marketing, SEO, Automation, Writing). Includes copy-to-clipboard, category filter, schema.org markup, OG/Twitter cards. Matches design system exactly.",
-      "last_event_narrative": "Vidura built prompts.html with 25 categorized AI agent prompts.",
+      "last_event_summary": null,
+      "last_event_narrative": null,
       "event_count_24h": 0,
-      "event_count_total": 1,
+      "event_count_total": 0,
       "is_active": false,
       "total_sessions": 2,
       "last_active": "2026-02-09 21:35:10",
@@ -260,10 +260,10 @@ var MC_DATA = {
       "tone": "Practical, craft-focused, precise",
       "quirk": "Thinks in architecture. \"Let me build it right.\"",
       "model": "sonnet",
-      "last_event_summary": "Audited brain/ for dead files, redundancy, stale content. Report at memory/audit.md",
+      "last_event_summary": "Report at research/link-analysis/voxyz-openclaw-vishwa.md",
       "last_event_narrative": "Vishwa completed file audit of brain/ directory.",
-      "event_count_24h": 0,
-      "event_count_total": 2,
+      "event_count_24h": 2,
+      "event_count_total": 4,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-11 18:10:00",
@@ -294,7 +294,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 0
+          "count": 2
         }
       ]
     }
@@ -1389,6 +1389,16 @@ var MC_DATA = {
       "ended_at": "2026-02-16T21:15:05Z",
       "duration_sec": null,
       "summary": "message task"
+    },
+    {
+      "id": "session-db-110",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "message",
+      "started_at": "2026-02-16 21:34:34",
+      "ended_at": null,
+      "duration_sec": null,
+      "summary": "message task"
     }
   ],
   "tasks": [
@@ -1546,41 +1556,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 21:11:45",
-      "narrative": "Krishna completed memory influence system and MCP research."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 23:57:20",
-      "narrative": "Sasi asked Krishna to check more SaaS name variations."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 23:57:35",
-      "narrative": "Krishna sent 20+ name variations with domain availability to Sasi."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 01:20:47",
-      "narrative": "Krishna planned proactive check and memory distillation work."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:17:49",
-      "narrative": "Krishna enabled conversation_schedule for 24h standup cycles."
-    },
     {
       "type": "comment",
       "agent": "Krishna",
@@ -2945,9 +2920,104 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-16 21:15:53",
       "narrative": "Responded to Ryan Carson tweet — Sasi shared x.com tweet about Code Factory repo pattern. Analyzed and compared to Dwarka closed-loop architecture."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 21:34:51",
+      "narrative": "Link from Sasi: x.com/voxyz_ai — https://x.com/voxyz_ai/status/Sasi487812729"
+    },
+    {
+      "type": "session_start",
+      "agent": "Vishwa",
+      "agent_id": "vishwa",
+      "timestamp": "2026-02-16 21:36:04",
+      "narrative": "Vishwa started: link analysis — Analyzing https://x.com/voxyz_ai/status/Sasi487812729"
+    },
+    {
+      "type": "session_start",
+      "agent": "Hanuman",
+      "agent_id": "hanuman",
+      "timestamp": "2026-02-16 21:36:32",
+      "narrative": "Hanuman started: link analysis — Analyzing https://x.com/voxyz_ai/status/Sasi487812729"
+    },
+    {
+      "type": "comment",
+      "agent": "Vishwa",
+      "agent_id": "vishwa",
+      "timestamp": "2026-02-16 21:37:24",
+      "narrative": "Vishwa completed: link analysis — Report at research/link-analysis/voxyz-openclaw-vishwa.md"
+    },
+    {
+      "type": "comment",
+      "agent": "Hanuman",
+      "agent_id": "hanuman",
+      "timestamp": "2026-02-16 21:39:52",
+      "narrative": "Hanuman completed: link analysis — Report at research/link-analysis/voxyz-openclaw-hanuman.md"
     }
   ],
   "pulse": [
+    {
+      "id": 1877,
+      "kind": "task_completed",
+      "agent_id": "hanuman",
+      "title": "Hanuman completed: link analysis",
+      "summary": "Report at research/link-analysis/voxyz-openclaw-hanuman.md",
+      "tags": null,
+      "created_at": "2026-02-16 21:39:52",
+      "agent_name": "Hanuman"
+    },
+    {
+      "id": 1876,
+      "kind": "task_completed",
+      "agent_id": "vishwa",
+      "title": "Vishwa completed: link analysis",
+      "summary": "Report at research/link-analysis/voxyz-openclaw-vishwa.md",
+      "tags": null,
+      "created_at": "2026-02-16 21:37:24",
+      "agent_name": "Vishwa"
+    },
+    {
+      "id": 1875,
+      "kind": "session_start",
+      "agent_id": "hanuman",
+      "title": "Hanuman started: link analysis",
+      "summary": "Analyzing https://x.com/voxyz_ai/status/Sasi487812729",
+      "tags": null,
+      "created_at": "2026-02-16 21:36:32",
+      "agent_name": "Hanuman"
+    },
+    {
+      "id": 1874,
+      "kind": "session_start",
+      "agent_id": "vishwa",
+      "title": "Vishwa started: link analysis",
+      "summary": "Analyzing https://x.com/voxyz_ai/status/Sasi487812729",
+      "tags": null,
+      "created_at": "2026-02-16 21:36:04",
+      "agent_name": "Vishwa"
+    },
+    {
+      "id": 1873,
+      "kind": "link_received",
+      "agent_id": "krishna",
+      "title": "Link from Sasi: x.com/voxyz_ai",
+      "summary": "https://x.com/voxyz_ai/status/Sasi487812729",
+      "tags": "[\"link\"]",
+      "created_at": "2026-02-16 21:34:51",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1872,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-16 21:34:34",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1871,
       "kind": "message_responded",
@@ -5087,89 +5157,34 @@ var MC_DATA = {
       "tags": "[\"saas\",\"naming\",\"branding\"]",
       "created_at": "2026-02-09 22:37:30",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 620,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "SaaS name suggestions",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-09 21:57:29",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 619,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "SaaS naming request",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-09 21:57:14",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 597,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "routine check. Delivered prompts.html — 25 AI agent prompts. Phase 1 SEO content engine complete (3 pages). Dashboard + contexts synced.",
-      "tags": "[\"session\",\"standing_order\"]",
-      "created_at": "2026-02-09 21:36:13",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 596,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "routine check. Delivered prompts.html — 25 AI agent prompts. Phase 1 SEO content engine complete (3 pages). Dashboard + contexts synced.",
-      "tags": "[\"session\",\"standing_order\"]",
-      "created_at": "2026-02-09 21:36:08",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 595,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "routine check. Delivered prompts.html — 25 AI agent prompts. Phase 1 SEO content engine complete (3 pages). Dashboard + contexts synced.",
-      "tags": "[\"session\",\"standing_order\"]",
-      "created_at": "2026-02-09 21:36:03",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 593,
-      "kind": "mission_completed",
-      "agent_id": "krishna",
-      "title": "Phase 1 content complete for SaaS GTM",
-      "summary": "All 5 initial mission steps succeeded: 2x research, 1x analysis, 1x content draft, 1x build. Three SEO pages live: projects.html, guides.html, prompts.html. Next: landing page SaaS positioning update, product pages.",
-      "tags": "[\"saas\",\"milestone\"]",
-      "created_at": "2026-02-09 21:35:19",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 592,
-      "kind": "step_completed",
-      "agent_id": "vidura",
-      "title": "Built prompts.html",
-      "summary": "Created 2436-line SEO content page with 25 AI agent prompts across 6 categories (Coding, Research, Marketing, SEO, Automation, Writing). Includes copy-to-clipboard, category filter, schema.org markup, OG/Twitter cards. Matches design system exactly.",
-      "tags": "[\"saas\",\"seo\",\"content\",\"vidura\"]",
-      "created_at": "2026-02-09 21:35:10",
-      "agent_name": "Vidura"
-    },
-    {
-      "id": 582,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "Build prompts.html",
-      "summary": "Standing order. Top priority: build missing prompts.html for SaaS SEO content. Also verify dashboard rendering if time permits.",
-      "tags": "[\"standing_order\",\"saas\",\"seo\"]",
-      "created_at": "2026-02-09 21:26:22",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
+    {
+      "id": 5,
+      "format": "debate",
+      "topic": "Link analysis: https://x.com/voxyz_ai/status/2023422101487812729",
+      "participants": [
+        "krishna",
+        "narada",
+        "vishwa",
+        "chanakya",
+        "vidura",
+        "hanuman"
+      ],
+      "status": "active",
+      "summary": null,
+      "started_at": "2026-02-16 21:35:08",
+      "completed_at": null,
+      "messages": [
+        {
+          "agent_id": "krishna",
+          "agent_name": "Krishna",
+          "content": "Sasi shared https://x.com/voxyz_ai/status/Sasi487812729 — Vox's article about running 6 AI employees on an $8/month Hetzner VPS with OpenClaw. Full team analysis — research, technical, marketing, content, security. Go.",
+          "turn": 1
+        }
+      ]
+    },
     {
       "id": 3,
       "format": "debate",
@@ -5620,7 +5635,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 14
+      "count": 20
     }
   ],
   "agent_activity": {
@@ -5681,7 +5696,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 0
+        "count": 2
       }
     ],
     "krishna": [
@@ -5711,7 +5726,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 9
+        "count": 10
       }
     ],
     "narada": [
@@ -5801,7 +5816,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 0
+        "count": 2
       }
     ]
   },
@@ -5810,31 +5825,31 @@ var MC_DATA = {
     "in_progress": 1,
     "completed_today": 0,
     "completed_all_time": 7,
-    "agents_active": 0,
-    "total_sessions": 109,
-    "total_events": 272,
-    "events_today": 14,
-    "conversations_total": 1,
+    "agents_active": 1,
+    "total_sessions": 110,
+    "total_events": 270,
+    "events_today": 20,
+    "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_plan": 12,
-      "step_completed": 17,
-      "mission_completed": 6,
-      "session_end": 25,
-      "message_received": 15,
-      "message_sent": 14,
       "message_response": 5,
       "action": 4,
       "daily_log": 1,
+      "session_plan": 11,
+      "step_completed": 16,
+      "session_end": 22,
+      "mission_completed": 5,
       "teammate_spawned": 7,
-      "session_start": 12,
+      "message_sent": 13,
+      "session_start": 14,
       "state_checkpoint": 4,
       "build": 8,
       "research": 1,
-      "task_completed": 6,
+      "message_received": 14,
+      "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 41,
+      "heartbeat": 42,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -5847,17 +5862,17 @@ var MC_DATA = {
       "decision_made": 1,
       "bug_fix": 1,
       "feedback_received": 1,
-      "link_received": 1,
+      "link_received": 2,
       "link_analyzed": 1,
       "message_responded": 1
     },
     "events_by_agent": {
-      "krishna": 214,
-      "vidura": 1,
+      "krishna": 208,
       "narada": 10,
-      "vishwa": 2,
-      "dwarka": 41,
-      "chanakya": 4
+      "vishwa": 4,
+      "dwarka": 42,
+      "chanakya": 4,
+      "hanuman": 2
     }
   }
 };
