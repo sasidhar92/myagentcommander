@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T02:24:58.938Z",
+    "updated_at": "2026-02-16T03:03:26.537Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -64,10 +64,10 @@ var MC_DATA = {
       "tone": "Vigilant, protective, thorough",
       "quirk": "Catches what others miss. \"I found a vulnerability.\"",
       "model": "sonnet",
-      "last_event_summary": "Security scan: 14 findings (0 critical, 0 high, 14 medium)",
-      "last_event_narrative": "Hanuman completed security scan and found 14 medium-severity issues.",
+      "last_event_summary": null,
+      "last_event_narrative": null,
       "event_count_24h": 0,
-      "event_count_total": 65,
+      "event_count_total": 0,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-09 03:01:42",
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Proactive routines executed. Health dashboard built. Daily digest sent.",
+      "last_event_summary": "Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 58,
-      "event_count_total": 231,
+      "event_count_24h": 59,
+      "event_count_total": 228,
       "is_active": false,
-      "total_sessions": 92,
+      "total_sessions": 93,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 0
+          "count": 1
         }
       ]
     },
@@ -1339,6 +1339,16 @@ var MC_DATA = {
       "ended_at": "2026-02-15 20:30:07",
       "duration_sec": null,
       "summary": "Proactive check — all routines already ran. Dashboard synced. Clean pass."
+    },
+    {
+      "id": "session-db-105",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-16 03:03:07",
+      "ended_at": "2026-02-16 03:03:23",
+      "duration_sec": 16,
+      "summary": "Proactive check — all routines already ran. No unread from Sasi. No queued work. Clean pass."
     }
   ],
   "tasks": [
@@ -1477,13 +1487,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-10 13:35:13",
-      "narrative": "Krishna sent domain research results recommending Auxion to Sasi."
-    },
     {
       "type": "session_end",
       "agent": "Krishna",
@@ -2876,9 +2879,26 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-15 16:28:55",
       "narrative": "Krishna completed proactive routines and built health dashboard."
+    },
+    {
+      "type": "session_start",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 03:03:11",
+      "narrative": "Session 105: proactive — Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass."
     }
   ],
   "pulse": [
+    {
+      "id": 1858,
+      "kind": "session_start",
+      "agent_id": "krishna",
+      "title": "Session 105: proactive",
+      "summary": "Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass.",
+      "tags": null,
+      "created_at": "2026-02-16 03:03:11",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1849,
       "kind": "session_end",
@@ -5198,696 +5218,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-09 03:19:03",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 82,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "Security Scan Complete: 14 findings",
-      "summary": "Security scan: 14 findings (0 critical, 0 high, 14 medium)",
-      "tags": "[\"security\",\"summary\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 81,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 80,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 79,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 78,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 77,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 76,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 75,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 74,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 73,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 72,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 71,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 70,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 69,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 68,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 03:01:42",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 62,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "Security Scan Complete: 26 findings",
-      "summary": "Security scan: 26 findings (0 critical, 0 high, 26 medium)",
-      "tags": "[\"security\",\"summary\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 61,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 49356 (Electron)",
-      "summary": "Process Electron (PID 96443) listening on port 49356",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 60,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 9222 (Google)",
-      "summary": "Process Google (PID 83110) listening on port 9222",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 59,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 8000 (Python)",
-      "summary": "Process Python (PID 73611) listening on port 8000",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 58,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 3000 (node)",
-      "summary": "Process node (PID 1836) listening on port 3000",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 57,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 63886 (rapportd)",
-      "summary": "Process rapportd (PID 642) listening on port 63886",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 56,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 63885 (rapportd)",
-      "summary": "Process rapportd (PID 642) listening on port 63885",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 55,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 59183 (rapportd)",
-      "summary": "Process rapportd (PID 642) listening on port 59183",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 54,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 59183 (rapportd)",
-      "summary": "Process rapportd (PID 642) listening on port 59183",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 53,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 5000 (ControlCe)",
-      "summary": "Process ControlCe (PID 601) listening on port 5000",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 52,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 5000 (ControlCe)",
-      "summary": "Process ControlCe (PID 601) listening on port 5000",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 51,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 7000 (ControlCe)",
-      "summary": "Process ControlCe (PID 601) listening on port 7000",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 50,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] open_port: Port 7000 (ControlCe)",
-      "summary": "Process ControlCe (PID 601) listening on port 7000",
-      "tags": "[\"security\",\"open_port\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 49,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 48,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 47,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 46,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 45,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 44,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 43,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 42,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 41,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 40,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 39,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 38,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 37,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 36,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:23",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 35,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "Security Scan Complete: 14 findings",
-      "summary": "Security scan: 14 findings (0 critical, 0 high, 14 medium)",
-      "tags": "[\"security\",\"summary\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 34,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 33,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 32,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 31,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 30,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 29,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 28,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 27,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 26,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 25,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 24,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 23,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 22,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 21,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:20",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 20,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "Security Scan Complete: 14 findings",
-      "summary": "Security scan: 14 findings (0 critical, 0 high, 14 medium)",
-      "tags": "[\"security\",\"summary\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 19,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 18,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 17,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 16,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 15,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 14,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 13,
-      "kind": "security_scan",
-      "agent_id": "hanuman",
-      "title": "[medium] code_vulnerability: innerHTML assignment",
-      "summary": "Potential XSS via innerHTML",
-      "tags": "[\"security\",\"code_vulnerability\"]",
-      "created_at": "2026-02-09 02:57:02",
-      "agent_name": "Hanuman"
-    },
-    {
-      "id": 7,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "Standing order session complete",
-      "summary": "Dashboard updated with Dwarka data. Goals and standing orders updated. Daily log written.",
-      "tags": "[\"standing_order\"]",
-      "created_at": "2026-02-09 02:51:59",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 6,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Dashboard data.js populated",
-      "summary": "Migrated data.js from Jarvis 4-agent roster to Dwarka 6-agent roster. Added migration session, standing order session, 12 feed events, 2 new tasks. Stats recomputed.",
-      "tags": "[\"dashboard\",\"standing_order\"]",
-      "created_at": "2026-02-09 02:51:58",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 5,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "Standing order: Dashboard live data",
-      "summary": "First successful standing_order session. Goal: populate mission-control dashboard data.js with real SQLite data. Secondary: update goals file to reflect Dwarka naming.",
-      "tags": "[\"standing_order\",\"dashboard\"]",
-      "created_at": "2026-02-09 02:48:36",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 3,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "False positive daemon trigger",
-      "summary": "Daemon triggered (message type) but no new messages from Sasi. Precheck fix still not deployed — Sasi needs to run setup.sh from Terminal.app.",
-      "tags": "[\"daemon\",\"false_positive\"]",
-      "created_at": "2026-02-09 02:39:22",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -6299,7 +5629,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 0
+      "count": 1
     }
   ],
   "agent_activity": {
@@ -6390,7 +5720,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 0
+        "count": 1
       }
     ],
     "narada": [
@@ -6490,23 +5820,22 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 7,
     "agents_active": 0,
-    "total_sessions": 104,
-    "total_events": 351,
-    "events_today": 0,
+    "total_sessions": 105,
+    "total_events": 283,
+    "events_today": 1,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
       "session_start": 15,
-      "session_plan": 14,
-      "step_completed": 21,
-      "session_end": 30,
-      "security_scan": 65,
       "bug_fix": 2,
       "state_checkpoint": 6,
+      "step_completed": 20,
       "message_sent": 15,
+      "session_end": 29,
       "task_completed": 7,
       "message_received": 16,
+      "session_plan": 13,
       "progress": 1,
       "mission_completed": 6,
       "message_response": 5,
@@ -6530,8 +5859,7 @@ var MC_DATA = {
       "feedback_received": 1
     },
     "events_by_agent": {
-      "krishna": 231,
-      "hanuman": 65,
+      "krishna": 228,
       "chanakya": 5,
       "vidura": 2,
       "narada": 8,
