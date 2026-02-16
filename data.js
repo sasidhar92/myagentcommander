@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T14:08:31.695Z",
+    "updated_at": "2026-02-16T15:15:06.934Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -116,7 +116,7 @@ var MC_DATA = {
       "last_event_summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
       "event_count_24h": 30,
-      "event_count_total": 226,
+      "event_count_total": 221,
       "is_active": false,
       "total_sessions": 95,
       "last_active": "2026-02-15 16:28:55",
@@ -2929,6 +2929,16 @@ var MC_DATA = {
   ],
   "pulse": [
     {
+      "id": 1866,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-16 14:34:22",
+      "agent_name": "Dwarka"
+    },
+    {
       "id": 1865,
       "kind": "session_end",
       "agent_id": "krishna",
@@ -5217,56 +5227,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-09 17:26:53",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 145,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "Standing order session 9 complete",
-      "summary": "Built sync-contexts.js (context handoff) and sync-dashboard.js (dashboard auto-sync). Both scripts integrated into boot.md shutdown sequence. Two standing orders advanced. Spawned Vishwa for parallel work.",
-      "tags": "[\"session_9\",\"standing_order\"]",
-      "created_at": "2026-02-09 14:22:59",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 143,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Dashboard auto-sync script built",
-      "summary": "Vishwa built sync-dashboard.js — reads all SQLite tables, generates data.js with agents, sessions, tasks, feed, stats. Filters heartbeat noise. Tested and verified.",
-      "tags": "[\"dashboard\",\"agentic\",\"vishwa\"]",
-      "created_at": "2026-02-09 14:21:34",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 141,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Context handoff system built",
-      "summary": "Rewrote sync-contexts.js to auto-update memory/contexts/*.md from filesystem + SQLite. Preserves Summary and Open Questions, auto-generates Tech Stack, Active Work, Recent Activity, Key Files, Recently Modified. Integrated into boot.md shutdown sequence.",
-      "tags": "[\"context\",\"agentic\"]",
-      "created_at": "2026-02-09 14:20:57",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 137,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "Standing order session 8",
-      "summary": "Working on: context handoff system + dashboard auto-sync",
-      "tags": "[\"standing_order\",\"session_8\"]",
-      "created_at": "2026-02-09 14:01:14",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 135,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "Proactive session 7 complete",
-      "summary": "Completed Telugu toggle for ayurveda-grains (Sasi request from session 5 that died). Updated dashboard. Ran proactive routines.",
-      "tags": null,
-      "created_at": "2026-02-09 13:56:54",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5720,7 +5680,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 8
+      "count": 9
     }
   ],
   "agent_activity": {
@@ -5912,19 +5872,18 @@ var MC_DATA = {
     "completed_all_time": 7,
     "agents_active": 0,
     "total_sessions": 107,
-    "total_events": 284,
-    "events_today": 8,
+    "total_events": 280,
+    "events_today": 9,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_end": 30,
-      "session_start": 13,
-      "step_completed": 22,
       "task_completed": 7,
       "message_received": 17,
       "session_plan": 13,
+      "step_completed": 20,
       "message_sent": 15,
+      "session_end": 28,
       "state_checkpoint": 5,
       "progress": 1,
       "mission_completed": 6,
@@ -5932,10 +5891,11 @@ var MC_DATA = {
       "action": 4,
       "daily_log": 1,
       "teammate_spawned": 7,
+      "session_start": 12,
       "build": 8,
       "research": 1,
       "duplicate_trigger": 1,
-      "heartbeat": 39,
+      "heartbeat": 40,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -5950,12 +5910,12 @@ var MC_DATA = {
       "feedback_received": 1
     },
     "events_by_agent": {
-      "krishna": 226,
+      "krishna": 221,
       "chanakya": 5,
       "vidura": 2,
       "narada": 10,
       "vishwa": 2,
-      "dwarka": 39
+      "dwarka": 40
     }
   }
 };
