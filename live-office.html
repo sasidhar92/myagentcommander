@@ -41,19 +41,42 @@
     .nav__toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 101; }
     .nav__toggle span { display: block; width: 20px; height: 2px; background: #111; margin: 4px 0; transition: 0.3s; }
     @media (max-width: 768px) {
+      /* Nav hamburger */
       .nav__toggle { display: block; }
       .nav__inner { position: relative; }
-      .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; gap: 4px; border-bottom: 1px solid #e5e5e5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+      .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; gap: 4px; border-bottom: 1px solid #e5e5e5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); z-index: 200; }
       .nav__links.open { display: flex; }
       .nav__links a { font-size: 1rem; padding: 8px 0; }
-      .nav { position: sticky; top: 0; }
+
+      /* Break out of 100vh locked layout */
+      body { height: auto; overflow-y: auto; }
+      .main-container { flex-direction: column; overflow: visible; min-height: 0; }
+      .main-column { overflow: visible; min-height: 0; }
+
+      /* Sidebar: horizontal scroll strip */
+      .sidebar-left { width: 100%; border-right: none; border-bottom: 1px solid var(--border); padding: 12px 16px; max-height: none; overflow-x: auto; overflow-y: hidden; display: flex; flex-direction: row; gap: 8px; flex-wrap: nowrap; }
+      .sidebar-left .section-header { display: none; }
+      .sidebar-left #agents-list { display: flex; gap: 8px; flex-wrap: nowrap; }
+      .sidebar-left .agent-card { flex-shrink: 0; width: 180px; margin-bottom: 0; border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
+
+      /* Stats bar */
       .stats-bar { flex-wrap: wrap; justify-content: center; gap: 6px; padding: 8px 12px; }
-      body { height: auto; overflow: auto; }
-      .main-container { flex-direction: column; overflow: visible; }
-      .sidebar-left { width: 100%; border-right: none; border-bottom: 1px solid var(--border); max-height: 50vh; overflow-y: auto; }
-      .main-column { overflow: visible; }
-      .stage-wrap { max-height: 300px; overflow: auto; }
-      .feed-wrap { overflow: visible; max-height: none; }
+
+      /* Stage SVG: scale to fit */
+      .stage-wrap { overflow: visible; max-height: none; }
+      .stage-svg { height: auto; min-height: 180px; }
+
+      /* Activity strip */
+      .activity-strip { padding: 8px 12px; height: auto; gap: 8px; }
+
+      /* Feed: natural flow instead of flex overflow */
+      .feed-panel { overflow: visible; min-height: 0; }
+      .feed-body { overflow: visible; max-height: none; }
+      .feed-tabs { overflow-x: auto; }
+
+      /* Mission bar */
+      .mission-bar { flex-wrap: wrap; padding: 8px 12px; gap: 8px; }
+      .mb-track { max-width: 100%; flex: 1 1 100%; }
     }
     .stats-bar { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 24px; border-bottom: 1px solid var(--border); font-size: 11px; max-width: 1080px; margin: 0 auto; }
     .stats-bar > span { padding: 3px 10px; border: 1px solid var(--border); border-radius: 12px; color: var(--muted); }
