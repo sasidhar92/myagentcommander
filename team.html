@@ -680,7 +680,7 @@
         var ago = diffSec < 60 ? 'now' : diffSec < 3600 ? Math.floor(diffSec / 60) + 'm ago' : diffSec < 86400 ? Math.floor(diffSec / 3600) + 'h ago' : Math.floor(diffSec / 86400) + 'd ago';
         if (data.meta && data.meta.daemon_status === 'offline') { dot.className = 'status-dot offline'; label.textContent = 'Offline'; }
         else if (diff < 30) { dot.className = 'status-dot'; label.textContent = 'Updated ' + ago; }
-        else { dot.className = 'status-dot stale'; label.textContent = 'Stale \u00b7 ' + ago; }
+        else { dot.className = 'status-dot stale'; label.textContent = 'Updated ' + ago; }
       } else { dot.className = 'status-dot offline'; label.textContent = 'Offline'; }
     }
 
