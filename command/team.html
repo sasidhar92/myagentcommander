@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team · Dwarka Mission Control</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --card-bg: #fff;
+      --card-border: #e5e5e5;
+      --border: #e5e5e5;
+      --text: #111;
+      --text-secondary: #666;
+      --text-muted: #888;
+      --muted: #888;
+      --text-dim: #999;
+      --line: #e5e5e5;
+      --surface: #fafafa;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-y: auto;
+      padding-top: 56px;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #bbb; }
+
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    .topbar-left { display: flex; align-items: center; gap: 32px; }
+    .topbar-title { font-size: 14px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+    .topbar-nav { display: flex; gap: 4px; }
+    .topbar-nav a {
+      font-size: 11px; padding: 5px 12px; border-radius: 4px;
+      color: var(--muted); text-decoration: none; transition: all 0.15s;
+    }
+    .topbar-nav a:hover { color: var(--text); }
+    .topbar-nav a.active { background: var(--text); color: var(--bg); }
+    .topbar-right { display: flex; align-items: center; gap: 20px; }
+    .topbar-stats { display: flex; gap: 8px; font-size: 11px; }
+    .topbar-stats span {
+      padding: 3px 10px; border: 1px solid var(--border);
+      border-radius: 12px; color: var(--muted);
+    }
+    .topbar-stats .val { color: var(--text); font-weight: 600; }
+    .clock {
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 13px; font-variant-numeric: tabular-nums;
+    }
+
+    .tree {
+      padding: 48px 24px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .ceo-wrap { display: flex; justify-content: center; }
+    .ceo-pill {
+      padding: 16px 40px;
+      border: 1.5px solid var(--line);
+      border-radius: 28px;
+      text-align: center;
+      background: var(--bg);
+    }
+    .ceo-name { font-size: 16px; font-weight: 700; letter-spacing: 1px; }
+    .ceo-role { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    .conn-v {
+      width: 1px; background: var(--line);
+      margin: 0 auto;
+    }
+
+    .lead-wrap { display: flex; justify-content: center; }
+    .lead-card {
+      background: var(--bg);
+      border: 1.5px solid var(--card-border);
+      border-radius: 12px;
+      padding: 20px 28px;
+      min-width: 380px;
+      position: relative;
+    }
+
+    .agent-header { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+    .agent-avatar {
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; font-weight: 800; flex-shrink: 0;
+      border: 2px solid var(--text);
+      color: var(--text);
+      background: var(--surface);
+    }
+    .agent-info { flex: 1; }
+    .agent-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; }
+    .agent-role { font-size: 12px; color: var(--text-secondary); }
+    .model-badge {
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 10px; padding: 2px 8px;
+      background: var(--surface); border: 1px solid var(--card-border);
+      border-radius: 3px;
+      color: var(--text-muted); display: inline-block;
+      margin-bottom: 10px;
+    }
+    .status-dot {
+      position: absolute; top: 16px; right: 16px;
+      width: 10px; height: 10px; border-radius: 50%;
+    }
+    .status-dot.active { background: var(--text); animation: pulse-dot 2s infinite; }
+    .status-dot.idle { background: #ccc; }
+    .status-dot.offline { border: 1.5px solid #ccc; background: transparent; }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .skill-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .skill-chip {
+      font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;
+      padding: 3px 8px; border: 1px solid var(--card-border);
+      border-radius: 100px; color: var(--text-muted);
+    }
+    .agent-stats {
+      display: flex; gap: 12px; margin-top: 10px;
+      font-size: 10px; color: var(--text-dim);
+      font-family: 'SF Mono', 'Menlo', monospace;
+    }
+    .agent-stats .stat-val { color: var(--text); font-weight: 600; }
+
+    .branch-connector {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 48px;
+    }
+    .branch-connector::before {
+      content: '';
+      position: absolute;
+      left: 50%; top: 0;
+      width: 1px; height: 24px;
+      background: var(--line);
+    }
+    .branch-connector::after {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 16.67%; right: 16.67%;
+      height: 1px;
+      background: var(--line);
+    }
+    .branch-drops {
+      position: absolute;
+      top: 24px; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 calc(16.67% - 0.5px);
+    }
+    .branch-drop {
+      width: 1px; height: 24px;
+      background: var(--line);
+    }
+
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .dept-box {
+      background: var(--surface);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .dept-title {
+      font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 2px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .dept-agents { display: flex; flex-direction: column; gap: 12px; }
+
+    .agent-card {
+      background: var(--bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 14px;
+      position: relative;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .agent-card:hover {
+      border-color: #ccc;
+      transform: translateY(-1px);
+    }
+    .agent-card .agent-avatar {
+      width: 36px; height: 36px; border-radius: 8px;
+      font-size: 13px;
+    }
+    .agent-card .agent-name { font-size: 14px; }
+    .agent-card .agent-role { font-size: 11px; }
+    .agent-card .status-dot { top: 12px; right: 12px; width: 8px; height: 8px; }
+    .agent-card .skill-chips { margin-top: 8px; }
+    .agent-card .agent-stats { margin-top: 8px; font-size: 9px; }
+
+    .av-kr, .av-na, .av-vi, .av-ch, .av-vd, .av-ha {
+      background: var(--surface);
+    }
+
+    .system-section {
+      max-width: 1000px;
+      margin: 60px auto 0;
+      padding: 0 0 60px;
+    }
+    .section-divider {
+      height: 1px;
+      background: var(--card-border);
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 3px;
+      color: var(--text-dim);
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .context-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 0 24px;
+    }
+    .context-card {
+      background: var(--bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 20px;
+      transition: border-color 0.15s;
+    }
+    .context-card:hover { border-color: #ccc; }
+    .context-icon {
+      font-size: 18px; margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+    .context-label {
+      font-size: 10px; text-transform: uppercase;
+      letter-spacing: 1.5px; color: var(--text-dim);
+      margin-bottom: 8px; font-weight: 600;
+    }
+    .context-value {
+      font-size: 14px; font-weight: 600; margin-bottom: 6px;
+    }
+    .context-desc {
+      font-size: 12px; color: var(--text-muted); line-height: 1.6;
+    }
+
+    .tree-intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .tree-intro p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .tree-intro strong { color: var(--text); font-weight: 600; }
+
+    .ceo-origin {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      line-height: 1.6;
+      max-width: 280px;
+    }
+    .ceo-origin .origin-quote {
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    .origin {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--card-border);
+    }
+    .origin-quote {
+      font-size: 11px;
+      font-style: italic;
+      color: var(--text-muted);
+      padding-left: 10px;
+      border-left: 2px solid var(--line);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .origin-bio {
+      font-size: 11px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .dept-grid { grid-template-columns: 1fr; }
+      .context-grid { grid-template-columns: 1fr; }
+      .lead-card { min-width: 0; }
+      .branch-connector { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="topbar">
+    <div class="topbar-left">
+      <a href="../" style="text-decoration:none;color:inherit"><span class="topbar-title">MY AGENT COMMANDER</span></a>
+      <div class="topbar-nav">
+        <a href="index.html">Command</a>
+        <a href="insights.html">Insights</a>
+        <a href="team.html" class="active">Team</a>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="topbar-stats">
+        <span>Agents <span class="val" id="stat-agents">6</span></span>
+        <span>Sessions <span class="val" id="stat-sessions">0</span></span>
+        <span>Events <span class="val" id="stat-events">0</span></span>
+      </div>
+      <div class="clock" id="clock">--:--:--</div>
+    </div>
+  </nav>
+
+  <div class="tree">
+
+    <div class="tree-intro">
+      <p>Every agent is named after a figure from Hindu mythology whose nature mirrors their role. The system is <strong>Dwarka</strong> — Krishna's island-city, a golden fortress said to govern itself.</p>
+    </div>
+
+    <!-- CEO / Human Operator -->
+    <div class="ceo-wrap">
+      <div class="ceo-pill">
+        <div class="ceo-name">Sasi (Arjuna)</div>
+        <div class="ceo-role">CEO &middot; Operator</div>
+        <div class="ceo-origin">
+          <div class="origin-quote">"I shall act as you instruct me."</div>
+          The greatest warrior of the Mahabharata. Krishna advises, but Arjuna draws the bow.
+        </div>
+      </div>
+    </div>
+
+    <div class="conn-v" style="height:32px"></div>
+
+    <!-- Lead Agent: Krishna -->
+    <div class="lead-wrap">
+      <div class="lead-card" id="lead-card">
+        <div class="status-dot idle" id="krishna-dot"></div>
+        <div class="agent-header">
+          <div class="agent-avatar av-kr">K</div>
+          <div class="agent-info">
+            <div class="agent-name">KRISHNA</div>
+            <div class="agent-role">Chief of Staff</div>
+          </div>
+        </div>
+        <div class="model-badge">opus</div>
+        <div class="skill-chips">
+          <span class="skill-chip">STRATEGIC PLANNING</span>
+          <span class="skill-chip">TASK ORCHESTRATION</span>
+          <span class="skill-chip">IMESSAGE</span>
+        </div>
+        <div class="agent-stats">
+          <span><span class="stat-val" id="kr-sessions">0</span> sessions</span>
+          <span><span class="stat-val" id="kr-events">0</span> events</span>
+        </div>
+        <div class="origin">
+          <div class="origin-quote">"I will not pick up a weapon. I will only guide."</div>
+          <div class="origin-bio">The divine charioteer who steered Arjuna through the war without ever fighting himself. Orchestrates, delegates, and advises — but the human always holds the wheel. Builder of Dwarka.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branch connectors -->
+    <div class="branch-connector">
+      <div class="branch-drops">
+        <div class="branch-drop"></div>
+        <div class="branch-drop"></div>
+        <div class="branch-drop"></div>
+      </div>
+    </div>
+
+    <!-- Department Grid -->
+    <div class="dept-grid">
+
+      <!-- INTELLIGENCE -->
+      <div class="dept-box">
+        <div class="dept-title">INTELLIGENCE</div>
+        <div class="dept-agents">
+          <div class="agent-card" id="card-narada">
+            <div class="status-dot idle" id="narada-dot"></div>
+            <div class="agent-header">
+              <div class="agent-avatar av-na">N</div>
+              <div class="agent-info">
+                <div class="agent-name">NARADA</div>
+                <div class="agent-role">Research / Analyst</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">DEEP RESEARCH</span>
+              <span class="skill-chip">WEB SEARCH</span>
+              <span class="skill-chip">TECH EVALUATION</span>
+            </div>
+            <div class="agent-stats">
+              <span><span class="stat-val" id="na-sessions">0</span> sessions</span>
+              <span><span class="stat-val" id="na-events">0</span> events</span>
+            </div>
+            <div class="origin">
+              <div class="origin-quote">"Narayana, Narayana..."</div>
+              <div class="origin-bio">The wandering sage who traveled between all three worlds gathering information. The original intelligence agent — always showed up with exactly the right context.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROWTH & CONTENT -->
+      <div class="dept-box">
+        <div class="dept-title">GROWTH &amp; CONTENT</div>
+        <div class="dept-agents">
+          <div class="agent-card" id="card-chanakya">
+            <div class="status-dot idle" id="chanakya-dot"></div>
+            <div class="agent-header">
+              <div class="agent-avatar av-ch">C</div>
+              <div class="agent-info">
+                <div class="agent-name">CHANAKYA</div>
+                <div class="agent-role">Marketing / Growth</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">GO-TO-MARKET</span>
+              <span class="skill-chip">AUDIENCE ANALYSIS</span>
+              <span class="skill-chip">CAMPAIGNS</span>
+            </div>
+            <div class="agent-stats">
+              <span><span class="stat-val" id="ch-sessions">0</span> sessions</span>
+              <span><span class="stat-val" id="ch-events">0</span> events</span>
+            </div>
+            <div class="origin">
+              <div class="origin-quote">"A person should not be too honest. Straight trees are cut first."</div>
+              <div class="origin-bio">The ruthless strategist who engineered the Maurya Empire. Author of the Arthashastra. Understood positioning, leverage, and timing better than anyone in history.</div>
+            </div>
+          </div>
+          <div class="agent-card" id="card-vidura">
+            <div class="status-dot idle" id="vidura-dot"></div>
+            <div class="agent-header">
+              <div class="agent-avatar av-vd">Vi</div>
+              <div class="agent-info">
+                <div class="agent-name">VIDURA</div>
+                <div class="agent-role">SEO / Content Writer</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">SEO OPTIMIZATION</span>
+              <span class="skill-chip">CONTENT CREATION</span>
+              <span class="skill-chip">DOCUMENTATION</span>
+            </div>
+            <div class="agent-stats">
+              <span><span class="stat-val" id="vd-sessions">0</span> sessions</span>
+              <span><span class="stat-val" id="vd-events">0</span> events</span>
+            </div>
+            <div class="origin">
+              <div class="origin-quote">"Truth is the highest dharma."</div>
+              <div class="origin-bio">The wisest counselor in the Mahabharata, known for Vidura Niti. Spoke plainly, never wasted words, and his counsel was always grounded in truth.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENGINEERING & SECURITY -->
+      <div class="dept-box">
+        <div class="dept-title">ENGINEERING &amp; SECURITY</div>
+        <div class="dept-agents">
+          <div class="agent-card" id="card-vishwa">
+            <div class="status-dot idle" id="vishwa-dot"></div>
+            <div class="agent-header">
+              <div class="agent-avatar av-vi">V</div>
+              <div class="agent-info">
+                <div class="agent-name">VISHWA</div>
+                <div class="agent-role">Engineering / Builder</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">CODE ARCHITECTURE</span>
+              <span class="skill-chip">FEATURE IMPLEMENTATION</span>
+              <span class="skill-chip">TESTING</span>
+            </div>
+            <div class="agent-stats">
+              <span><span class="stat-val" id="vi-sessions">0</span> sessions</span>
+              <span><span class="stat-val" id="vi-events">0</span> events</span>
+            </div>
+            <div class="origin">
+              <div class="origin-quote">"The architect of the impossible."</div>
+              <div class="origin-bio">Short for Vishwakarma — the divine craftsman of the gods. Built Lanka, Dwarka, Indra's palace, and every celestial weapon. No spec was too ambitious.</div>
+            </div>
+          </div>
+          <div class="agent-card" id="card-hanuman">
+            <div class="status-dot idle" id="hanuman-dot"></div>
+            <div class="agent-header">
+              <div class="agent-avatar av-ha">H</div>
+              <div class="agent-info">
+                <div class="agent-name">HANUMAN</div>
+                <div class="agent-role">Security / Guardian</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">VULNERABILITY SCANNING</span>
+              <span class="skill-chip">SECRET DETECTION</span>
+              <span class="skill-chip">CODE REVIEW</span>
+            </div>
+            <div class="agent-stats">
+              <span><span class="stat-val" id="ha-sessions">0</span> sessions</span>
+              <span><span class="stat-val" id="ha-events">0</span> events</span>
+            </div>
+            <div class="origin">
+              <div class="origin-quote">"Where there is Ram, there is Hanuman."</div>
+              <div class="origin-bio">The devoted guardian who could not be defeated, corrupted, or turned. Burned Lanka to the ground when Sita was threatened. Vigilant, loyal, and indestructible.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /dept-grid -->
+  </div><!-- /tree -->
+
+  <!-- System Architecture Context -->
+  <div class="system-section">
+    <div class="section-divider"></div>
+    <div class="section-title">SYSTEM ARCHITECTURE</div>
+    <div class="context-grid">
+
+      <div class="context-card">
+        <div class="context-icon">&#9678;</div>
+        <div class="context-label">CLOSED LOOP</div>
+        <div class="context-value">SQLite Pipeline</div>
+        <div class="context-desc">
+          Proposals become missions, missions break into steps, every action emits events. Append-only audit trail.
+        </div>
+      </div>
+
+      <div class="context-card">
+        <div class="context-icon">&#9655;</div>
+        <div class="context-label">HEARTBEAT</div>
+        <div class="context-value">Zero-LLM Daemon</div>
+        <div class="context-desc">
+          Node.js heartbeat every 5 minutes via launchd. Detects triggers, enqueues work. No AI cost at idle.
+        </div>
+      </div>
+
+      <div class="context-card">
+        <div class="context-icon">&#9993;</div>
+        <div class="context-label">COMMUNICATION</div>
+        <div class="context-value">iMessage Bridge</div>
+        <div class="context-desc">
+          Krishna talks to Sasi through iMessage. Teammates report via shared task lists, never iMessage directly.
+        </div>
+      </div>
+
+      <div class="context-card">
+        <div class="context-icon">&#9047;</div>
+        <div class="context-label">MEMORY</div>
+        <div class="context-value">Persistent Context</div>
+        <div class="context-desc">
+          Working memory, daily logs, lessons learned, and decision records. Survives across sessions and reboots.
+        </div>
+      </div>
+
+      <div class="context-card">
+        <div class="context-icon">&#9635;</div>
+        <div class="context-label">AUTONOMY</div>
+        <div class="context-value">Bounded Freedom</div>
+        <div class="context-desc">
+          Full autonomy within brain/ directory. No credentials, no system files, no external access without asking.
+        </div>
+      </div>
+
+      <div class="context-card">
+        <div class="context-icon">&#9633;</div>
+        <div class="context-label">DASHBOARD</div>
+        <div class="context-value">Mission Control</div>
+        <div class="context-desc">
+          Real-time sync from SQLite to static data.js. Events feed, sparklines, and insights. No server needed.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    var data = null;
+
+    function updateClock() {
+      var now = new Date();
+      var h = String(now.getHours()).padStart(2, '0');
+      var m = String(now.getMinutes()).padStart(2, '0');
+      var s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = h + ':' + m + ':' + s;
+    }
+
+    function getAgentById(id) {
+      if (!data || !data.agents) return null;
+      return data.agents.find(function(a) { return a.id === id; }) || null;
+    }
+
+    function statusClass(agent) {
+      if (!agent) return 'offline';
+      if (agent.is_active) return 'active';
+      if (agent.event_count_total > 0 || agent.last_active) return 'idle';
+      return 'offline';
+    }
+
+    var AGENT_IDS = {
+      krishna: 'kr', narada: 'na', vishwa: 'vi',
+      chanakya: 'ch', vidura: 'vd', hanuman: 'ha'
+    };
+
+    function updateAgentCards() {
+      if (!data || !data.agents) return;
+
+      Object.keys(AGENT_IDS).forEach(function(id) {
+        var prefix = AGENT_IDS[id];
+        var agent = getAgentById(id);
+        if (!agent) return;
+
+        var dot = document.getElementById(id + '-dot');
+        if (dot) dot.className = 'status-dot ' + statusClass(agent);
+
+        var sessEl = document.getElementById(prefix + '-sessions');
+        if (sessEl) sessEl.textContent = agent.total_sessions || 0;
+
+        var evEl = document.getElementById(prefix + '-events');
+        if (evEl) evEl.textContent = agent.event_count_total || 0;
+      });
+    }
+
+    function updateStats() {
+      if (!data) return;
+      document.getElementById('stat-agents').textContent = data.agents ? data.agents.length : 6;
+      document.getElementById('stat-sessions').textContent =
+        (data.stats && data.stats.total_sessions) || 0;
+      document.getElementById('stat-events').textContent =
+        (data.stats && data.stats.total_events) || (data.pulse ? data.pulse.length : 0);
+    }
+
+    function render() {
+      updateStats();
+      updateAgentCards();
+    }
+
+    function loadData() {
+      var old = document.getElementById('mc-data-script');
+      if (old) old.remove();
+      var s = document.createElement('script');
+      s.id = 'mc-data-script';
+      s.src = '../data.js?t=' + Date.now();
+      s.onload = function() {
+        if (typeof MC_DATA !== 'undefined') { data = MC_DATA; render(); }
+      };
+      document.head.appendChild(s);
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+    loadData();
+    setInterval(loadData, 30000);
+  </script>
+</body>
+</html>
