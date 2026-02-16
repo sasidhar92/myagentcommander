@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T22:16:31.789Z",
+    "updated_at": "2026-02-16T23:07:21.757Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -107,18 +107,18 @@ var MC_DATA = {
       "name": "Krishna",
       "role": "Chief of Staff",
       "level": "LEAD",
-      "status": "WORKING",
+      "status": "IDLE",
       "avatar": "K",
       "current_task": null,
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "https://x.com/voxyz_ai/status/Sasi487812729",
+      "last_event_summary": "Proactive housekeeping. Closed stale processes 110. Completed mission 8. Cleaned stale steps. Dashboard synced. No message to Sasi.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
       "event_count_24h": 13,
-      "event_count_total": 208,
-      "is_active": true,
-      "total_sessions": 98,
+      "event_count_total": 209,
+      "is_active": false,
+      "total_sessions": 99,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 10
+          "count": 13
         }
       ]
     },
@@ -1396,9 +1396,19 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "message",
       "started_at": "2026-02-16 21:34:34",
-      "ended_at": null,
-      "duration_sec": null,
-      "summary": "message task"
+      "ended_at": "2026-02-16 22:46:10",
+      "duration_sec": 4296,
+      "summary": "Message trigger: voxyz_ai link from Sasi. Spawned Vishwa + Hanuman for parallel link analysis. Both completed (reports at research/link-analysis/). run orphaned — no proper shutdown."
+    },
+    {
+      "id": "session-db-111",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-16 22:45:16",
+      "ended_at": "2026-02-16T22:48:12Z",
+      "duration_sec": 168,
+      "summary": "Proactive housekeeping: closed stale processes 110, completed mission 8 (all 6 steps), cleaned stale mission 6 steps, synced dashboard (111 runs). No message to Sasi — no deliverables."
     }
   ],
   "tasks": [
@@ -1539,16 +1549,16 @@ var MC_DATA = {
       "id": "task-m8",
       "title": "Dwarka Packaging + Slack + iMessage Group Research",
       "description": "Mission from krishna",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "assignee": "krishna",
       "tags": [
         "mission"
       ],
       "created_at": "2026-02-16 03:50:15",
-      "updated_at": "2026-02-16 03:50:15",
+      "updated_at": "2026-02-16 22:47:08",
       "history": [
         {
-          "status": "IN_PROGRESS",
+          "status": "DONE",
           "by": "Krishna",
           "at": "2026-02-16 03:50:15"
         }
@@ -1556,27 +1566,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:27:12",
-      "narrative": "Krishna merged myagentcommander website and rebranded from Jarvis."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:27:13",
-      "narrative": "Krishna started building comparison page per Sasi request."
-    },
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:28:04",
-      "narrative": "Krishna completed proactive check with improved distillation."
-    },
     {
       "type": "message_received",
       "agent": "Krishna",
@@ -2955,9 +2944,70 @@ var MC_DATA = {
       "agent_id": "hanuman",
       "timestamp": "2026-02-16 21:39:52",
       "narrative": "Hanuman completed: link analysis — Report at research/link-analysis/voxyz-openclaw-hanuman.md"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 22:46:16",
+      "narrative": "Proactive Cleanup: close stale processes 110, mark work_id 91 done. Dashboard sync. Check stale carry-forward items. Check mission 8 steps."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 22:47:10",
+      "narrative": "Mission 8 complete: Dwarka Packaging + Slack + iMessage Group Research — All 6 steps succeeded. Research: MAC analysis, Slack integration approach, iMessage group multi-user design. Build: complete package in setup.sh (4208 lines, 45 files). Remaining: end-to-end test on customer Mac."
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 22:48:06",
+      "narrative": "Proactive housekeeping. Closed stale processes 110. Completed mission 8. Cleaned stale steps. Dashboard synced. No message to Sasi."
     }
   ],
   "pulse": [
+    {
+      "id": 1881,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "",
+      "summary": "Proactive housekeeping. Closed stale processes 110. Completed mission 8. Cleaned stale steps. Dashboard synced. No message to Sasi.",
+      "tags": null,
+      "created_at": "2026-02-16 22:48:06",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1880,
+      "kind": "mission_completed",
+      "agent_id": "krishna",
+      "title": "Mission 8 complete: Dwarka Packaging + Slack + iMessage Group Research",
+      "summary": "All 6 steps succeeded. Research: MAC analysis, Slack integration approach, iMessage group multi-user design. Build: complete package in setup.sh (4208 lines, 45 files). Remaining: end-to-end test on customer Mac.",
+      "tags": "[\"mission\",\"packaging\",\"slack\",\"imessage\"]",
+      "created_at": "2026-02-16 22:47:10",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1879,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "proactive check 111",
+      "summary": "Cleanup: close stale processes 110, mark work_id 91 done. Dashboard sync. Check stale carry-forward items. Check mission 8 steps.",
+      "tags": null,
+      "created_at": "2026-02-16 22:46:16",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1878,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-16 22:44:15",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1877,
       "kind": "task_completed",
@@ -5137,54 +5187,9 @@ var MC_DATA = {
       "tags": "[\"daily\",\"log\",\"imported\"]",
       "created_at": "2026-02-09T23:59:00",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 667,
-      "kind": "action",
-      "agent_id": "krishna",
-      "title": "SaaS Name Research",
-      "summary": "Checked domain availability and Google search for 12+ name candidates. Nearly all common English words taken by funded AI companies. Top finding: Atelier is cleanest option. Suggested unique invented names.",
-      "tags": null,
-      "created_at": "2026-02-09 22:42:00",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 661,
-      "kind": "message_response",
-      "agent_id": "krishna",
-      "title": "SaaS naming - global names",
-      "summary": "Sasi wants globally recognizable name, no Indian mythology. Sent 12 options. Top picks: Foundry, Hive, Sixfold.",
-      "tags": "[\"saas\",\"naming\",\"branding\"]",
-      "created_at": "2026-02-09 22:37:30",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
-    {
-      "id": 5,
-      "format": "debate",
-      "topic": "Link analysis: https://x.com/voxyz_ai/status/2023422101487812729",
-      "participants": [
-        "krishna",
-        "narada",
-        "vishwa",
-        "chanakya",
-        "vidura",
-        "hanuman"
-      ],
-      "status": "active",
-      "summary": null,
-      "started_at": "2026-02-16 21:35:08",
-      "completed_at": null,
-      "messages": [
-        {
-          "agent_id": "krishna",
-          "agent_name": "Krishna",
-          "content": "Sasi shared https://x.com/voxyz_ai/status/Sasi487812729 — Vox's article about running 6 AI employees on an $8/month Hetzner VPS with OpenClaw. Full team analysis — research, technical, marketing, content, security. Go.",
-          "turn": 1
-        }
-      ]
-    },
     {
       "id": 3,
       "format": "debate",
@@ -5524,12 +5529,12 @@ var MC_DATA = {
         },
         {
           "kind": "draft_content",
-          "status": "queued",
+          "status": "failed",
           "reserved_by": null
         },
         {
           "kind": "build",
-          "status": "queued",
+          "status": "failed",
           "reserved_by": null
         }
       ],
@@ -5568,7 +5573,7 @@ var MC_DATA = {
     {
       "id": 8,
       "title": "Dwarka Packaging + Slack + iMessage Group Research",
-      "status": "running",
+      "status": "succeeded",
       "created_by": "krishna",
       "steps": [
         {
@@ -5588,23 +5593,23 @@ var MC_DATA = {
         },
         {
           "kind": "build",
-          "status": "queued",
+          "status": "succeeded",
           "reserved_by": null
         },
         {
           "kind": "build",
-          "status": "queued",
+          "status": "succeeded",
           "reserved_by": null
         },
         {
           "kind": "build",
-          "status": "queued",
+          "status": "succeeded",
           "reserved_by": null
         }
       ],
       "progress": {
         "total": 6,
-        "completed": 3
+        "completed": 6
       }
     }
   ],
@@ -5635,7 +5640,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 20
+      "count": 24
     }
   ],
   "agent_activity": {
@@ -5726,7 +5731,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 10
+        "count": 13
       }
     ],
     "narada": [
@@ -5822,34 +5827,34 @@ var MC_DATA = {
   },
   "stats": {
     "total_tasks": 8,
-    "in_progress": 1,
-    "completed_today": 0,
-    "completed_all_time": 7,
-    "agents_active": 1,
-    "total_sessions": 110,
-    "total_events": 270,
-    "events_today": 20,
-    "conversations_total": 2,
+    "in_progress": 0,
+    "completed_today": 1,
+    "completed_all_time": 8,
+    "agents_active": 0,
+    "total_sessions": 111,
+    "total_events": 272,
+    "events_today": 24,
+    "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "message_response": 5,
-      "action": 4,
       "daily_log": 1,
-      "session_plan": 11,
+      "session_plan": 12,
       "step_completed": 16,
-      "session_end": 22,
-      "mission_completed": 5,
+      "session_end": 23,
+      "mission_completed": 6,
       "teammate_spawned": 7,
       "message_sent": 13,
       "session_start": 14,
       "state_checkpoint": 4,
+      "message_response": 4,
       "build": 8,
       "research": 1,
       "message_received": 14,
+      "action": 3,
       "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 42,
+      "heartbeat": 43,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -5867,10 +5872,10 @@ var MC_DATA = {
       "message_responded": 1
     },
     "events_by_agent": {
-      "krishna": 208,
+      "krishna": 209,
       "narada": 10,
       "vishwa": 4,
-      "dwarka": 42,
+      "dwarka": 43,
       "chanakya": 4,
       "hanuman": 2
     }
