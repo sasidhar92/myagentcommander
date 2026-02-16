@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T12:39:37.294Z",
+    "updated_at": "2026-02-16T14:08:31.695Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -116,7 +116,7 @@ var MC_DATA = {
       "last_event_summary": "Research sprint: 3 parallel agents, 2 research docs, 1 MAC analysis",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
       "event_count_24h": 30,
-      "event_count_total": 228,
+      "event_count_total": 226,
       "is_active": false,
       "total_sessions": 95,
       "last_active": "2026-02-15 16:28:55",
@@ -5267,26 +5267,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-09 13:56:54",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 130,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Telugu toggle complete — notified Sasi",
-      "summary": "Messaged Sasi that Telugu language toggle is live. All grains, FAQ, principles, seasonal guide translated. Pushed to GitHub Pages.",
-      "tags": null,
-      "created_at": "2026-02-09 11:23:45",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 129,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Telugu language toggle — ayurveda-grains",
-      "summary": "Created data-te.js with full Telugu translations for all 17 grains, dosha FAQ, principles, seasonal guide, and UI strings. Previous session had wired index.html/app.js/style.css for i18n but died before creating the data file. Committed and pushed to GitHub. Pages will auto-deploy.",
-      "tags": "[\"ayurveda-grains\",\"telugu\",\"i18n\",\"deploy\"]",
-      "created_at": "2026-02-09 11:23:31",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5932,19 +5912,19 @@ var MC_DATA = {
     "completed_all_time": 7,
     "agents_active": 0,
     "total_sessions": 107,
-    "total_events": 286,
+    "total_events": 284,
     "events_today": 8,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "step_completed": 23,
-      "message_sent": 16,
       "session_end": 30,
       "session_start": 13,
+      "step_completed": 22,
       "task_completed": 7,
       "message_received": 17,
       "session_plan": 13,
+      "message_sent": 15,
       "state_checkpoint": 5,
       "progress": 1,
       "mission_completed": 6,
@@ -5970,7 +5950,7 @@ var MC_DATA = {
       "feedback_received": 1
     },
     "events_by_agent": {
-      "krishna": 228,
+      "krishna": 226,
       "chanakya": 5,
       "vidura": 2,
       "narada": 10,
