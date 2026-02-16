@@ -48,10 +48,10 @@
       .nav__links.open { display: flex; }
       .nav__links a { font-size: 1rem; padding: 8px 0; }
 
-      /* Break out of 100vh locked layout — switch to normal block flow */
-      body { height: auto; overflow-y: auto; display: block; }
-      .main-container { display: block; overflow: visible; }
-      .main-column { display: block; overflow: visible; }
+      /* Break out of 100vh locked layout — block flow, contain horizontal overflow */
+      body { height: auto; overflow-y: auto; overflow-x: hidden; display: block; }
+      .main-container { display: block; overflow-x: hidden; }
+      .main-column { display: block; overflow-x: hidden; }
       .feed-panel { display: block; }
 
       /* Stats bar: compact single row */
@@ -73,9 +73,9 @@
       .sidebar-left .agent-avatar { width: 28px; height: 28px; font-size: 12px; }
       .sidebar-left .agent-status-dot { width: 8px; height: 8px; }
 
-      /* Stage SVG: fill width, scroll horizontally for detail */
-      .stage-wrap { overflow-x: auto; overflow-y: hidden; max-height: none; -webkit-overflow-scrolling: touch; }
-      .stage-svg { height: auto; width: 700px; min-width: 700px; }
+      /* Stage SVG: fit to screen, JS crops viewBox to desks only */
+      .stage-wrap { overflow: hidden; max-height: none; }
+      .stage-svg { width: 100%; height: auto; min-height: 0; }
 
       /* Activity strip */
       .activity-strip { padding: 8px 12px; height: auto; gap: 8px; }
@@ -1600,10 +1600,22 @@
 document.querySelector('.nav__toggle').addEventListener('click', function() {
   document.querySelector('.nav__links').classList.toggle('open');
 });
-// Close menu when clicking a link
 document.querySelectorAll('.nav__links a').forEach(function(a) {
   a.addEventListener('click', function() { document.querySelector('.nav__links').classList.remove('open'); });
 });
+// Mobile: crop SVG to desk area only (hide lounge)
+(function() {
+  var svg = document.getElementById('stage-svg');
+  function adjustView() {
+    if (window.innerWidth <= 768) {
+      svg.setAttribute('viewBox', '0 0 620 300');
+    } else {
+      svg.setAttribute('viewBox', '0 0 1120 300');
+    }
+  }
+  adjustView();
+  window.addEventListener('resize', adjustView);
+})();
 </script>
 </body>
 </html>
