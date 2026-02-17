@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T04:28:41.290Z",
+    "updated_at": "2026-02-17T05:34:54.644Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -118,7 +118,7 @@ var MC_DATA = {
       "event_count_24h": 20,
       "event_count_total": 215,
       "is_active": true,
-      "total_sessions": 102,
+      "total_sessions": 103,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -1439,6 +1439,16 @@ var MC_DATA = {
       "ended_at": null,
       "duration_sec": null,
       "summary": "conversation task"
+    },
+    {
+      "id": "session-db-115",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "initiative",
+      "started_at": "2026-02-17 05:21:45",
+      "ended_at": null,
+      "duration_sec": null,
+      "summary": "initiative task"
     }
   ],
   "tasks": [
@@ -2998,6 +3008,16 @@ var MC_DATA = {
     }
   ],
   "pulse": [
+    {
+      "id": 1892,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 05:21:09",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1891,
       "kind": "session_end",
@@ -5775,7 +5795,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 6
+      "count": 7
     }
   ],
   "agent_activity": {
@@ -5966,9 +5986,9 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 1,
-    "total_sessions": 114,
-    "total_events": 281,
-    "events_today": 6,
+    "total_sessions": 115,
+    "total_events": 282,
+    "events_today": 7,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
@@ -5988,7 +6008,7 @@ var MC_DATA = {
       "action": 3,
       "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 46,
+      "heartbeat": 47,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -6009,7 +6029,7 @@ var MC_DATA = {
       "krishna": 215,
       "narada": 10,
       "vishwa": 4,
-      "dwarka": 46,
+      "dwarka": 47,
       "chanakya": 4,
       "hanuman": 2
     }
