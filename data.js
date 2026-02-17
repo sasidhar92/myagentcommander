@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T21:12:07.854Z",
+    "updated_at": "2026-02-17T22:47:36.555Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Dashboard synced (122 runs, 291 events, 50 today). No new missions or queue items. WORKING.md carry-forward unchanged. MAC GTM still stale. System quiet.",
+      "last_event_summary": "run 123 end — proactive check",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 37,
-      "event_count_total": 222,
+      "event_count_24h": 40,
+      "event_count_total": 221,
       "is_active": false,
-      "total_sessions": 110,
+      "total_sessions": 111,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 26
+          "count": 29
         }
       ]
     },
@@ -165,7 +165,7 @@ var MC_DATA = {
       "last_event_summary": "Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution.",
       "last_event_narrative": "Narada wrote monetization market research report.",
       "event_count_24h": 0,
-      "event_count_total": 9,
+      "event_count_total": 8,
       "is_active": false,
       "total_sessions": 5,
       "last_active": "2026-02-15 14:09:16",
@@ -1519,6 +1519,16 @@ var MC_DATA = {
       "ended_at": "2026-02-17 18:10:32",
       "duration_sec": null,
       "summary": "Proactive check: dashboard synced, carry-forward reviewed, no action needed"
+    },
+    {
+      "id": "session-db-123",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 22:11:12",
+      "ended_at": "2026-02-17 22:11:47",
+      "duration_sec": 35,
+      "summary": "Proactive check + daily routine. Dashboard synced (123 runs). 1 memory distilled. MAC GTM stale. No action needed."
     }
   ],
   "tasks": [
@@ -1714,27 +1724,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 19:56:37",
-      "narrative": "Sasi asked Krishna who proposed the iOS app ideas task."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 19:56:46",
-      "narrative": "Krishna clarified app ideas came from standing orders, not proposals."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 19:56:50",
-      "narrative": "Krishna explained iOS app ideas origin to Sasi."
-    },
     {
       "type": "message_received",
       "agent": "Krishna",
@@ -3113,9 +3102,60 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 18:10:10",
       "narrative": "Proactive check complete — Dashboard synced (122 runs, 291 events, 50 today). No new missions or queue items. WORKING.md carry-forward unchanged. MAC GTM still stale. System quiet."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 22:11:16",
+      "narrative": "Proactive daily routine check — Running daily routine (not yet logged today). Will: distill memory, review goals, check todo/goals stalls."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 22:11:31",
+      "narrative": "Proactive check + daily routine complete — Dashboard synced (123 runs). Memory distilled: 1 new memory (high spawn frequency pattern). Goals: MAC GTM still blocked on Sasi. No blocked todo items. Carry-forward: ASO research and setup.sh security audit still queued. No action items requiring iMessage."
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 22:11:47",
+      "narrative": "run 123 end — proactive check"
     }
   ],
   "pulse": [
+    {
+      "id": 1921,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "run 123 end — proactive check",
+      "summary": null,
+      "tags": null,
+      "created_at": "2026-02-17 22:11:47",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1920,
+      "kind": "routine_completed",
+      "agent_id": "krishna",
+      "title": "Proactive check + daily routine complete — run 123",
+      "summary": "Dashboard synced (123 runs). Memory distilled: 1 new memory (high spawn frequency pattern). Goals: MAC GTM still blocked on Sasi. No blocked todo items. Carry-forward: ASO research and setup.sh security audit still queued. No action items requiring iMessage.",
+      "tags": "[\"routine\",\"proactive\",\"daily\"]",
+      "created_at": "2026-02-17 22:11:31",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1919,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "Proactive daily routine check",
+      "summary": "Running daily routine (not yet logged today). Will: distill memory, review goals, check todo/goals stalls.",
+      "tags": "[\"routine\",\"proactive\"]",
+      "created_at": "2026-02-17 22:11:16",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1918,
       "kind": "routine_completed",
@@ -5485,56 +5525,6 @@ var MC_DATA = {
       "tags": "[\"saas\",\"naming\"]",
       "created_at": "2026-02-10 23:57:20",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 1176,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "Memory influence system built (3 scripts), 10 agent memories seeded, 5 relationships updated, MCP research delivered (40+ servers). Goals advanced.",
-      "tags": null,
-      "created_at": "2026-02-10 21:11:45",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1174,
-      "kind": "research",
-      "agent_id": "narada",
-      "title": "MCP server extensions research",
-      "summary": "Catalogued 40+ MCP servers across 10 categories. Top 3: GitHub MCP (critical), Playwright MCP (high), PostgreSQL MCP (medium). Report at projects/ideas/mcp-extensions.md",
-      "tags": null,
-      "created_at": "2026-02-10 21:10:48",
-      "agent_name": "Narada"
-    },
-    {
-      "id": 1172,
-      "kind": "build",
-      "agent_id": "krishna",
-      "title": "Memory influence system built",
-      "summary": "Three scripts: memory-context.js (query), inject-memory.js (probabilistic injection), relationship-update.js (affinity drift). Seeded 10 memories across 4 agents. Updated 4 relationships from recent teamwork.",
-      "tags": null,
-      "created_at": "2026-02-10 21:09:12",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1167,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "standing_order",
-      "summary": "Focus: memory_influence + MCP research",
-      "tags": null,
-      "created_at": "2026-02-10 21:06:08",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1156,
-      "kind": "message_response",
-      "agent_id": "krishna",
-      "title": "Domain availability check",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-10 20:55:52",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -6047,7 +6037,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 33
+      "count": 36
     }
   ],
   "agent_activity": {
@@ -6138,7 +6128,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 26
+        "count": 29
       }
     ],
     "narada": [
@@ -6238,33 +6228,32 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 0,
-    "total_sessions": 122,
-    "total_events": 292,
-    "events_today": 33,
+    "total_sessions": 123,
+    "total_events": 290,
+    "events_today": 36,
     "conversations_total": 2,
-    "memories_total": 42,
+    "memories_total": 43,
     "insights_total": 4,
     "events_by_kind": {
-      "message_response": 4,
-      "session_start": 13,
-      "build": 8,
-      "research": 1,
-      "session_end": 22,
       "message_received": 14,
       "message_sent": 13,
-      "session_plan": 16,
+      "session_plan": 17,
       "action": 3,
       "task_completed": 8,
       "state_checkpoint": 2,
+      "session_end": 22,
       "step_completed": 14,
       "duplicate_trigger": 1,
+      "session_start": 12,
       "teammate_spawned": 12,
       "heartbeat": 51,
+      "message_response": 3,
       "review_completed": 1,
       "mission_created": 1,
       "mission_completed": 4,
       "daily_digest": 5,
       "maintenance": 1,
+      "build": 7,
       "deploy": 1,
       "research_complete": 3,
       "routine": 5,
@@ -6280,13 +6269,13 @@ var MC_DATA = {
       "step_started": 2,
       "session_skipped": 1,
       "mission_failed": 2,
-      "routine_completed": 2,
+      "routine_completed": 3,
       "fix": 1
     },
     "events_by_agent": {
-      "krishna": 222,
-      "narada": 9,
+      "krishna": 221,
       "vishwa": 4,
+      "narada": 8,
       "dwarka": 51,
       "chanakya": 4,
       "hanuman": 2
