@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-16T23:17:24.563Z",
+    "updated_at": "2026-02-17T00:17:41.905Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -24,10 +24,6 @@ var MC_DATA = {
       "last_active": "2026-02-15 14:07:31",
       "sparkline": [
         {
-          "date": "2026-02-10",
-          "count": 0
-        },
-        {
           "date": "2026-02-11",
           "count": 0
         },
@@ -49,6 +45,10 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
+          "count": 0
+        },
+        {
+          "date": "2026-02-17",
           "count": 0
         }
       ]
@@ -73,10 +73,6 @@ var MC_DATA = {
       "last_active": "2026-02-09 03:01:42",
       "sparkline": [
         {
-          "date": "2026-02-10",
-          "count": 0
-        },
-        {
           "date": "2026-02-11",
           "count": 0
         },
@@ -99,6 +95,10 @@ var MC_DATA = {
         {
           "date": "2026-02-16",
           "count": 2
+        },
+        {
+          "date": "2026-02-17",
+          "count": 0
         }
       ]
     },
@@ -113,18 +113,14 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Proactive housekeeping. Closed stale processes 110. Completed mission 8. Cleaned stale steps. Dashboard synced. No message to Sasi.",
+      "last_event_summary": "Standing order: Enhanced commanderctl.sh with user management CLI. No message to Sasi — infrastructure work, no deliverables.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 13,
-      "event_count_total": 209,
+      "event_count_24h": 16,
+      "event_count_total": 211,
       "is_active": false,
-      "total_sessions": 99,
+      "total_sessions": 100,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
-        {
-          "date": "2026-02-10",
-          "count": 21
-        },
         {
           "date": "2026-02-11",
           "count": 39
@@ -147,7 +143,11 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
-          "count": 13
+          "count": 16
+        },
+        {
+          "date": "2026-02-17",
+          "count": 0
         }
       ]
     },
@@ -171,10 +171,6 @@ var MC_DATA = {
       "last_active": "2026-02-15 14:09:16",
       "sparkline": [
         {
-          "date": "2026-02-10",
-          "count": 2
-        },
-        {
           "date": "2026-02-11",
           "count": 2
         },
@@ -197,6 +193,10 @@ var MC_DATA = {
         {
           "date": "2026-02-16",
           "count": 2
+        },
+        {
+          "date": "2026-02-17",
+          "count": 0
         }
       ]
     },
@@ -220,10 +220,6 @@ var MC_DATA = {
       "last_active": "2026-02-09 21:35:10",
       "sparkline": [
         {
-          "date": "2026-02-10",
-          "count": 0
-        },
-        {
           "date": "2026-02-11",
           "count": 0
         },
@@ -245,6 +241,10 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-16",
+          "count": 0
+        },
+        {
+          "date": "2026-02-17",
           "count": 0
         }
       ]
@@ -269,10 +269,6 @@ var MC_DATA = {
       "last_active": "2026-02-11 18:10:00",
       "sparkline": [
         {
-          "date": "2026-02-10",
-          "count": 0
-        },
-        {
           "date": "2026-02-11",
           "count": 2
         },
@@ -295,6 +291,10 @@ var MC_DATA = {
         {
           "date": "2026-02-16",
           "count": 2
+        },
+        {
+          "date": "2026-02-17",
+          "count": 0
         }
       ]
     }
@@ -1409,6 +1409,16 @@ var MC_DATA = {
       "ended_at": "2026-02-16T22:48:12Z",
       "duration_sec": 168,
       "summary": "Proactive housekeeping: closed stale processes 110, completed mission 8 (all 6 steps), cleaned stale mission 6 steps, synced dashboard (111 runs). No message to Sasi — no deliverables."
+    },
+    {
+      "id": "session-db-112",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "standing_order",
+      "started_at": "2026-02-16 23:35:30",
+      "ended_at": "2026-02-16T23:39:33Z",
+      "duration_sec": 232,
+      "summary": "Standing order: Enhanced commanderctl.sh with 7 new user management commands (agents, agent-enable/disable, config, policy, reset-cb, missions, events). Added enabled column to agents schema. Updated conversation trigger and dashboard sync. 4102 lines, syntax clean."
     }
   ],
   "tasks": [
@@ -1566,27 +1576,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:29:28",
-      "narrative": "Sasi asked Krishna for a summary of all active missions."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:29:42",
-      "narrative": "Krishna sent full mission summary to Sasi."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:30:23",
-      "narrative": "Krishna built comparison page for My Agent Commander vs competitors."
-    },
     {
       "type": "message_received",
       "agent": "Krishna",
@@ -2965,9 +2954,70 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-16 22:48:06",
       "narrative": "Proactive housekeeping. Closed stale processes 110. Completed mission 8. Cleaned stale steps. Dashboard synced. No message to Sasi."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 23:36:35",
+      "narrative": "Standing order Plan: (1) Check ASO research output from Narada. (2) Build dwarkactl user management CLI for MAC package — list-agents, disable-agent, enable-agent, show-config. Makes product customer-ready."
+    },
+    {
+      "type": "task_updated",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 23:38:51",
+      "narrative": "MAC commanderctl.sh enhanced with user management — Added 7 new commands to commanderctl.sh: agents (list roster), agent-enable, agent-disable, config, policy (view/update), reset-cb, missions, events. Added enabled column to agents table. Updated conversation trigger to respect enabled status. Updated dashboard sync to include enabled field. Improved status and help output. 4102 lines total, syntax verified."
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-16 23:39:24",
+      "narrative": "Standing order: Enhanced commanderctl.sh with user management CLI. No message to Sasi — infrastructure work, no deliverables."
     }
   ],
   "pulse": [
+    {
+      "id": 1885,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "",
+      "summary": "Standing order: Enhanced commanderctl.sh with user management CLI. No message to Sasi — infrastructure work, no deliverables.",
+      "tags": null,
+      "created_at": "2026-02-16 23:39:24",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1884,
+      "kind": "step_completed",
+      "agent_id": "krishna",
+      "title": "MAC commanderctl.sh enhanced with user management",
+      "summary": "Added 7 new commands to commanderctl.sh: agents (list roster), agent-enable, agent-disable, config, policy (view/update), reset-cb, missions, events. Added enabled column to agents table. Updated conversation trigger to respect enabled status. Updated dashboard sync to include enabled field. Improved status and help output. 4102 lines total, syntax verified.",
+      "tags": "[\"mac\",\"engineering\",\"commanderctl\"]",
+      "created_at": "2026-02-16 23:38:51",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1883,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "routine check 112",
+      "summary": "Plan: (1) Check ASO research output from Narada. (2) Build dwarkactl user management CLI for MAC package — list-agents, disable-agent, enable-agent, show-config. Makes product customer-ready.",
+      "tags": null,
+      "created_at": "2026-02-16 23:36:35",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1882,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-16 23:35:30",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1881,
       "kind": "session_end",
@@ -5177,16 +5227,6 @@ var MC_DATA = {
       "tags": "[\"session\",\"plan\"]",
       "created_at": "2026-02-10 13:28:03",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 85,
-      "kind": "daily_log",
-      "agent_id": "krishna",
-      "title": "Daily log: 2026-02-09",
-      "summary": "# 2026-02-09 ## runs ### run 2 (daemon/standing_order, ~8:48 PM CT)",
-      "tags": "[\"daily\",\"log\",\"imported\"]",
-      "created_at": "2026-02-09T23:59:00",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5615,10 +5655,6 @@ var MC_DATA = {
   ],
   "daily_stats": [
     {
-      "date": "2026-02-10",
-      "count": 23
-    },
-    {
       "date": "2026-02-11",
       "count": 49
     },
@@ -5640,15 +5676,15 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-16",
-      "count": 24
+      "count": 28
+    },
+    {
+      "date": "2026-02-17",
+      "count": 0
     }
   ],
   "agent_activity": {
     "chanakya": [
-      {
-        "date": "2026-02-10",
-        "count": 0
-      },
       {
         "date": "2026-02-11",
         "count": 0
@@ -5672,13 +5708,13 @@ var MC_DATA = {
       {
         "date": "2026-02-16",
         "count": 0
+      },
+      {
+        "date": "2026-02-17",
+        "count": 0
       }
     ],
     "hanuman": [
-      {
-        "date": "2026-02-10",
-        "count": 0
-      },
       {
         "date": "2026-02-11",
         "count": 0
@@ -5702,13 +5738,13 @@ var MC_DATA = {
       {
         "date": "2026-02-16",
         "count": 2
+      },
+      {
+        "date": "2026-02-17",
+        "count": 0
       }
     ],
     "krishna": [
-      {
-        "date": "2026-02-10",
-        "count": 21
-      },
       {
         "date": "2026-02-11",
         "count": 39
@@ -5731,14 +5767,14 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
-        "count": 13
+        "count": 16
+      },
+      {
+        "date": "2026-02-17",
+        "count": 0
       }
     ],
     "narada": [
-      {
-        "date": "2026-02-10",
-        "count": 2
-      },
       {
         "date": "2026-02-11",
         "count": 2
@@ -5762,13 +5798,13 @@ var MC_DATA = {
       {
         "date": "2026-02-16",
         "count": 2
+      },
+      {
+        "date": "2026-02-17",
+        "count": 0
       }
     ],
     "vidura": [
-      {
-        "date": "2026-02-10",
-        "count": 0
-      },
       {
         "date": "2026-02-11",
         "count": 0
@@ -5791,15 +5827,15 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-16",
+        "count": 0
+      },
+      {
+        "date": "2026-02-17",
         "count": 0
       }
     ],
     "vishwa": [
       {
-        "date": "2026-02-10",
-        "count": 0
-      },
-      {
         "date": "2026-02-11",
         "count": 2
       },
@@ -5822,26 +5858,29 @@ var MC_DATA = {
       {
         "date": "2026-02-16",
         "count": 2
+      },
+      {
+        "date": "2026-02-17",
+        "count": 0
       }
     ]
   },
   "stats": {
     "total_tasks": 8,
     "in_progress": 0,
-    "completed_today": 1,
+    "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 0,
-    "total_sessions": 111,
-    "total_events": 272,
-    "events_today": 24,
+    "total_sessions": 112,
+    "total_events": 275,
+    "events_today": 0,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "daily_log": 1,
-      "session_plan": 12,
-      "step_completed": 16,
-      "session_end": 23,
+      "session_plan": 13,
+      "step_completed": 17,
+      "session_end": 24,
       "mission_completed": 6,
       "teammate_spawned": 7,
       "message_sent": 13,
@@ -5854,7 +5893,7 @@ var MC_DATA = {
       "action": 3,
       "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 43,
+      "heartbeat": 44,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -5872,10 +5911,10 @@ var MC_DATA = {
       "message_responded": 1
     },
     "events_by_agent": {
-      "krishna": 209,
+      "krishna": 211,
       "narada": 10,
       "vishwa": 4,
-      "dwarka": 43,
+      "dwarka": 44,
       "chanakya": 4,
       "hanuman": 2
     }
