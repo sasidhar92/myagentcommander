@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T18:10:36.275Z",
+    "updated_at": "2026-02-17T19:13:20.631Z",
     "daemon_status": "online"
   },
   "agents": [
