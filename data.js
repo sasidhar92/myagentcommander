@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T08:49:07.378Z",
+    "updated_at": "2026-02-17T10:29:14.639Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Mission 10, step audit_security. Output: research/setup-sh-audit.md",
+      "last_event_summary": "Proactive check. Cleanup stale processes (95/96). Fix missions 9/10 (failed steps). Re-run ASO research. Dashboard sync.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 25,
-      "event_count_total": 220,
+      "event_count_24h": 21,
+      "event_count_total": 221,
       "is_active": true,
-      "total_sessions": 104,
+      "total_sessions": 106,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 9
+          "count": 10
         }
       ]
     },
@@ -164,7 +164,7 @@ var MC_DATA = {
       "model": "sonnet",
       "last_event_summary": "Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution.",
       "last_event_narrative": "Narada wrote monetization market research report.",
-      "event_count_24h": 2,
+      "event_count_24h": 0,
       "event_count_total": 10,
       "is_active": false,
       "total_sessions": 5,
@@ -1436,9 +1436,9 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "conversation",
       "started_at": "2026-02-17 03:21:52",
-      "ended_at": null,
+      "ended_at": "2026-02-17 09:36:15",
       "duration_sec": null,
-      "summary": "conversation task"
+      "summary": "Stale — never completed. Cleaned up by 117."
     },
     {
       "id": "session-db-115",
@@ -1446,9 +1446,9 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "initiative",
       "started_at": "2026-02-17 05:21:45",
-      "ended_at": null,
+      "ended_at": "2026-02-17 09:36:15",
       "duration_sec": null,
-      "summary": "initiative task"
+      "summary": "Stale — never completed. Cleaned up by 117."
     },
     {
       "id": "session-db-116",
@@ -1456,9 +1456,29 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "proactive",
       "started_at": "2026-02-17 07:09:43",
+      "ended_at": "2026-02-17 09:36:15",
+      "duration_sec": null,
+      "summary": "Stale — never completed. Cleaned up by 117."
+    },
+    {
+      "id": "session-db-117",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 09:36:09",
       "ended_at": null,
       "duration_sec": null,
       "summary": "proactive task"
+    },
+    {
+      "id": "session-db-118",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "standing_order",
+      "started_at": "2026-02-17 09:36:23",
+      "ended_at": null,
+      "duration_sec": null,
+      "summary": "standing_order task"
     }
   ],
   "tasks": [
@@ -1654,13 +1674,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:29:34",
-      "narrative": "Krishna merged compare page, reorganized navigation, drafted 18 Twitter posts."
-    },
     {
       "type": "comment",
       "agent": "Krishna",
@@ -3053,9 +3066,26 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 07:10:00",
       "narrative": "Spawned Hanuman for setup.sh audit — Mission 10, step audit_security. Output: research/setup-sh-audit.md"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 09:36:10",
+      "narrative": "Proactive Proactive check. Cleanup stale processes (95/96). Fix missions 9/10 (failed steps). Re-run ASO research. Dashboard sync."
     }
   ],
   "pulse": [
+    {
+      "id": 1900,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "proactive check 116",
+      "summary": "Proactive check. Cleanup stale processes (95/96). Fix missions 9/10 (failed steps). Re-run ASO research. Dashboard sync.",
+      "tags": null,
+      "created_at": "2026-02-17 09:36:10",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1899,
       "kind": "heartbeat",
@@ -5947,7 +5977,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 14
+      "count": 15
     }
   ],
   "agent_activity": {
@@ -6038,7 +6068,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 9
+        "count": 10
       }
     ],
     "narada": [
@@ -6138,14 +6168,14 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 1,
-    "total_sessions": 116,
-    "total_events": 289,
-    "events_today": 14,
+    "total_sessions": 118,
+    "total_events": 290,
+    "events_today": 15,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_plan": 15,
+      "session_plan": 16,
       "step_completed": 17,
       "session_end": 25,
       "mission_completed": 6,
@@ -6179,7 +6209,7 @@ var MC_DATA = {
       "proposal_approved": 2
     },
     "events_by_agent": {
-      "krishna": 220,
+      "krishna": 221,
       "narada": 10,
       "vishwa": 4,
       "dwarka": 49,
