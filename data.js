@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T13:10:34.931Z",
+    "updated_at": "2026-02-17T14:10:44.754Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -107,18 +107,18 @@ var MC_DATA = {
       "name": "Krishna",
       "role": "Chief of Staff",
       "level": "LEAD",
-      "status": "WORKING",
+      "status": "IDLE",
       "avatar": "K",
       "current_task": null,
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Step 21 re-assigned to Hanuman after previous failure. Mission 10.",
+      "last_event_summary": "Dashboard synced. M9/M10 marked failed (spawn exhaustion). WORKING.md updated. Daily log appended. No action needed from Sasi.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 23,
-      "event_count_total": 223,
-      "is_active": true,
-      "total_sessions": 107,
+      "event_count_24h": 35,
+      "event_count_total": 225,
+      "is_active": false,
+      "total_sessions": 109,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 12
+          "count": 24
         }
       ]
     },
@@ -165,7 +165,7 @@ var MC_DATA = {
       "last_event_summary": "Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution.",
       "last_event_narrative": "Narada wrote monetization market research report.",
       "event_count_24h": 0,
-      "event_count_total": 10,
+      "event_count_total": 9,
       "is_active": false,
       "total_sessions": 5,
       "last_active": "2026-02-15 14:09:16",
@@ -1466,9 +1466,9 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "proactive",
       "started_at": "2026-02-17 09:36:09",
-      "ended_at": null,
+      "ended_at": "2026-02-17 13:17:12",
       "duration_sec": null,
-      "summary": "proactive task"
+      "summary": "Stale — never completed. Cleaned up by 118."
     },
     {
       "id": "session-db-118",
@@ -1476,9 +1476,9 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "standing_order",
       "started_at": "2026-02-17 09:36:23",
-      "ended_at": null,
+      "ended_at": "2026-02-17 13:17:20",
       "duration_sec": null,
-      "summary": "standing_order task"
+      "summary": "Stale — never completed. Cleaned up by 119."
     },
     {
       "id": "session-db-119",
@@ -1486,9 +1486,29 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "proactive",
       "started_at": "2026-02-17 12:29:50",
-      "ended_at": null,
+      "ended_at": "2026-02-17 13:17:12",
       "duration_sec": null,
-      "summary": "proactive task"
+      "summary": "Stale — never completed. Cleaned up by 118."
+    },
+    {
+      "id": "session-db-120",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "daily_digest",
+      "started_at": "2026-02-17 14:00:42",
+      "ended_at": "2026-02-17T14:01:41Z",
+      "duration_sec": null,
+      "summary": "daily_digest task"
+    },
+    {
+      "id": "session-db-121",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 14:06:41",
+      "ended_at": "2026-02-17 14:08:04",
+      "duration_sec": null,
+      "summary": "Proactive check — dashboard sync, M9/M10 marked failed, WORKING.md updated"
     }
   ],
   "tasks": [
@@ -1648,7 +1668,7 @@ var MC_DATA = {
       "id": "task-m9",
       "title": "ASO Research for Developer Tools",
       "description": "Mission from krishna",
-      "status": "IN_PROGRESS",
+      "status": "FAILED",
       "assignee": "krishna",
       "tags": [
         "mission"
@@ -1657,7 +1677,7 @@ var MC_DATA = {
       "updated_at": "2026-02-17 06:36:18",
       "history": [
         {
-          "status": "IN_PROGRESS",
+          "status": "FAILED",
           "by": "Krishna",
           "at": "2026-02-17 06:36:18"
         }
@@ -1667,7 +1687,7 @@ var MC_DATA = {
       "id": "task-m10",
       "title": "Security Audit of Customer Setup Package",
       "description": "Mission from krishna",
-      "status": "IN_PROGRESS",
+      "status": "FAILED",
       "assignee": "krishna",
       "tags": [
         "mission"
@@ -1676,7 +1696,7 @@ var MC_DATA = {
       "updated_at": "2026-02-17 07:09:36",
       "history": [
         {
-          "status": "IN_PROGRESS",
+          "status": "FAILED",
           "by": "Krishna",
           "at": "2026-02-17 07:09:36"
         }
@@ -1684,90 +1704,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 14:03:02",
-      "narrative": "Krishna detected duplicate message trigger for myagentcommander deploy."
-    },
-    {
-      "type": "session_start",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 17:55:53",
-      "narrative": "Krishna started advancing standing orders with two research tasks."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 17:55:58",
-      "narrative": "Krishna planned parallel tasks: app ideas and file audit."
-    },
-    {
-      "type": "teammate_spawned",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 17:56:42",
-      "narrative": "Krishna assigned Narada to brainstorm iOS app ideas."
-    },
-    {
-      "type": "teammate_spawned",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 17:56:42",
-      "narrative": "Krishna assigned Vishwa to audit brain/ for dead files."
-    },
-    {
-      "type": "session_start",
-      "agent": "Vishwa",
-      "agent_id": "vishwa",
-      "timestamp": "2026-02-11 17:57:00",
-      "narrative": "Vishwa started auditing brain/ directory for dead files."
-    },
-    {
-      "type": "session_start",
-      "agent": "Narada",
-      "agent_id": "narada",
-      "timestamp": "2026-02-11 17:57:00",
-      "narrative": "Narada started brainstorming iOS app ideas."
-    },
-    {
-      "type": "session_start",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 17:58:24",
-      "narrative": "Krishna ran daily routine and system health check."
-    },
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 17:59:15",
-      "narrative": "Krishna fixed heartbeat noise and cleaned 625 stale events."
-    },
-    {
-      "type": "comment",
-      "agent": "Vishwa",
-      "agent_id": "vishwa",
-      "timestamp": "2026-02-11 18:10:00",
-      "narrative": "Vishwa completed file audit of brain/ directory."
-    },
-    {
-      "type": "comment",
-      "agent": "Narada",
-      "agent_id": "narada",
-      "timestamp": "2026-02-11 18:10:00",
-      "narrative": "Narada completed research on 10 iOS app ideas for developers."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 19:52:42",
-      "narrative": "Sasi asked about form data storage and requested daily digests."
-    },
     {
       "type": "comment",
       "agent": "Krishna",
@@ -3083,9 +3019,223 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 12:30:00",
       "narrative": "Security audit step re-queued to Hanuman — Step 21 re-assigned to Hanuman after previous failure. Mission 10."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:17:15",
+      "narrative": "Standing order Plan: (1) Clean stale processes 117/119. (2) Retry M9 ASO research via Narada. (3) Retry M10 setup.sh security audit via Hanuman. Both previous step attempts failed with no output."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:17:18",
+      "narrative": "Proactive Proactive check. Clean up stale processes 117/118. Re-attempt missions 9/10 (ASO research + security audit — steps failed). Dashboard sync. Update daily log."
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:53:53",
+      "narrative": "Spawned Narada for ASO research (3rd attempt) — Mission 9, step 20. Previous attempts failed (stale processes). Output: projects/ideas/aso-research.md"
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:53:53",
+      "narrative": "Spawned Hanuman for setup.sh audit (3rd attempt) — Mission 10, step 21. Previous attempts failed (stale processes). Output: research/setup-sh-audit.md"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:55:33",
+      "narrative": "False positive message trigger — Message trigger but no new messages from Sasi. False positive mtime trigger #9 on Feb 17."
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:55:58",
+      "narrative": "Spawned Narada for ASO research (attempt 3) — Mission 9, step 22. Output: projects/ideas/aso-research.md. Previous 2 attempts failed with no output."
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 13:56:00",
+      "narrative": "Spawned Hanuman for setup.sh security audit (attempt 3) — Mission 10, step 23. Output: research/setup-sh-audit.md. Auditing 4005-line customer setup package."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 14:01:28",
+      "narrative": "Daily Digest sent — Feb 17 — Morning briefing via iMessage. Covered: commanderctl enhancements, M8 completion, weekly summary, MAC GTM blocked 11 days, ASO research retry, setup.sh audit planned."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 14:06:42",
+      "narrative": "proactive check — routine check — Dashboard sync, carry-forward review, stale step cleanup"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 14:07:28",
+      "narrative": "M9 ASO Research failed — 4 spawn attempts exhausted — Narada spawns failed silently. Research steps all failed. Will retry as direct Krishna work or new approach."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 14:07:28",
+      "narrative": "M10 Security Audit failed — 4 spawn attempts exhausted — Hanuman spawns failed silently. Audit steps all failed. Will retry as direct Krishna work or new approach."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 14:08:03",
+      "narrative": "Proactive check complete — Dashboard synced. M9/M10 marked failed (spawn exhaustion). WORKING.md updated. Daily log appended. No action needed from Sasi."
     }
   ],
   "pulse": [
+    {
+      "id": 1916,
+      "kind": "routine_completed",
+      "agent_id": "krishna",
+      "title": "Proactive check complete — run 121",
+      "summary": "Dashboard synced. M9/M10 marked failed (spawn exhaustion). WORKING.md updated. Daily log appended. No action needed from Sasi.",
+      "tags": null,
+      "created_at": "2026-02-17 14:08:03",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1915,
+      "kind": "mission_failed",
+      "agent_id": "krishna",
+      "title": "M10 Security Audit failed — 4 spawn attempts exhausted",
+      "summary": "Hanuman spawns failed silently. Audit steps all failed. Will retry as direct Krishna work or new approach.",
+      "tags": null,
+      "created_at": "2026-02-17 14:07:28",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1914,
+      "kind": "mission_failed",
+      "agent_id": "krishna",
+      "title": "M9 ASO Research failed — 4 spawn attempts exhausted",
+      "summary": "Narada spawns failed silently. Research steps all failed. Will retry as direct Krishna work or new approach.",
+      "tags": null,
+      "created_at": "2026-02-17 14:07:28",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1913,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "proactive check — routine check",
+      "summary": "Dashboard sync, carry-forward review, stale step cleanup",
+      "tags": null,
+      "created_at": "2026-02-17 14:06:42",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1912,
+      "kind": "daily_digest",
+      "agent_id": "krishna",
+      "title": "Daily Digest sent — Feb 17",
+      "summary": "Morning briefing via iMessage. Covered: commanderctl enhancements, M8 completion, weekly summary, MAC GTM blocked 11 days, ASO research retry, setup.sh audit planned.",
+      "tags": null,
+      "created_at": "2026-02-17 14:01:28",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1911,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 14:00:42",
+      "agent_name": "Dwarka"
+    },
+    {
+      "id": 1910,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Spawned Hanuman for setup.sh security audit (attempt 3)",
+      "summary": "Mission 10, step 23. Output: research/setup-sh-audit.md. Auditing 4005-line customer setup package.",
+      "tags": "[\"spawn\",\"hanuman\",\"mission_10\"]",
+      "created_at": "2026-02-17 13:56:00",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1909,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Spawned Narada for ASO research (attempt 3)",
+      "summary": "Mission 9, step 22. Output: projects/ideas/aso-research.md. Previous 2 attempts failed with no output.",
+      "tags": "[\"spawn\",\"narada\",\"mission_9\"]",
+      "created_at": "2026-02-17 13:55:58",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1908,
+      "kind": "session_skipped",
+      "agent_id": "krishna",
+      "title": "False positive message trigger",
+      "summary": "Message trigger but no new messages from Sasi. False positive mtime trigger #9 on Feb 17.",
+      "tags": null,
+      "created_at": "2026-02-17 13:55:33",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1907,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Spawned Hanuman for setup.sh audit (3rd attempt)",
+      "summary": "Mission 10, step 21. Previous attempts failed (stale processes). Output: research/setup-sh-audit.md",
+      "tags": "[\"spawn\",\"hanuman\"]",
+      "created_at": "2026-02-17 13:53:53",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1906,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Spawned Narada for ASO research (3rd attempt)",
+      "summary": "Mission 9, step 20. Previous attempts failed (stale processes). Output: projects/ideas/aso-research.md",
+      "tags": "[\"spawn\",\"narada\"]",
+      "created_at": "2026-02-17 13:53:53",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1905,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "proactive check 119",
+      "summary": "Proactive check. Clean up stale processes 117/118. Re-attempt missions 9/10 (ASO research + security audit — steps failed). Dashboard sync. Update daily log.",
+      "tags": "[\"proactive\",\"housekeeping\"]",
+      "created_at": "2026-02-17 13:17:18",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1904,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "routine check 118",
+      "summary": "Plan: (1) Clean stale processes 117/119. (2) Retry M9 ASO research via Narada. (3) Retry M10 setup.sh security audit via Hanuman. Both previous step attempts failed with no output.",
+      "tags": "[\"standing_order\",\"session_plan\"]",
+      "created_at": "2026-02-17 13:17:15",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1903,
       "kind": "step_started",
@@ -5405,116 +5555,6 @@ var MC_DATA = {
       "tags": "[\"session\",\"proactive\"]",
       "created_at": "2026-02-10 17:06:38",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 711,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "routine check. Delivered domain research to Sasi. Auxion recommended as top SaaS product name. Housekeeping: 3 stale processes cleaned, 2 missions completed, 6 decisions logged, routines updated.",
-      "tags": "[\"session\"]",
-      "created_at": "2026-02-10 13:36:17",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 709,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Domain research results sent to Sasi",
-      "summary": "Messaged Sasi with domain research findings. Top pick: Auxion. All previous top picks (Foundry/Hive/Sixfold) taken.",
-      "tags": "[\"saas\",\"naming\",\"message\"]",
-      "created_at": "2026-02-10 13:35:13",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 708,
-      "kind": "teammate_spawned",
-      "agent_id": "krishna",
-      "title": "Spawned Narada for domain research",
-      "summary": "Narada researched 12 product name candidates. Report at projects/dwarka-saas/research/domain-research.md",
-      "tags": "[\"saas\",\"naming\"]",
-      "created_at": "2026-02-10 13:34:51",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 707,
-      "kind": "step_completed",
-      "agent_id": "narada",
-      "title": "Domain research complete for SaaS naming",
-      "summary": "Researched 12+ name candidates for domain availability, Google conflicts, and trademarks. Key finding: Foundry/Hive/Sixfold all TAKEN by funded AI companies. Auxion is best candidate — both .ai and .com likely available, no conflicts.",
-      "tags": "[\"saas\",\"naming\",\"research\"]",
-      "created_at": "2026-02-10 13:34:51",
-      "agent_name": "Narada"
-    },
-    {
-      "id": 704,
-      "kind": "mission_completed",
-      "agent_id": "krishna",
-      "title": "Mission 2 completed: Dashboard Live Data",
-      "summary": "Dashboard rendering verified. sync-dashboard.js and sync-contexts.js integrated into boot.md. Auto-syncs on every shutdown.",
-      "tags": "[\"milestone\"]",
-      "created_at": "2026-02-10 13:33:04",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 703,
-      "kind": "mission_completed",
-      "agent_id": "krishna",
-      "title": "Mission 1 retired: Make Jarvis Truly Agentic",
-      "summary": "Superseded by Mission 4 (Make Dwarka Truly Agentic). Jarvis to Dwarka migration complete.",
-      "tags": "[\"cleanup\"]",
-      "created_at": "2026-02-10 13:33:04",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 702,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "Built weekly summary generator, verified dashboard rendering, synced all state.",
-      "tags": null,
-      "created_at": "2026-02-10 13:32:23",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 700,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "run Plan: Domain Research + Weekly Summary",
-      "summary": "routine check 24. Primary: Research domain availability for SaaS product names (Sasi asked ~14h ago, runs 21-23 failed). Secondary: Run weekly summary generator, clean up stale processes.",
-      "tags": "[\"session\",\"plan\"]",
-      "created_at": "2026-02-10 13:31:29",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 698,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Dashboard rendering verified",
-      "summary": "Vishwa verified both index.html and pulse.html render correctly with auto-synced data.js. All field names match, no mismatches found. Both dashboards have auto-refresh and error handling.",
-      "tags": "[\"dashboard\",\"verification\"]",
-      "created_at": "2026-02-10 13:31:20",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 697,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Weekly summary generator built",
-      "summary": "Built tools/dwarka/weekly-summary.js — queries SQLite for runs, events, missions, steps, decisions, agent activity. Generates memory/weekly/YYYY-WNN.md. Deduplicates security scan noise. Generated first summary: 2026-W07 (23 runs, 105 events, 5 missions).",
-      "tags": "[\"agentic\",\"tooling\"]",
-      "created_at": "2026-02-10 13:31:18",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 693,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "run Plan: Weekly Summary Generator",
-      "summary": "routine check. SaaS landing page blocked by product name decision. Advancing Make Dwarka Truly Agentic goal — building weekly summary generator (tools/weekly-summary.md standing order).",
-      "tags": "[\"session\",\"plan\"]",
-      "created_at": "2026-02-10 13:28:03",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -5958,9 +5998,14 @@ var MC_DATA = {
     {
       "id": 9,
       "title": "ASO Research for Developer Tools",
-      "status": "running",
+      "status": "failed",
       "created_by": "krishna",
       "steps": [
+        {
+          "kind": "research",
+          "status": "failed",
+          "reserved_by": "narada"
+        },
         {
           "kind": "research",
           "status": "failed",
@@ -5968,16 +6013,21 @@ var MC_DATA = {
         }
       ],
       "progress": {
-        "total": 1,
+        "total": 2,
         "completed": 0
       }
     },
     {
       "id": 10,
       "title": "Security Audit of Customer Setup Package",
-      "status": "running",
+      "status": "failed",
       "created_by": "krishna",
       "steps": [
+        {
+          "kind": "audit_security",
+          "status": "failed",
+          "reserved_by": "hanuman"
+        },
         {
           "kind": "audit_security",
           "status": "failed",
@@ -5985,7 +6035,7 @@ var MC_DATA = {
         }
       ],
       "progress": {
-        "total": 1,
+        "total": 2,
         "completed": 0
       }
     }
@@ -6017,7 +6067,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 18
+      "count": 31
     }
   ],
   "agent_activity": {
@@ -6108,7 +6158,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 12
+        "count": 24
       }
     ],
     "narada": [
@@ -6204,36 +6254,36 @@ var MC_DATA = {
   },
   "stats": {
     "total_tasks": 10,
-    "in_progress": 2,
+    "in_progress": 0,
     "completed_today": 0,
     "completed_all_time": 8,
-    "agents_active": 1,
-    "total_sessions": 119,
-    "total_events": 293,
-    "events_today": 18,
+    "agents_active": 0,
+    "total_sessions": 121,
+    "total_events": 295,
+    "events_today": 31,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_plan": 16,
-      "step_completed": 17,
-      "session_end": 25,
-      "mission_completed": 6,
-      "teammate_spawned": 9,
-      "message_sent": 14,
       "session_start": 14,
+      "session_plan": 17,
       "state_checkpoint": 4,
+      "session_end": 23,
       "message_response": 4,
       "build": 8,
       "research": 1,
       "message_received": 14,
+      "message_sent": 13,
       "action": 3,
       "task_completed": 8,
+      "step_completed": 14,
       "duplicate_trigger": 1,
-      "heartbeat": 50,
+      "teammate_spawned": 12,
+      "heartbeat": 51,
       "review_completed": 1,
       "mission_created": 1,
-      "daily_digest": 4,
+      "mission_completed": 4,
+      "daily_digest": 5,
       "maintenance": 1,
       "deploy": 1,
       "research_complete": 3,
@@ -6247,13 +6297,16 @@ var MC_DATA = {
       "link_analyzed": 1,
       "message_responded": 1,
       "proposal_approved": 2,
-      "step_started": 2
+      "step_started": 2,
+      "session_skipped": 1,
+      "mission_failed": 2,
+      "routine_completed": 1
     },
     "events_by_agent": {
-      "krishna": 223,
-      "narada": 10,
+      "krishna": 225,
+      "narada": 9,
       "vishwa": 4,
-      "dwarka": 50,
+      "dwarka": 51,
       "chanakya": 4,
       "hanuman": 2
     }
