@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T22:47:36.555Z",
+    "updated_at": "2026-02-17T23:59:28.582Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "run 123 end — proactive check",
+      "last_event_summary": "com.jarvis.listener and com.jarvis.proactive were still installed in LaunchAgents and causing false JARVIS_TRIGGER=message responses. Both unloaded via launchctl. Sasi notified to delete plists from Terminal.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
       "event_count_24h": 40,
-      "event_count_total": 221,
+      "event_count_total": 222,
       "is_active": false,
-      "total_sessions": 111,
+      "total_sessions": 112,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 29
+          "count": 30
         }
       ]
     },
@@ -1529,6 +1529,16 @@ var MC_DATA = {
       "ended_at": "2026-02-17 22:11:47",
       "duration_sec": 35,
       "summary": "Proactive check + daily routine. Dashboard synced (123 runs). 1 memory distilled. MAC GTM stale. No action needed."
+    },
+    {
+      "id": "session-db-124",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "message",
+      "started_at": "2026-02-17 23:59:22",
+      "ended_at": "2026-02-17 23:59:22",
+      "duration_sec": null,
+      "summary": "Root cause found: old Jarvis launchd daemons (com.jarvis.listener/proactive) were still running, causing false JARVIS_TRIGGER=message responses. Unloaded both. Sent iMessage to Sasi to delete plist files from Terminal."
     }
   ],
   "tasks": [
@@ -1724,13 +1734,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 20:12:22",
-      "narrative": "Sasi asked Krishna where standing orders come from."
-    },
     {
       "type": "message_sent",
       "agent": "Krishna",
@@ -3123,9 +3126,26 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 22:11:47",
       "narrative": "run 123 end — proactive check"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 23:59:17",
+      "narrative": "Root cause: Jarvis daemons unloaded — com.jarvis.listener and com.jarvis.proactive were still installed in LaunchAgents and causing false JARVIS_TRIGGER=message responses. Both unloaded via launchctl. Sasi notified to delete plists from Terminal."
     }
   ],
   "pulse": [
+    {
+      "id": 1922,
+      "kind": "system",
+      "agent_id": "krishna",
+      "title": "Root cause: Jarvis daemons unloaded",
+      "summary": "com.jarvis.listener and com.jarvis.proactive were still installed in LaunchAgents and causing false JARVIS_TRIGGER=message responses. Both unloaded via launchctl. Sasi notified to delete plists from Terminal.",
+      "tags": null,
+      "created_at": "2026-02-17 23:59:17",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1921,
       "kind": "session_end",
@@ -6037,7 +6057,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 36
+      "count": 37
     }
   ],
   "agent_activity": {
@@ -6128,7 +6148,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 29
+        "count": 30
       }
     ],
     "narada": [
@@ -6228,9 +6248,9 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 0,
-    "total_sessions": 123,
-    "total_events": 290,
-    "events_today": 36,
+    "total_sessions": 124,
+    "total_events": 291,
+    "events_today": 37,
     "conversations_total": 2,
     "memories_total": 43,
     "insights_total": 4,
@@ -6270,10 +6290,11 @@ var MC_DATA = {
       "session_skipped": 1,
       "mission_failed": 2,
       "routine_completed": 3,
-      "fix": 1
+      "fix": 1,
+      "system": 1
     },
     "events_by_agent": {
-      "krishna": 221,
+      "krishna": 222,
       "vishwa": 4,
       "narada": 8,
       "dwarka": 51,
