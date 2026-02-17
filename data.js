@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T14:10:44.754Z",
+    "updated_at": "2026-02-17T15:11:00.971Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,10 +113,10 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Dashboard synced. M9/M10 marked failed (spawn exhaustion). WORKING.md updated. Daily log appended. No action needed from Sasi.",
+      "last_event_summary": "Updated message trigger to write mtime state when no incoming message found, preventing outgoing messages from re-triggering checks on every heartbeat",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 35,
-      "event_count_total": 225,
+      "event_count_24h": 36,
+      "event_count_total": 226,
       "is_active": false,
       "total_sessions": 109,
       "last_active": "2026-02-15 16:28:55",
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 24
+          "count": 25
         }
       ]
     },
@@ -1705,13 +1705,6 @@ var MC_DATA = {
   ],
   "feed": [
     {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 19:53:47",
-      "narrative": "Krishna built daily digest trigger for morning briefings."
-    },
-    {
       "type": "message_sent",
       "agent": "Krishna",
       "agent_id": "krishna",
@@ -3103,9 +3096,26 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 14:08:03",
       "narrative": "Proactive check complete — Dashboard synced. M9/M10 marked failed (spawn exhaustion). WORKING.md updated. Daily log appended. No action needed from Sasi."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 14:18:01",
+      "narrative": "Fix false positive message triggers — Updated message trigger to write mtime state when no incoming message found, preventing outgoing messages from re-triggering checks on every heartbeat"
     }
   ],
   "pulse": [
+    {
+      "id": 1917,
+      "kind": "fix",
+      "agent_id": "krishna",
+      "title": "Fix false positive message triggers",
+      "summary": "Updated message trigger to write mtime state when no incoming message found, preventing outgoing messages from re-triggering checks on every heartbeat",
+      "tags": null,
+      "created_at": "2026-02-17 14:18:01",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1916,
       "kind": "routine_completed",
@@ -6067,7 +6077,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 31
+      "count": 32
     }
   ],
   "agent_activity": {
@@ -6158,7 +6168,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 24
+        "count": 25
       }
     ],
     "narada": [
@@ -6259,8 +6269,8 @@ var MC_DATA = {
     "completed_all_time": 8,
     "agents_active": 0,
     "total_sessions": 121,
-    "total_events": 295,
-    "events_today": 31,
+    "total_events": 296,
+    "events_today": 32,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
@@ -6300,10 +6310,11 @@ var MC_DATA = {
       "step_started": 2,
       "session_skipped": 1,
       "mission_failed": 2,
-      "routine_completed": 1
+      "routine_completed": 1,
+      "fix": 1
     },
     "events_by_agent": {
-      "krishna": 225,
+      "krishna": 226,
       "narada": 9,
       "vishwa": 4,
       "dwarka": 51,
