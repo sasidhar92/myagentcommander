@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T10:29:14.639Z",
+    "updated_at": "2026-02-17T13:10:34.931Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Proactive check. Cleanup stale processes (95/96). Fix missions 9/10 (failed steps). Re-run ASO research. Dashboard sync.",
+      "last_event_summary": "Step 21 re-assigned to Hanuman after previous failure. Mission 10.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 21,
-      "event_count_total": 221,
+      "event_count_24h": 23,
+      "event_count_total": 223,
       "is_active": true,
-      "total_sessions": 106,
+      "total_sessions": 107,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 10
+          "count": 12
         }
       ]
     },
@@ -1479,6 +1479,16 @@ var MC_DATA = {
       "ended_at": null,
       "duration_sec": null,
       "summary": "standing_order task"
+    },
+    {
+      "id": "session-db-119",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 12:29:50",
+      "ended_at": null,
+      "duration_sec": null,
+      "summary": "proactive task"
     }
   ],
   "tasks": [
@@ -1674,20 +1684,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 13:55:21",
-      "narrative": "Krishna noted Sasi wants to start Twitter posting for traffic."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 13:55:44",
-      "narrative": "Krishna sent Twitter posting strategy to Sasi."
-    },
     {
       "type": "comment",
       "agent": "Krishna",
@@ -3073,9 +3069,53 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 09:36:10",
       "narrative": "Proactive Proactive check. Cleanup stale processes (95/96). Fix missions 9/10 (failed steps). Re-run ASO research. Dashboard sync."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 12:30:00",
+      "narrative": "ASO Research step re-queued to Narada — Step 20 re-assigned to Narada after previous failure. Mission 9."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 12:30:00",
+      "narrative": "Security audit step re-queued to Hanuman — Step 21 re-assigned to Hanuman after previous failure. Mission 10."
     }
   ],
   "pulse": [
+    {
+      "id": 1903,
+      "kind": "step_started",
+      "agent_id": "krishna",
+      "title": "Security audit step re-queued to Hanuman",
+      "summary": "Step 21 re-assigned to Hanuman after previous failure. Mission 10.",
+      "tags": null,
+      "created_at": "2026-02-17 12:30:00",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1902,
+      "kind": "step_started",
+      "agent_id": "krishna",
+      "title": "ASO Research step re-queued to Narada",
+      "summary": "Step 20 re-assigned to Narada after previous failure. Mission 9.",
+      "tags": null,
+      "created_at": "2026-02-17 12:30:00",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1901,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 12:29:50",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1900,
       "kind": "session_plan",
@@ -5977,7 +6017,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 15
+      "count": 18
     }
   ],
   "agent_activity": {
@@ -6068,7 +6108,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 10
+        "count": 12
       }
     ],
     "narada": [
@@ -6168,9 +6208,9 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 1,
-    "total_sessions": 118,
-    "total_events": 290,
-    "events_today": 15,
+    "total_sessions": 119,
+    "total_events": 293,
+    "events_today": 18,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
@@ -6190,7 +6230,7 @@ var MC_DATA = {
       "action": 3,
       "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 49,
+      "heartbeat": 50,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -6206,13 +6246,14 @@ var MC_DATA = {
       "link_received": 2,
       "link_analyzed": 1,
       "message_responded": 1,
-      "proposal_approved": 2
+      "proposal_approved": 2,
+      "step_started": 2
     },
     "events_by_agent": {
-      "krishna": 221,
+      "krishna": 223,
       "narada": 10,
       "vishwa": 4,
-      "dwarka": 49,
+      "dwarka": 50,
       "chanakya": 4,
       "hanuman": 2
     }
