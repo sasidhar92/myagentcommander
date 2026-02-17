@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T03:21:49.280Z",
+    "updated_at": "2026-02-17T04:28:41.290Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Monday proactive check. Routines: proactive check + weekly routine (first Monday). No new messages from Sasi. No active missions. Clean state.",
+      "last_event_summary": "Monday weekly routine. Dashboard synced, W07 summary generated, goals reviewed, weekly digest sent. No active missions. MAC GTM stale 11 days. ASO research to re-run.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 17,
-      "event_count_total": 212,
+      "event_count_24h": 20,
+      "event_count_total": 215,
       "is_active": true,
-      "total_sessions": 101,
+      "total_sessions": 102,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 1
+          "count": 4
         }
       ]
     },
@@ -1426,9 +1426,19 @@ var MC_DATA = {
       "agent_name": "Krishna",
       "trigger": "proactive",
       "started_at": "2026-02-17 02:55:35",
+      "ended_at": "2026-02-17T03:28:42Z",
+      "duration_sec": 1978,
+      "summary": "Monday weekly routine + proactive check. Dashboard synced (113 runs, 228 pulse). W07 summary generated. Goals reviewed (MAC GTM stale 11 days). Lessons clean. Week plan: ASO research, MAC test. Weekly digest sent to Sasi. No active missions."
+    },
+    {
+      "id": "session-db-114",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "conversation",
+      "started_at": "2026-02-17 03:21:52",
       "ended_at": null,
       "duration_sec": null,
-      "summary": "proactive task"
+      "summary": "conversation task"
     }
   ],
   "tasks": [
@@ -1586,27 +1596,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:30:46",
-      "narrative": "Krishna told Sasi missioncontrolhq.ai appears taken."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:37:33",
-      "narrative": "Krishna consolidated old project folders and cleaned contexts."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:04:12",
-      "narrative": "Krishna replaced Auxen.ai with MissionControlHQ.ai in compare page."
-    },
     {
       "type": "message_received",
       "agent": "Krishna",
@@ -2985,9 +2974,60 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 03:21:44",
       "narrative": "Proactive Monday proactive check. Routines: proactive check + weekly routine (first Monday). No new messages from Sasi. No active missions. Clean state."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 03:24:03",
+      "narrative": "Weekly routine + proactive check — Monday proactive: dashboard synced (113 runs, 228 pulse). Weekly routine: W07 summary generated (104 runs, 209 events, 7 missions). Goals reviewed — MAC GTM stale 11 days. Lessons clean. Week plan: ASO research, MAC test, advance standing orders. Weekly digest sent to Sasi."
+    },
+    {
+      "type": "message_sent",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 03:24:04",
+      "narrative": "Weekly digest sent to Sasi — Feb 9-16 weekly digest: 8 missions succeeded, setup.sh complete, MAC GTM blocked 11 days, ASO research re-run planned."
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 03:28:35",
+      "narrative": "Monday weekly routine. Dashboard synced, W07 summary generated, goals reviewed, weekly digest sent. No active missions. MAC GTM stale 11 days. ASO research to re-run."
     }
   ],
   "pulse": [
+    {
+      "id": 1891,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "",
+      "summary": "Monday weekly routine. Dashboard synced, W07 summary generated, goals reviewed, weekly digest sent. No active missions. MAC GTM stale 11 days. ASO research to re-run.",
+      "tags": null,
+      "created_at": "2026-02-17 03:28:35",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1890,
+      "kind": "message_sent",
+      "agent_id": "krishna",
+      "title": "Weekly digest sent to Sasi",
+      "summary": "Feb 9-16 weekly digest: 8 missions succeeded, setup.sh complete, MAC GTM blocked 11 days, ASO research re-run planned.",
+      "tags": null,
+      "created_at": "2026-02-17 03:24:04",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1889,
+      "kind": "routine",
+      "agent_id": "krishna",
+      "title": "Weekly routine + proactive check",
+      "summary": "Monday proactive: dashboard synced (113 runs, 228 pulse). Weekly routine: W07 summary generated (104 runs, 209 events, 7 missions). Goals reviewed — MAC GTM stale 11 days. Lessons clean. Week plan: ASO research, MAC test, advance standing orders. Weekly digest sent to Sasi.",
+      "tags": "[\"weekly\",\"routine\",\"digest\"]",
+      "created_at": "2026-02-17 03:24:03",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1888,
       "kind": "session_plan",
@@ -5271,6 +5311,21 @@ var MC_DATA = {
   ],
   "conversations": [
     {
+      "id": 6,
+      "format": "debate",
+      "topic": "Should we expand to new project areas or deepen existing ones?",
+      "participants": [
+        "krishna",
+        "vishwa",
+        "vidura"
+      ],
+      "status": "active",
+      "summary": null,
+      "started_at": "2026-02-17 03:22:16",
+      "completed_at": null,
+      "messages": []
+    },
+    {
       "id": 3,
       "format": "debate",
       "topic": "What is the biggest risk to Dwarka right now?",
@@ -5720,7 +5775,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 3
+      "count": 6
     }
   ],
   "agent_activity": {
@@ -5811,7 +5866,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 1
+        "count": 4
       }
     ],
     "narada": [
@@ -5911,19 +5966,19 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 1,
-    "total_sessions": 113,
-    "total_events": 278,
-    "events_today": 3,
-    "conversations_total": 1,
+    "total_sessions": 114,
+    "total_events": 281,
+    "events_today": 6,
+    "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
       "session_plan": 14,
       "step_completed": 17,
-      "session_end": 24,
+      "session_end": 25,
       "mission_completed": 6,
       "teammate_spawned": 7,
-      "message_sent": 13,
+      "message_sent": 14,
       "session_start": 14,
       "state_checkpoint": 4,
       "message_response": 4,
@@ -5940,7 +5995,7 @@ var MC_DATA = {
       "maintenance": 1,
       "deploy": 1,
       "research_complete": 3,
-      "routine": 4,
+      "routine": 5,
       "file_change": 71,
       "conversation": 1,
       "decision_made": 1,
@@ -5951,7 +6006,7 @@ var MC_DATA = {
       "message_responded": 1
     },
     "events_by_agent": {
-      "krishna": 212,
+      "krishna": 215,
       "narada": 10,
       "vishwa": 4,
       "dwarka": 46,
