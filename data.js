@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T16:49:12.544Z",
+    "updated_at": "2026-02-17T18:10:36.275Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Updated message trigger to write mtime state when no incoming message found, preventing outgoing messages from re-triggering checks on every heartbeat",
+      "last_event_summary": "Dashboard synced (122 runs, 291 events, 50 today). No new missions or queue items. WORKING.md carry-forward unchanged. MAC GTM still stale. System quiet.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 36,
-      "event_count_total": 226,
+      "event_count_24h": 37,
+      "event_count_total": 222,
       "is_active": false,
-      "total_sessions": 109,
+      "total_sessions": 110,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 25
+          "count": 26
         }
       ]
     },
@@ -1509,6 +1509,16 @@ var MC_DATA = {
       "ended_at": "2026-02-17 14:08:04",
       "duration_sec": null,
       "summary": "Proactive check — dashboard sync, M9/M10 marked failed, WORKING.md updated"
+    },
+    {
+      "id": "session-db-122",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 18:09:07",
+      "ended_at": "2026-02-17 18:10:32",
+      "duration_sec": null,
+      "summary": "Proactive check: dashboard synced, carry-forward reviewed, no action needed"
     }
   ],
   "tasks": [
@@ -1704,13 +1714,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 19:53:49",
-      "narrative": "Krishna replied to Sasi about form storage, privacy, and digest."
-    },
     {
       "type": "message_received",
       "agent": "Krishna",
@@ -3103,9 +3106,26 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 14:18:01",
       "narrative": "Fix false positive message triggers — Updated message trigger to write mtime state when no incoming message found, preventing outgoing messages from re-triggering checks on every heartbeat"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 18:10:10",
+      "narrative": "Proactive check complete — Dashboard synced (122 runs, 291 events, 50 today). No new missions or queue items. WORKING.md carry-forward unchanged. MAC GTM still stale. System quiet."
     }
   ],
   "pulse": [
+    {
+      "id": 1918,
+      "kind": "routine_completed",
+      "agent_id": "krishna",
+      "title": "Proactive check complete — run 122",
+      "summary": "Dashboard synced (122 runs, 291 events, 50 today). No new missions or queue items. WORKING.md carry-forward unchanged. MAC GTM still stale. System quiet.",
+      "tags": null,
+      "created_at": "2026-02-17 18:10:10",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1917,
       "kind": "fix",
@@ -5515,56 +5535,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-10 20:55:52",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 929,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "Proactive check complete",
-      "summary": "Fixed heartbeat noise (805 events), enabled initiative, cleaned stale queue. No Sasi messages.",
-      "tags": "[\"session\"]",
-      "created_at": "2026-02-10 17:09:26",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 927,
-      "kind": "state_checkpoint",
-      "agent_id": "krishna",
-      "title": "Initiative capabilities enabled",
-      "summary": "Enabled initiative policy. Krishna will now propose work autonomously every 12 hours based on pattern recognition. Safeguards: proposal_daily_cap=10, auto_approve only for research/analyze/content/audit, build/deploy requires Sasi approval. Improved initiative prompt template with quality guidelines.",
-      "tags": "[\"agentic\",\"milestone\"]",
-      "created_at": "2026-02-10 17:08:33",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 925,
-      "kind": "state_checkpoint",
-      "agent_id": "krishna",
-      "title": "System health: heartbeat noise fixed",
-      "summary": "Fixed heartbeat.js logging every run (805 noisy events). Now only logs when work enqueued. Cleaned 805 heartbeat events from DB. Cleaned 4 stale work_queue items.",
-      "tags": "[\"system\",\"fix\"]",
-      "created_at": "2026-02-10 17:07:18",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 923,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "run 25 Plan",
-      "summary": "proactive check agenda: 1) Clean stale work_queue items, 2) Address heartbeat event noise (60 events/hour), 3) Review carry-forward items, 4) Advance agentic goal — initiative capabilities, 5) Sync dashboard",
-      "tags": "[\"session\",\"proactive\"]",
-      "created_at": "2026-02-10 17:06:44",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 922,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "Proactive Check",
-      "summary": "Proactive check-in. No unread messages. Assessing system health and advancing goals.",
-      "tags": "[\"session\",\"proactive\"]",
-      "created_at": "2026-02-10 17:06:38",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -6077,7 +6047,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 32
+      "count": 33
     }
   ],
   "agent_activity": {
@@ -6168,7 +6138,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 25
+        "count": 26
       }
     ],
     "narada": [
@@ -6268,24 +6238,24 @@ var MC_DATA = {
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 0,
-    "total_sessions": 121,
-    "total_events": 296,
-    "events_today": 32,
+    "total_sessions": 122,
+    "total_events": 292,
+    "events_today": 33,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_start": 14,
-      "session_plan": 17,
-      "state_checkpoint": 4,
-      "session_end": 23,
       "message_response": 4,
+      "session_start": 13,
       "build": 8,
       "research": 1,
+      "session_end": 22,
       "message_received": 14,
       "message_sent": 13,
+      "session_plan": 16,
       "action": 3,
       "task_completed": 8,
+      "state_checkpoint": 2,
       "step_completed": 14,
       "duplicate_trigger": 1,
       "teammate_spawned": 12,
@@ -6310,11 +6280,11 @@ var MC_DATA = {
       "step_started": 2,
       "session_skipped": 1,
       "mission_failed": 2,
-      "routine_completed": 1,
+      "routine_completed": 2,
       "fix": 1
     },
     "events_by_agent": {
-      "krishna": 226,
+      "krishna": 222,
       "narada": 9,
       "vishwa": 4,
       "dwarka": 51,
