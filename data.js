@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T06:35:47.454Z",
+    "updated_at": "2026-02-17T08:49:07.378Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -113,12 +113,12 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Monday weekly routine. Dashboard synced, W07 summary generated, goals reviewed, weekly digest sent. No active missions. MAC GTM stale 11 days. ASO research to re-run.",
+      "last_event_summary": "Mission 10, step audit_security. Output: research/setup-sh-audit.md",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 20,
-      "event_count_total": 215,
+      "event_count_24h": 25,
+      "event_count_total": 220,
       "is_active": true,
-      "total_sessions": 103,
+      "total_sessions": 104,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 4
+          "count": 9
         }
       ]
     },
@@ -1449,6 +1449,16 @@ var MC_DATA = {
       "ended_at": null,
       "duration_sec": null,
       "summary": "initiative task"
+    },
+    {
+      "id": "session-db-116",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 07:09:43",
+      "ended_at": null,
+      "duration_sec": null,
+      "summary": "proactive task"
     }
   ],
   "tasks": [
@@ -1603,44 +1613,47 @@ var MC_DATA = {
           "at": "2026-02-16 03:50:15"
         }
       ]
+    },
+    {
+      "id": "task-m9",
+      "title": "ASO Research for Developer Tools",
+      "description": "Mission from krishna",
+      "status": "IN_PROGRESS",
+      "assignee": "krishna",
+      "tags": [
+        "mission"
+      ],
+      "created_at": "2026-02-17 06:36:18",
+      "updated_at": "2026-02-17 06:36:18",
+      "history": [
+        {
+          "status": "IN_PROGRESS",
+          "by": "Krishna",
+          "at": "2026-02-17 06:36:18"
+        }
+      ]
+    },
+    {
+      "id": "task-m10",
+      "title": "Security Audit of Customer Setup Package",
+      "description": "Mission from krishna",
+      "status": "IN_PROGRESS",
+      "assignee": "krishna",
+      "tags": [
+        "mission"
+      ],
+      "created_at": "2026-02-17 07:09:36",
+      "updated_at": "2026-02-17 07:09:36",
+      "history": [
+        {
+          "status": "IN_PROGRESS",
+          "by": "Krishna",
+          "at": "2026-02-17 07:09:36"
+        }
+      ]
     }
   ],
   "feed": [
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:07:47",
-      "narrative": "Sasi asked Krishna to remove Auxen AI from comparisons."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:24:32",
-      "narrative": "Sasi asked Krishna to merge compare.html and organize site."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:24:34",
-      "narrative": "Krishna planned to merge compare page and draft Twitter content."
-    },
-    {
-      "type": "task_updated",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:29:10",
-      "narrative": "Krishna merged comparison table into unified landing page."
-    },
-    {
-      "type": "task_updated",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 03:29:10",
-      "narrative": "Krishna drafted 18 Twitter/X posts for launch campaign."
-    },
     {
       "type": "session_end",
       "agent": "Krishna",
@@ -3005,9 +3018,114 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-17 03:28:35",
       "narrative": "Monday weekly routine. Dashboard synced, W07 summary generated, goals reviewed, weekly digest sent. No active missions. MAC GTM stale 11 days. ASO research to re-run."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 06:35:51",
+      "narrative": "Initiative Review state, create 2 proposals: (1) ASO research re-run (standing order), (2) Security audit of setup.sh customer package. Both auto-approvable."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 07:09:47",
+      "narrative": "Auto-approved: ASO Research — Standing order. All steps research kind — auto-approve policy applies."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 07:09:47",
+      "narrative": "Auto-approved: Security Audit of setup.sh — 4102-line customer package. All steps audit_security kind — auto-approve policy applies."
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 07:10:00",
+      "narrative": "Spawned Narada for ASO research — Mission 9, step research. Output: projects/ideas/aso-research.md"
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 07:10:00",
+      "narrative": "Spawned Hanuman for setup.sh audit — Mission 10, step audit_security. Output: research/setup-sh-audit.md"
     }
   ],
   "pulse": [
+    {
+      "id": 1899,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 08:49:07",
+      "agent_name": "Dwarka"
+    },
+    {
+      "id": 1898,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Spawned Hanuman for setup.sh audit",
+      "summary": "Mission 10, step audit_security. Output: research/setup-sh-audit.md",
+      "tags": "[\"initiative\",\"spawn\"]",
+      "created_at": "2026-02-17 07:10:00",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1897,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Spawned Narada for ASO research",
+      "summary": "Mission 9, step research. Output: projects/ideas/aso-research.md",
+      "tags": "[\"initiative\",\"spawn\"]",
+      "created_at": "2026-02-17 07:10:00",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1896,
+      "kind": "proposal_approved",
+      "agent_id": "krishna",
+      "title": "Auto-approved: Security Audit of setup.sh",
+      "summary": "4102-line customer package. All steps audit_security kind — auto-approve policy applies.",
+      "tags": "[\"initiative\",\"auto_approve\"]",
+      "created_at": "2026-02-17 07:09:47",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1895,
+      "kind": "proposal_approved",
+      "agent_id": "krishna",
+      "title": "Auto-approved: ASO Research",
+      "summary": "Standing order. All steps research kind — auto-approve policy applies.",
+      "tags": "[\"initiative\",\"auto_approve\"]",
+      "created_at": "2026-02-17 07:09:47",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1894,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 07:09:42",
+      "agent_name": "Dwarka"
+    },
+    {
+      "id": 1893,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "Initiative 115",
+      "summary": "Review state, create 2 proposals: (1) ASO research re-run (standing order), (2) Security audit of setup.sh customer package. Both auto-approvable.",
+      "tags": "[\"initiative\",\"session_plan\"]",
+      "created_at": "2026-02-17 06:35:51",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1892,
       "kind": "heartbeat",
@@ -5766,6 +5884,40 @@ var MC_DATA = {
         "total": 6,
         "completed": 6
       }
+    },
+    {
+      "id": 9,
+      "title": "ASO Research for Developer Tools",
+      "status": "running",
+      "created_by": "krishna",
+      "steps": [
+        {
+          "kind": "research",
+          "status": "failed",
+          "reserved_by": "narada"
+        }
+      ],
+      "progress": {
+        "total": 1,
+        "completed": 0
+      }
+    },
+    {
+      "id": 10,
+      "title": "Security Audit of Customer Setup Package",
+      "status": "running",
+      "created_by": "krishna",
+      "steps": [
+        {
+          "kind": "audit_security",
+          "status": "failed",
+          "reserved_by": "hanuman"
+        }
+      ],
+      "progress": {
+        "total": 1,
+        "completed": 0
+      }
     }
   ],
   "daily_stats": [
@@ -5795,7 +5947,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 7
+      "count": 14
     }
   ],
   "agent_activity": {
@@ -5886,7 +6038,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 4
+        "count": 9
       }
     ],
     "narada": [
@@ -5981,23 +6133,23 @@ var MC_DATA = {
     ]
   },
   "stats": {
-    "total_tasks": 8,
-    "in_progress": 0,
+    "total_tasks": 10,
+    "in_progress": 2,
     "completed_today": 0,
     "completed_all_time": 8,
     "agents_active": 1,
-    "total_sessions": 115,
-    "total_events": 282,
-    "events_today": 7,
+    "total_sessions": 116,
+    "total_events": 289,
+    "events_today": 14,
     "conversations_total": 2,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_plan": 14,
+      "session_plan": 15,
       "step_completed": 17,
       "session_end": 25,
       "mission_completed": 6,
-      "teammate_spawned": 7,
+      "teammate_spawned": 9,
       "message_sent": 14,
       "session_start": 14,
       "state_checkpoint": 4,
@@ -6008,7 +6160,7 @@ var MC_DATA = {
       "action": 3,
       "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 47,
+      "heartbeat": 49,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -6023,13 +6175,14 @@ var MC_DATA = {
       "feedback_received": 1,
       "link_received": 2,
       "link_analyzed": 1,
-      "message_responded": 1
+      "message_responded": 1,
+      "proposal_approved": 2
     },
     "events_by_agent": {
-      "krishna": 215,
+      "krishna": 220,
       "narada": 10,
       "vishwa": 4,
-      "dwarka": 47,
+      "dwarka": 49,
       "chanakya": 4,
       "hanuman": 2
     }
