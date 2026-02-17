@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T02:19:51.697Z",
+    "updated_at": "2026-02-17T03:21:49.280Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -107,18 +107,18 @@ var MC_DATA = {
       "name": "Krishna",
       "role": "Chief of Staff",
       "level": "LEAD",
-      "status": "IDLE",
+      "status": "WORKING",
       "avatar": "K",
       "current_task": null,
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "opus",
-      "last_event_summary": "Standing order: Enhanced commanderctl.sh with user management CLI. No message to Sasi — infrastructure work, no deliverables.",
+      "last_event_summary": "Monday proactive check. Routines: proactive check + weekly routine (first Monday). No new messages from Sasi. No active missions. Clean state.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 16,
-      "event_count_total": 211,
-      "is_active": false,
-      "total_sessions": 100,
+      "event_count_24h": 17,
+      "event_count_total": 212,
+      "is_active": true,
+      "total_sessions": 101,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
         {
@@ -147,7 +147,7 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
-          "count": 0
+          "count": 1
         }
       ]
     },
@@ -1419,6 +1419,16 @@ var MC_DATA = {
       "ended_at": "2026-02-16T23:39:33Z",
       "duration_sec": 232,
       "summary": "Standing order: Enhanced commanderctl.sh with 7 new user management commands (agents, agent-enable/disable, config, policy, reset-cb, missions, events). Added enabled column to agents schema. Updated conversation trigger and dashboard sync. 4102 lines, syntax clean."
+    },
+    {
+      "id": "session-db-113",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-17 02:55:35",
+      "ended_at": null,
+      "duration_sec": null,
+      "summary": "proactive task"
     }
   ],
   "tasks": [
@@ -1576,13 +1586,6 @@ var MC_DATA = {
     }
   ],
   "feed": [
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-11 02:30:36",
-      "narrative": "Sasi clarified domain choice is missioncontrolhq.ai."
-    },
     {
       "type": "message_sent",
       "agent": "Krishna",
@@ -2975,9 +2978,46 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-16 23:39:24",
       "narrative": "Standing order: Enhanced commanderctl.sh with user management CLI. No message to Sasi — infrastructure work, no deliverables."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-17 03:21:44",
+      "narrative": "Proactive Monday proactive check. Routines: proactive check + weekly routine (first Monday). No new messages from Sasi. No active missions. Clean state."
     }
   ],
   "pulse": [
+    {
+      "id": 1888,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "proactive check 113",
+      "summary": "Monday proactive check. Routines: proactive check + weekly routine (first Monday). No new messages from Sasi. No active missions. Clean state.",
+      "tags": null,
+      "created_at": "2026-02-17 03:21:44",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1887,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 03:19:02",
+      "agent_name": "Dwarka"
+    },
+    {
+      "id": 1886,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=1",
+      "tags": null,
+      "created_at": "2026-02-17 02:55:35",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1885,
       "kind": "session_end",
@@ -5680,7 +5720,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-17",
-      "count": 0
+      "count": 3
     }
   ],
   "agent_activity": {
@@ -5771,7 +5811,7 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 0
+        "count": 1
       }
     ],
     "narada": [
@@ -5870,15 +5910,15 @@ var MC_DATA = {
     "in_progress": 0,
     "completed_today": 0,
     "completed_all_time": 8,
-    "agents_active": 0,
-    "total_sessions": 112,
-    "total_events": 275,
-    "events_today": 0,
+    "agents_active": 1,
+    "total_sessions": 113,
+    "total_events": 278,
+    "events_today": 3,
     "conversations_total": 1,
     "memories_total": 42,
     "insights_total": 4,
     "events_by_kind": {
-      "session_plan": 13,
+      "session_plan": 14,
       "step_completed": 17,
       "session_end": 24,
       "mission_completed": 6,
@@ -5893,7 +5933,7 @@ var MC_DATA = {
       "action": 3,
       "task_completed": 8,
       "duplicate_trigger": 1,
-      "heartbeat": 44,
+      "heartbeat": 46,
       "review_completed": 1,
       "mission_created": 1,
       "daily_digest": 4,
@@ -5911,10 +5951,10 @@ var MC_DATA = {
       "message_responded": 1
     },
     "events_by_agent": {
-      "krishna": 211,
+      "krishna": 212,
       "narada": 10,
       "vishwa": 4,
-      "dwarka": 44,
+      "dwarka": 46,
       "chanakya": 4,
       "hanuman": 2
     }
