@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-17T23:59:28.582Z",
+    "updated_at": "2026-02-18T14:30:15.479Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -24,10 +24,6 @@ var MC_DATA = {
       "last_active": "2026-02-15 14:07:31",
       "sparkline": [
         {
-          "date": "2026-02-11",
-          "count": 0
-        },
-        {
           "date": "2026-02-12",
           "count": 1
         },
@@ -50,6 +46,10 @@ var MC_DATA = {
         {
           "date": "2026-02-17",
           "count": 0
+        },
+        {
+          "date": "2026-02-18",
+          "count": 0
         }
       ]
     },
@@ -66,16 +66,12 @@ var MC_DATA = {
       "model": "sonnet",
       "last_event_summary": "Report at research/link-analysis/voxyz-openclaw-hanuman.md",
       "last_event_narrative": null,
-      "event_count_24h": 2,
+      "event_count_24h": 0,
       "event_count_total": 2,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-09 03:01:42",
       "sparkline": [
-        {
-          "date": "2026-02-11",
-          "count": 0
-        },
         {
           "date": "2026-02-12",
           "count": 0
@@ -99,6 +95,10 @@ var MC_DATA = {
         {
           "date": "2026-02-17",
           "count": 0
+        },
+        {
+          "date": "2026-02-18",
+          "count": 0
         }
       ]
     },
@@ -115,16 +115,12 @@ var MC_DATA = {
       "model": "opus",
       "last_event_summary": "com.jarvis.listener and com.jarvis.proactive were still installed in LaunchAgents and causing false JARVIS_TRIGGER=message responses. Both unloaded via launchctl. Sasi notified to delete plists from Terminal.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 40,
-      "event_count_total": 222,
+      "event_count_24h": 21,
+      "event_count_total": 220,
       "is_active": false,
       "total_sessions": 112,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
-        {
-          "date": "2026-02-11",
-          "count": 39
-        },
         {
           "date": "2026-02-12",
           "count": 32
@@ -148,6 +144,10 @@ var MC_DATA = {
         {
           "date": "2026-02-17",
           "count": 30
+        },
+        {
+          "date": "2026-02-18",
+          "count": 0
         }
       ]
     },
@@ -171,10 +171,6 @@ var MC_DATA = {
       "last_active": "2026-02-15 14:09:16",
       "sparkline": [
         {
-          "date": "2026-02-11",
-          "count": 2
-        },
-        {
           "date": "2026-02-12",
           "count": 1
         },
@@ -196,6 +192,10 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
+          "count": 0
+        },
+        {
+          "date": "2026-02-18",
           "count": 0
         }
       ]
@@ -220,10 +220,6 @@ var MC_DATA = {
       "last_active": "2026-02-09 21:35:10",
       "sparkline": [
         {
-          "date": "2026-02-11",
-          "count": 0
-        },
-        {
           "date": "2026-02-12",
           "count": 0
         },
@@ -245,6 +241,10 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
+          "count": 0
+        },
+        {
+          "date": "2026-02-18",
           "count": 0
         }
       ]
@@ -262,16 +262,12 @@ var MC_DATA = {
       "model": "sonnet",
       "last_event_summary": "Report at research/link-analysis/voxyz-openclaw-vishwa.md",
       "last_event_narrative": "Vishwa completed file audit of brain/ directory.",
-      "event_count_24h": 2,
+      "event_count_24h": 0,
       "event_count_total": 4,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-11 18:10:00",
       "sparkline": [
-        {
-          "date": "2026-02-11",
-          "count": 2
-        },
         {
           "date": "2026-02-12",
           "count": 0
@@ -294,6 +290,10 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-17",
+          "count": 0
+        },
+        {
+          "date": "2026-02-18",
           "count": 0
         }
       ]
@@ -3137,6 +3137,16 @@ var MC_DATA = {
   ],
   "pulse": [
     {
+      "id": 1923,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=5",
+      "tags": null,
+      "created_at": "2026-02-18 14:30:15",
+      "agent_name": "Dwarka"
+    },
+    {
       "id": 1922,
       "kind": "system",
       "agent_id": "krishna",
@@ -5525,26 +5535,6 @@ var MC_DATA = {
       "tags": "[\"proactive\",\"session_29\"]",
       "created_at": "2026-02-11 01:20:47",
       "agent_name": "Krishna"
-    },
-    {
-      "id": 1231,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Sent name variations to Sasi",
-      "summary": "Researched 20+ name variations with domain availability",
-      "tags": "[\"saas\",\"naming\",\"domains\"]",
-      "created_at": "2026-02-10 23:57:35",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1230,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "Sasi: check other variations",
-      "summary": "SaaS naming - wants more name/domain variations",
-      "tags": "[\"saas\",\"naming\"]",
-      "created_at": "2026-02-10 23:57:20",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -6032,10 +6022,6 @@ var MC_DATA = {
   ],
   "daily_stats": [
     {
-      "date": "2026-02-11",
-      "count": 49
-    },
-    {
       "date": "2026-02-12",
       "count": 51
     },
@@ -6058,14 +6044,14 @@ var MC_DATA = {
     {
       "date": "2026-02-17",
       "count": 37
+    },
+    {
+      "date": "2026-02-18",
+      "count": 1
     }
   ],
   "agent_activity": {
     "chanakya": [
-      {
-        "date": "2026-02-11",
-        "count": 0
-      },
       {
         "date": "2026-02-12",
         "count": 1
@@ -6089,13 +6075,13 @@ var MC_DATA = {
       {
         "date": "2026-02-17",
         "count": 0
+      },
+      {
+        "date": "2026-02-18",
+        "count": 0
       }
     ],
     "hanuman": [
-      {
-        "date": "2026-02-11",
-        "count": 0
-      },
       {
         "date": "2026-02-12",
         "count": 0
@@ -6119,13 +6105,13 @@ var MC_DATA = {
       {
         "date": "2026-02-17",
         "count": 0
+      },
+      {
+        "date": "2026-02-18",
+        "count": 0
       }
     ],
     "krishna": [
-      {
-        "date": "2026-02-11",
-        "count": 39
-      },
       {
         "date": "2026-02-12",
         "count": 32
@@ -6149,13 +6135,13 @@ var MC_DATA = {
       {
         "date": "2026-02-17",
         "count": 30
+      },
+      {
+        "date": "2026-02-18",
+        "count": 0
       }
     ],
     "narada": [
-      {
-        "date": "2026-02-11",
-        "count": 2
-      },
       {
         "date": "2026-02-12",
         "count": 1
@@ -6179,13 +6165,13 @@ var MC_DATA = {
       {
         "date": "2026-02-17",
         "count": 0
+      },
+      {
+        "date": "2026-02-18",
+        "count": 0
       }
     ],
     "vidura": [
-      {
-        "date": "2026-02-11",
-        "count": 0
-      },
       {
         "date": "2026-02-12",
         "count": 0
@@ -6208,15 +6194,15 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
+        "count": 0
+      },
+      {
+        "date": "2026-02-18",
         "count": 0
       }
     ],
     "vishwa": [
       {
-        "date": "2026-02-11",
-        "count": 2
-      },
-      {
         "date": "2026-02-12",
         "count": 0
       },
@@ -6238,6 +6224,10 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-17",
+        "count": 0
+      },
+      {
+        "date": "2026-02-18",
         "count": 0
       }
     ]
@@ -6249,24 +6239,24 @@ var MC_DATA = {
     "completed_all_time": 8,
     "agents_active": 0,
     "total_sessions": 124,
-    "total_events": 291,
-    "events_today": 37,
+    "total_events": 290,
+    "events_today": 1,
     "conversations_total": 2,
     "memories_total": 43,
     "insights_total": 4,
     "events_by_kind": {
-      "message_received": 14,
-      "message_sent": 13,
       "session_plan": 17,
       "action": 3,
       "task_completed": 8,
       "state_checkpoint": 2,
       "session_end": 22,
+      "message_received": 13,
+      "message_sent": 12,
       "step_completed": 14,
       "duplicate_trigger": 1,
       "session_start": 12,
       "teammate_spawned": 12,
-      "heartbeat": 51,
+      "heartbeat": 52,
       "message_response": 3,
       "review_completed": 1,
       "mission_created": 1,
@@ -6294,10 +6284,10 @@ var MC_DATA = {
       "system": 1
     },
     "events_by_agent": {
-      "krishna": 222,
+      "krishna": 220,
       "vishwa": 4,
       "narada": 8,
-      "dwarka": 51,
+      "dwarka": 52,
       "chanakya": 4,
       "hanuman": 2
     }
