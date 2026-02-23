@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-23T03:03:06.811Z",
+    "updated_at": "2026-02-23T14:28:29.026Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -116,7 +116,7 @@ var MC_DATA = {
       "last_event_summary": "Proactive check done. M11 marked succeeded (Knowledge Layer complete). FINDING-04 fully fixed (hardcoded phone cleared from setup.sh line 37). stale processes 139+141 closed. Daily log + WORKING.md updated. Dashboard synced. No active missions.",
       "last_event_narrative": null,
       "event_count_24h": 10,
-      "event_count_total": 85,
+      "event_count_total": 84,
       "is_active": true,
       "total_sessions": 130,
       "last_active": "2026-02-15 16:28:55",
@@ -1972,13 +1972,6 @@ var MC_DATA = {
   ],
   "feed": [
     {
-      "type": "session_start",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-16 03:03:11",
-      "narrative": "proactive — Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass."
-    },
-    {
       "type": "message_received",
       "agent": "Krishna",
       "agent_id": "krishna",
@@ -2652,6 +2645,16 @@ var MC_DATA = {
     }
   ],
   "pulse": [
+    {
+      "id": 1971,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=5",
+      "tags": null,
+      "created_at": "2026-02-23 14:28:28",
+      "agent_name": "Dwarka"
+    },
     {
       "id": 1970,
       "kind": "session_end",
@@ -3771,16 +3774,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-16 03:49:23",
       "agent_name": "Dwarka"
-    },
-    {
-      "id": 1858,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "proactive",
-      "summary": "Proactive check. All routines already ran today. No unread from Sasi. No queued work. Clean pass.",
-      "tags": null,
-      "created_at": "2026-02-16 03:03:11",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -4476,7 +4469,7 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-23",
-      "count": 13
+      "count": 14
     }
   ],
   "agent_activity": {
@@ -4669,13 +4662,12 @@ var MC_DATA = {
     "agents_active": 1,
     "total_sessions": 142,
     "total_events": 113,
-    "events_today": 13,
+    "events_today": 14,
     "conversations_total": 3,
     "memories_total": 52,
     "insights_total": 4,
     "events_by_kind": {
-      "session_start": 6,
-      "heartbeat": 16,
+      "heartbeat": 17,
       "message_received": 1,
       "step_completed": 8,
       "message_sent": 3,
@@ -4684,6 +4676,7 @@ var MC_DATA = {
       "link_received": 2,
       "link_analyzed": 1,
       "message_responded": 1,
+      "session_start": 5,
       "task_completed": 3,
       "session_plan": 16,
       "mission_completed": 2,
@@ -4704,8 +4697,8 @@ var MC_DATA = {
       "conversation": 1
     },
     "events_by_agent": {
-      "krishna": 85,
-      "dwarka": 16,
+      "dwarka": 17,
+      "krishna": 84,
       "narada": 3,
       "vishwa": 4,
       "hanuman": 3,
