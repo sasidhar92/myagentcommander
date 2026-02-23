@@ -1,6 +1,6 @@
 var MC_DATA = {
   "meta": {
-    "updated_at": "2026-02-19T14:54:49.083Z",
+    "updated_at": "2026-02-23T01:02:30.789Z",
     "daemon_status": "online"
   },
   "agents": [
@@ -15,7 +15,7 @@ var MC_DATA = {
       "tone": "Strategic, audience-aware, bold",
       "quirk": "Thinks in campaigns. \"The market wants this.\"",
       "model": "claude-sonnet-4-6",
-      "last_event_summary": "projects/ideas/monetization-gtm.md",
+      "last_event_summary": "10 ready-now + 10 post-launch. Threads: vending-machine mindset, zero-LLM heartbeat deep-dive, named agent breakdown, SQLite architecture, solo company narrative. Standout: thread 11 (named agents) + thread 20 (solo company = new category). File: projects/myagentcommander/content/twitter-arsenal.md",
       "last_event_narrative": "Chanakya wrote GTM strategy analysis.",
       "event_count_24h": 0,
       "event_count_total": 4,
@@ -23,22 +23,6 @@ var MC_DATA = {
       "total_sessions": 3,
       "last_active": "2026-02-15 14:07:31",
       "sparkline": [
-        {
-          "date": "2026-02-13",
-          "count": 0
-        },
-        {
-          "date": "2026-02-14",
-          "count": 0
-        },
-        {
-          "date": "2026-02-15",
-          "count": 3
-        },
-        {
-          "date": "2026-02-16",
-          "count": 0
-        },
         {
           "date": "2026-02-17",
           "count": 0
@@ -49,6 +33,22 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-19",
+          "count": 1
+        },
+        {
+          "date": "2026-02-20",
+          "count": 0
+        },
+        {
+          "date": "2026-02-21",
+          "count": 0
+        },
+        {
+          "date": "2026-02-22",
+          "count": 0
+        },
+        {
+          "date": "2026-02-23",
           "count": 0
         }
       ]
@@ -64,30 +64,14 @@ var MC_DATA = {
       "tone": "Vigilant, protective, thorough",
       "quirk": "Catches what others miss. \"I found a vulnerability.\"",
       "model": "claude-sonnet-4-6",
-      "last_event_summary": "Report at research/link-analysis/voxyz-openclaw-hanuman.md",
+      "last_event_summary": "CRITICAL: eval \"$PARSED\" line 218 — arbitrary code execution risk on customer machine. HIGH: SQL/shell injection in generated message.js + dispatch.sh; hardcoded personal phone number in tools/dwarka/setup.sh. MEDIUM: inconsistent SQL escaping across auto-insights.js/memory-context.js/health.js; WORK_DIR path traversal; config.json world-readable. Risk: 6.5/10. Report: projects/myagentcommander/research/security-audit.md",
       "last_event_narrative": null,
       "event_count_24h": 0,
-      "event_count_total": 2,
+      "event_count_total": 3,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-09 03:01:42",
       "sparkline": [
-        {
-          "date": "2026-02-13",
-          "count": 0
-        },
-        {
-          "date": "2026-02-14",
-          "count": 0
-        },
-        {
-          "date": "2026-02-15",
-          "count": 0
-        },
-        {
-          "date": "2026-02-16",
-          "count": 2
-        },
         {
           "date": "2026-02-17",
           "count": 0
@@ -98,6 +82,22 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-19",
+          "count": 1
+        },
+        {
+          "date": "2026-02-20",
+          "count": 0
+        },
+        {
+          "date": "2026-02-21",
+          "count": 0
+        },
+        {
+          "date": "2026-02-22",
+          "count": 0
+        },
+        {
+          "date": "2026-02-23",
           "count": 0
         }
       ]
@@ -113,30 +113,14 @@ var MC_DATA = {
       "tone": "Strategic, measured, decisive",
       "quirk": "Frames everything as chess moves. \"The position is clear.\"",
       "model": "claude-sonnet-4-6",
-      "last_event_summary": "Proactive",
+      "last_event_summary": "Proposals created + auto-approved: M12 (security audit) + M13 (MAC content arsenal). M11 Step 24 retroactively marked succeeded. Hanuman: 1 CRITICAL, 3 HIGH, 5 MEDIUM, 4 LOW findings. Sasi notified. Vidura: 3 blog posts ready. Chanakya: 20 Twitter posts ready.",
       "last_event_narrative": "Krishna completed proactive routines and built health dashboard.",
-      "event_count_24h": 10,
-      "event_count_total": 209,
+      "event_count_24h": 0,
+      "event_count_total": 193,
       "is_active": true,
-      "total_sessions": 118,
+      "total_sessions": 124,
       "last_active": "2026-02-15 16:28:55",
       "sparkline": [
-        {
-          "date": "2026-02-13",
-          "count": 45
-        },
-        {
-          "date": "2026-02-14",
-          "count": 0
-        },
-        {
-          "date": "2026-02-15",
-          "count": 58
-        },
-        {
-          "date": "2026-02-16",
-          "count": 16
-        },
         {
           "date": "2026-02-17",
           "count": 30
@@ -147,6 +131,22 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-19",
+          "count": 19
+        },
+        {
+          "date": "2026-02-20",
+          "count": 0
+        },
+        {
+          "date": "2026-02-21",
+          "count": 0
+        },
+        {
+          "date": "2026-02-22",
+          "count": 0
+        },
+        {
+          "date": "2026-02-23",
           "count": 0
         }
       ]
@@ -162,30 +162,14 @@ var MC_DATA = {
       "tone": "Curious, data-driven, well-traveled",
       "quirk": "Always knows something relevant. \"I've seen this pattern before.\"",
       "model": "claude-sonnet-4-6",
-      "last_event_summary": "Design doc at research/imessage-group-multi-user.md. Recommends Option B: Hybrid dispatcher with per-user Krishna instances. Covers: chat.db handle_id sender attribution, users table, per-user workspaces, workspace isolation, privacy, conflict resolution.",
+      "last_event_summary": "Narada designing schema for unified knowledge layer. Fields: intent, audience_segment, positioning_thesis, outcome, cycle_time. Output: projects/ideas/knowledge-layer-schema.md. Running as background agent.",
       "last_event_narrative": "Narada wrote monetization market research report.",
       "event_count_24h": 0,
-      "event_count_total": 8,
+      "event_count_total": 6,
       "is_active": false,
       "total_sessions": 5,
       "last_active": "2026-02-15 14:09:16",
       "sparkline": [
-        {
-          "date": "2026-02-13",
-          "count": 0
-        },
-        {
-          "date": "2026-02-14",
-          "count": 0
-        },
-        {
-          "date": "2026-02-15",
-          "count": 3
-        },
-        {
-          "date": "2026-02-16",
-          "count": 2
-        },
         {
           "date": "2026-02-17",
           "count": 0
@@ -196,6 +180,22 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-19",
+          "count": 1
+        },
+        {
+          "date": "2026-02-20",
+          "count": 0
+        },
+        {
+          "date": "2026-02-21",
+          "count": 0
+        },
+        {
+          "date": "2026-02-22",
+          "count": 0
+        },
+        {
+          "date": "2026-02-23",
           "count": 0
         }
       ]
@@ -211,30 +211,14 @@ var MC_DATA = {
       "tone": "Clear, persuasive, measured",
       "quirk": "Words matter. \"Let me find the right way to say this.\"",
       "model": "claude-sonnet-4-6",
-      "last_event_summary": null,
+      "last_event_summary": "Post 1: Claude agent tutorial (HowTo JSON-LD, ~1050 words). Post 2: Claude-native vs API-first for indie builders (~1100w). Post 3: Anatomy of a useful AI agent (~1200w, publish first — credibility anchor). All with SEO meta, JSON-LD schema, internal linking strategy. File: projects/myagentcommander/content/blog-posts.md",
       "last_event_narrative": null,
       "event_count_24h": 0,
-      "event_count_total": 0,
+      "event_count_total": 1,
       "is_active": false,
       "total_sessions": 2,
       "last_active": "2026-02-09 21:35:10",
       "sparkline": [
-        {
-          "date": "2026-02-13",
-          "count": 0
-        },
-        {
-          "date": "2026-02-14",
-          "count": 0
-        },
-        {
-          "date": "2026-02-15",
-          "count": 0
-        },
-        {
-          "date": "2026-02-16",
-          "count": 0
-        },
         {
           "date": "2026-02-17",
           "count": 0
@@ -245,6 +229,22 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-19",
+          "count": 1
+        },
+        {
+          "date": "2026-02-20",
+          "count": 0
+        },
+        {
+          "date": "2026-02-21",
+          "count": 0
+        },
+        {
+          "date": "2026-02-22",
+          "count": 0
+        },
+        {
+          "date": "2026-02-23",
           "count": 0
         }
       ]
@@ -261,29 +261,13 @@ var MC_DATA = {
       "quirk": "Thinks in architecture. \"Let me build it right.\"",
       "model": "claude-sonnet-4-6",
       "last_event_summary": "Report at research/link-analysis/voxyz-openclaw-vishwa.md",
-      "last_event_narrative": "Vishwa completed file audit of brain/ directory.",
+      "last_event_narrative": null,
       "event_count_24h": 0,
-      "event_count_total": 4,
+      "event_count_total": 2,
       "is_active": false,
       "total_sessions": 1,
       "last_active": "2026-02-11 18:10:00",
       "sparkline": [
-        {
-          "date": "2026-02-13",
-          "count": 0
-        },
-        {
-          "date": "2026-02-14",
-          "count": 0
-        },
-        {
-          "date": "2026-02-15",
-          "count": 0
-        },
-        {
-          "date": "2026-02-16",
-          "count": 2
-        },
         {
           "date": "2026-02-17",
           "count": 0
@@ -294,6 +278,22 @@ var MC_DATA = {
         },
         {
           "date": "2026-02-19",
+          "count": 0
+        },
+        {
+          "date": "2026-02-20",
+          "count": 0
+        },
+        {
+          "date": "2026-02-21",
+          "count": 0
+        },
+        {
+          "date": "2026-02-22",
+          "count": 0
+        },
+        {
+          "date": "2026-02-23",
           "count": 0
         }
       ]
@@ -1599,6 +1599,66 @@ var MC_DATA = {
       "ended_at": null,
       "duration_sec": null,
       "summary": "initiative task"
+    },
+    {
+      "id": "session-db-131",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "conversation",
+      "started_at": "2026-02-19 14:54:49",
+      "ended_at": "2026-02-19 15:03:36",
+      "duration_sec": null,
+      "summary": "Orphaned — conversation standup. Work item 106 still processing."
+    },
+    {
+      "id": "session-db-132",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "daily_digest",
+      "started_at": "2026-02-19 14:56:51",
+      "ended_at": "2026-02-19T14:57:44Z",
+      "duration_sec": null,
+      "summary": "daily_digest task"
+    },
+    {
+      "id": "session-db-133",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "standing_order",
+      "started_at": "2026-02-19 14:57:51",
+      "ended_at": "2026-02-19 15:02:47",
+      "duration_sec": 296,
+      "summary": "routine check 133. Advanced M11 (Unified Knowledge Layer). Spawned Narada (background) for Step 24 — schema design for knowledge-layer-schema.md. run ends before Narada completes — schema will be ready for Vishwa Step 25 in next."
+    },
+    {
+      "id": "session-db-134",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "proactive",
+      "started_at": "2026-02-19 14:59:51",
+      "ended_at": "2026-02-19T15:04:59Z",
+      "duration_sec": 293,
+      "summary": "Proactive check: M11 Step 24 (schema) completed directly. stale processes/work items cleaned. Daily routine ran. M11 Step 25 queued for Vishwa."
+    },
+    {
+      "id": "session-db-135",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "initiative",
+      "started_at": "2026-02-19 15:01:52",
+      "ended_at": "2026-02-19T15:11:05Z",
+      "duration_sec": null,
+      "summary": "initiative task"
+    },
+    {
+      "id": "session-db-136",
+      "agent": "krishna",
+      "agent_name": "Krishna",
+      "trigger": "initiative",
+      "started_at": "2026-02-19 15:03:31",
+      "ended_at": "2026-02-19 15:10:50",
+      "duration_sec": 439,
+      "summary": "Initiative 135. Proposals: M12 (security audit, Hanuman) + M13 (MAC content arsenal, Vidura + Chanakya). M11 Step 24 status fixed. CRITICAL security finding in setup.sh — eval PARSED line 218 — escalated to Sasi. Blog posts (3) + Twitter posts (20) ready for MAC launch. M12 + M13 succeeded."
     }
   ],
   "tasks": [
@@ -1810,170 +1870,47 @@ var MC_DATA = {
           "at": "2026-02-18 14:36:39"
         }
       ]
+    },
+    {
+      "id": "task-m12",
+      "title": "Security Audit: setup.sh Customer Package (M10 Retry)",
+      "description": "Mission from krishna",
+      "status": "DONE",
+      "assignee": "krishna",
+      "tags": [
+        "mission"
+      ],
+      "created_at": "2026-02-19 15:04:06",
+      "updated_at": "2026-02-19 15:04:06",
+      "history": [
+        {
+          "status": "DONE",
+          "by": "Krishna",
+          "at": "2026-02-19 15:04:06"
+        }
+      ]
+    },
+    {
+      "id": "task-m13",
+      "title": "MAC GTM Content Arsenal — Blog Posts + Twitter Threads",
+      "description": "Mission from krishna",
+      "status": "DONE",
+      "assignee": "krishna",
+      "tags": [
+        "mission"
+      ],
+      "created_at": "2026-02-19 15:04:06",
+      "updated_at": "2026-02-19 15:04:06",
+      "history": [
+        {
+          "status": "DONE",
+          "by": "Krishna",
+          "at": "2026-02-19 15:04:06"
+        }
+      ]
     }
   ],
   "feed": [
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 01:55:34",
-      "narrative": "Krishna planned parallel tasks: Twitter refinement and SwiftUI research."
-    },
-    {
-      "type": "teammate_spawned",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 01:56:31",
-      "narrative": "Krishna assigned Chanakya to refine Twitter posts for immediate posting."
-    },
-    {
-      "type": "teammate_spawned",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 01:56:31",
-      "narrative": "Krishna assigned Narada to research SwiftUI patterns for iOS 17+."
-    },
-    {
-      "type": "task_updated",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 01:57:22",
-      "narrative": "Krishna fixed conversation trigger priority to prevent starvation."
-    },
-    {
-      "type": "task_updated",
-      "agent": "Chanakya",
-      "agent_id": "chanakya",
-      "timestamp": "2026-02-12 02:01:15",
-      "narrative": "Chanakya split Twitter posts into 14 ready-now and 4 post-domain groups."
-    },
-    {
-      "type": "task_updated",
-      "agent": "Narada",
-      "agent_id": "narada",
-      "timestamp": "2026-02-12 02:01:15",
-      "narrative": "Narada wrote a 1454-line SwiftUI patterns guide."
-    },
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 02:02:26",
-      "narrative": "Krishna completed Twitter posts, SwiftUI guide, and conversation trigger fix."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 02:57:10",
-      "narrative": "Sasi asked Krishna about security implications of skip-permissions."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 03:04:42",
-      "narrative": "Krishna wrote detailed security report for skip-permissions mode."
-    },
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 03:04:48",
-      "narrative": "Krishna completed the security report."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 03:44:35",
-      "narrative": "Krishna advised Sasi on security hardening best practices."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 03:45:31",
-      "narrative": "Krishna sent the security hardening plan to Sasi."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 14:30:22",
-      "narrative": "Krishna archived 7 Jarvis daemon files and consolidated lessons."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 14:30:24",
-      "narrative": "Krishna added dedup logic to prevent duplicate message responses."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 15:13:41",
-      "narrative": "Krishna deployed daily digest trigger and updated initiative prompt."
-    },
-    {
-      "type": "comment",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 15:13:57",
-      "narrative": "Krishna sent the daily digest to Sasi via iMessage."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 15:30:39",
-      "narrative": "Sasi directed Krishna to focus on Claude Max features for Dwarka."
-    },
-    {
-      "type": "research",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 15:32:35",
-      "narrative": "Krishna researched 6 Claude Code features and sent recommendations to Sasi."
-    },
-    {
-      "type": "session_end",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 15:34:19",
-      "narrative": "Krishna completed research on Claude Code features for Dwarka upgrades."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 16:14:21",
-      "narrative": "Sasi asked Krishna about sub-agents vs agent teams."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 16:14:36",
-      "narrative": "Krishna explained differences between sub-agents and agent teams to Sasi."
-    },
-    {
-      "type": "message_received",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 16:15:16",
-      "narrative": "Sasi shared full system upgrade priorities with Krishna."
-    },
-    {
-      "type": "message_sent",
-      "agent": "Krishna",
-      "agent_id": "krishna",
-      "timestamp": "2026-02-12 16:15:44",
-      "narrative": "Krishna sent the full Dwarka v2 upgrade roadmap to Sasi."
-    },
     {
       "type": "session_start",
       "agent": "Krishna",
@@ -3212,9 +3149,410 @@ var MC_DATA = {
       "agent_id": "krishna",
       "timestamp": "2026-02-18 14:38:23",
       "narrative": "Proactive"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 14:57:35",
+      "narrative": "Daily Digest Sent — Feb 19 — Morning briefing sent via iMessage. Covered: M11 (Knowledge Layer) launched, MAC GTM overdue (blocked on Sasi), M9/M10 retry planned."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 14:59:03",
+      "narrative": "Standing order M11 Knowledge Layer Schema — Agenda: Advance M11 Unified Knowledge Layer. Spawn Narada (Step 24) to design schema for queryable knowledge layer. Sequential dep: Vishwa Step 25 after schema complete."
+    },
+    {
+      "type": "teammate_spawned",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 14:59:08",
+      "narrative": "Narada spawned — M11 Step 24 (Knowledge Layer Schema) — Task: Model schema for unified knowledge layer. Fields: intent, audience segment, positioning thesis, outcome, cycle time. Query patterns: by segment, by thesis, by agent. Output: projects/ideas/knowledge-layer-schema.md"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:00:55",
+      "narrative": "run 133 checkpoint — Narada schema work in progress — M11 Step 24 running. Narada designing knowledge-layer-schema.md. Will complete async. Step 25 (Vishwa build) queued for next."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:01:56",
+      "narrative": "Proactive M11 schema retry + cleanup — Agenda: 1) Run proactive check routine, 2) Run daily routine, 3) Design M11 knowledge layer schema directly (Narada step 24 failed), 4) Queue Vishwa for step 25, 5) Clean stale work items + stale processes"
+    },
+    {
+      "type": "comment",
+      "agent": "Narada",
+      "agent_id": "narada",
+      "timestamp": "2026-02-19 15:02:41",
+      "narrative": "M11 Step 24 — Knowledge Layer Schema (Narada) — Narada designing schema for unified knowledge layer. Fields: intent, audience_segment, positioning_thesis, outcome, cycle_time. Output: projects/ideas/knowledge-layer-schema.md. Running as background agent."
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:02:51",
+      "narrative": "Standing order M11 Step 24 in flight (Narada background). Knowledge layer schema will be ready for Vishwa (Step 25) in next."
+    },
+    {
+      "type": "task_updated",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:03:23",
+      "narrative": "M11 Step 24 complete — Knowledge Layer Schema — Schema designed directly by Krishna. Tables: knowledge_items + knowledge_links. Fields: intent, audience_segment, positioning_thesis, outcome, cycle_time_days, confidence. 4 query patterns documented. Saved to projects/ideas/knowledge-layer-schema.md."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:03:39",
+      "narrative": "Initiative plan — Agenda: 1) Fix M11 Step 24 status (schema was written directly by Krishna in 134), 2) Create + auto-approve Proposal: setup.sh security audit (Hanuman, audit_security), 3) Create + auto-approve Proposal: MAC GTM content arsenal (Vidura + Chanakya, draft_content)"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:03:44",
+      "narrative": "Proactive Check + Daily Routine — Proactive check: M11 Step 24 completed (schema). Stale work items 106/110 closed. runs 131/133 closed. Daily routine: memory distillation ran (0 new memories). MAC GTM OVERDUE (>12 days, target Feb 20 passed). M11 Step 25 queued for Vishwa."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:19",
+      "narrative": "Proposal 4: Security Audit setup.sh (M10 retry) — audit_security step — Hanuman to scan setup.sh for OWASP vulns, secrets, unsafe patterns"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:19",
+      "narrative": "Proposal 4 auto-approved — audit_security in auto_approve list → Mission 12 created"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:19",
+      "narrative": "Proposal 5: MAC GTM Content Arsenal — Two draft_content steps — Vidura (3 blog posts) + Chanakya (20 Twitter posts)"
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:19",
+      "narrative": "Proposal 5 auto-approved — draft_content in auto_approve list → Mission 13 created"
+    },
+    {
+      "type": "task_created",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:19",
+      "narrative": "M12: Security Audit setup.sh — Hanuman security audit of customer-facing setup.sh package"
+    },
+    {
+      "type": "task_created",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:19",
+      "narrative": "M13: MAC GTM Content Arsenal — Vidura + Chanakya parallel content creation for myagentcommander.com launch"
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:04:49",
+      "narrative": "Proactive M11 Step 24 schema done. stale processes+work items cleaned. Daily routine + memory distillation ran. M11 Step 25 (Vishwa build) queued."
+    },
+    {
+      "type": "comment",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:06:17",
+      "narrative": "Initiative 135 checkpoint — M11 Step 24 marked succeeded (schema at projects/ideas/knowledge-layer-schema.md). Proposals 4+5 created and auto-approved. M12 (security audit) + M13 (MAC content) created. Hanuman + Vidura + Chanakya spawned in parallel. Waiting on agent results."
+    },
+    {
+      "type": "task_updated",
+      "agent": "Chanakya",
+      "agent_id": "chanakya",
+      "timestamp": "2026-02-19 15:08:13",
+      "narrative": "M13: Twitter Arsenal complete (20 posts) — 10 ready-now + 10 post-launch. Threads: vending-machine mindset, zero-LLM heartbeat deep-dive, named agent breakdown, SQLite architecture, solo company narrative. Standout: thread 11 (named agents) + thread 20 (solo company = new category). File: projects/myagentcommander/content/twitter-arsenal.md"
+    },
+    {
+      "type": "task_updated",
+      "agent": "Vidura",
+      "agent_id": "vidura",
+      "timestamp": "2026-02-19 15:09:15",
+      "narrative": "M13: Blog Arsenal complete (3 posts) — Post 1: Claude agent tutorial (HowTo JSON-LD, ~1050 words). Post 2: Claude-native vs API-first for indie builders (~1100w). Post 3: Anatomy of a useful AI agent (~1200w, publish first — credibility anchor). All with SEO meta, JSON-LD schema, internal linking strategy. File: projects/myagentcommander/content/blog-posts.md"
+    },
+    {
+      "type": "security_scan",
+      "agent": "Hanuman",
+      "agent_id": "hanuman",
+      "timestamp": "2026-02-19 15:09:54",
+      "narrative": "M12: setup.sh Security Audit — 1 CRITICAL, 3 HIGH — CRITICAL: eval \"$PARSED\" line 218 — arbitrary code execution risk on customer machine. HIGH: SQL/shell injection in generated message.js + dispatch.sh; hardcoded personal phone number in tools/dwarka/setup.sh. MEDIUM: inconsistent SQL escaping across auto-insights.js/memory-context.js/health.js; WORK_DIR path traversal; config.json world-readable. Risk: 6.5/10. Report: projects/myagentcommander/research/security-audit.md"
+    },
+    {
+      "type": "message_sent",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:10:17",
+      "narrative": "Escalated CRITICAL security finding to Sasi — eval PARSED (line 218) = arbitrary code execution. SQL/shell injection in generated files. Hardcoded personal phone in setup.sh. Full report at projects/myagentcommander/research/security-audit.md"
+    },
+    {
+      "type": "session_end",
+      "agent": "Krishna",
+      "agent_id": "krishna",
+      "timestamp": "2026-02-19 15:10:57",
+      "narrative": "Initiative Proposals created + auto-approved: M12 (security audit) + M13 (MAC content arsenal). M11 Step 24 retroactively marked succeeded. Hanuman: 1 CRITICAL, 3 HIGH, 5 MEDIUM, 4 LOW findings. Sasi notified. Vidura: 3 blog posts ready. Chanakya: 20 Twitter posts ready."
     }
   ],
   "pulse": [
+    {
+      "id": 1958,
+      "kind": "heartbeat",
+      "agent_id": "dwarka",
+      "title": "Heartbeat — work enqueued",
+      "summary": "triggers_checked=6 enqueued=5",
+      "tags": null,
+      "created_at": "2026-02-23 01:02:30",
+      "agent_name": "Dwarka"
+    },
+    {
+      "id": 1957,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "Initiative",
+      "summary": "Proposals created + auto-approved: M12 (security audit) + M13 (MAC content arsenal). M11 Step 24 retroactively marked succeeded. Hanuman: 1 CRITICAL, 3 HIGH, 5 MEDIUM, 4 LOW findings. Sasi notified. Vidura: 3 blog posts ready. Chanakya: 20 Twitter posts ready.",
+      "tags": null,
+      "created_at": "2026-02-19 15:10:57",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1956,
+      "kind": "message_sent",
+      "agent_id": "krishna",
+      "title": "Escalated CRITICAL security finding to Sasi",
+      "summary": "eval PARSED (line 218) = arbitrary code execution. SQL/shell injection in generated files. Hardcoded personal phone in setup.sh. Full report at projects/myagentcommander/research/security-audit.md",
+      "tags": null,
+      "created_at": "2026-02-19 15:10:17",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1955,
+      "kind": "security_scan",
+      "agent_id": "hanuman",
+      "title": "M12: setup.sh Security Audit — 1 CRITICAL, 3 HIGH",
+      "summary": "CRITICAL: eval \"$PARSED\" line 218 — arbitrary code execution risk on customer machine. HIGH: SQL/shell injection in generated message.js + dispatch.sh; hardcoded personal phone number in tools/dwarka/setup.sh. MEDIUM: inconsistent SQL escaping across auto-insights.js/memory-context.js/health.js; WORK_DIR path traversal; config.json world-readable. Risk: 6.5/10. Report: projects/myagentcommander/research/security-audit.md",
+      "tags": "[\"security\",\"critical\"]",
+      "created_at": "2026-02-19 15:09:54",
+      "agent_name": "Hanuman"
+    },
+    {
+      "id": 1954,
+      "kind": "step_completed",
+      "agent_id": "vidura",
+      "title": "M13: Blog Arsenal complete (3 posts)",
+      "summary": "Post 1: Claude agent tutorial (HowTo JSON-LD, ~1050 words). Post 2: Claude-native vs API-first for indie builders (~1100w). Post 3: Anatomy of a useful AI agent (~1200w, publish first — credibility anchor). All with SEO meta, JSON-LD schema, internal linking strategy. File: projects/myagentcommander/content/blog-posts.md",
+      "tags": null,
+      "created_at": "2026-02-19 15:09:15",
+      "agent_name": "Vidura"
+    },
+    {
+      "id": 1953,
+      "kind": "step_completed",
+      "agent_id": "chanakya",
+      "title": "M13: Twitter Arsenal complete (20 posts)",
+      "summary": "10 ready-now + 10 post-launch. Threads: vending-machine mindset, zero-LLM heartbeat deep-dive, named agent breakdown, SQLite architecture, solo company narrative. Standout: thread 11 (named agents) + thread 20 (solo company = new category). File: projects/myagentcommander/content/twitter-arsenal.md",
+      "tags": null,
+      "created_at": "2026-02-19 15:08:13",
+      "agent_name": "Chanakya"
+    },
+    {
+      "id": 1952,
+      "kind": "state_checkpoint",
+      "agent_id": "krishna",
+      "title": "Initiative 135 checkpoint",
+      "summary": "M11 Step 24 marked succeeded (schema at projects/ideas/knowledge-layer-schema.md). Proposals 4+5 created and auto-approved. M12 (security audit) + M13 (MAC content) created. Hanuman + Vidura + Chanakya spawned in parallel. Waiting on agent results.",
+      "tags": null,
+      "created_at": "2026-02-19 15:06:17",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1951,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "Proactive",
+      "summary": "M11 Step 24 schema done. stale processes+work items cleaned. Daily routine + memory distillation ran. M11 Step 25 (Vishwa build) queued.",
+      "tags": "[\"proactive\",\"session_end\"]",
+      "created_at": "2026-02-19 15:04:49",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1950,
+      "kind": "mission_created",
+      "agent_id": "krishna",
+      "title": "M13: MAC GTM Content Arsenal",
+      "summary": "Vidura + Chanakya parallel content creation for myagentcommander.com launch",
+      "tags": null,
+      "created_at": "2026-02-19 15:04:19",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1949,
+      "kind": "mission_created",
+      "agent_id": "krishna",
+      "title": "M12: Security Audit setup.sh",
+      "summary": "Hanuman security audit of customer-facing setup.sh package",
+      "tags": null,
+      "created_at": "2026-02-19 15:04:19",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1948,
+      "kind": "proposal_approved",
+      "agent_id": "krishna",
+      "title": "Proposal 5 auto-approved",
+      "summary": "draft_content in auto_approve list → Mission 13 created",
+      "tags": null,
+      "created_at": "2026-02-19 15:04:19",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1947,
+      "kind": "proposal_created",
+      "agent_id": "krishna",
+      "title": "Proposal 5: MAC GTM Content Arsenal",
+      "summary": "Two draft_content steps — Vidura (3 blog posts) + Chanakya (20 Twitter posts)",
+      "tags": null,
+      "created_at": "2026-02-19 15:04:19",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1946,
+      "kind": "proposal_approved",
+      "agent_id": "krishna",
+      "title": "Proposal 4 auto-approved",
+      "summary": "audit_security in auto_approve list → Mission 12 created",
+      "tags": null,
+      "created_at": "2026-02-19 15:04:19",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1945,
+      "kind": "proposal_created",
+      "agent_id": "krishna",
+      "title": "Proposal 4: Security Audit setup.sh (M10 retry)",
+      "summary": "audit_security step — Hanuman to scan setup.sh for OWASP vulns, secrets, unsafe patterns",
+      "tags": null,
+      "created_at": "2026-02-19 15:04:19",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1944,
+      "kind": "routine_completed",
+      "agent_id": "krishna",
+      "title": "Proactive Check + Daily Routine — run 134",
+      "summary": "Proactive check: M11 Step 24 completed (schema). Stale work items 106/110 closed. runs 131/133 closed. Daily routine: memory distillation ran (0 new memories). MAC GTM OVERDUE (>12 days, target Feb 20 passed). M11 Step 25 queued for Vishwa.",
+      "tags": "[\"routine\",\"proactive\",\"daily\"]",
+      "created_at": "2026-02-19 15:03:44",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1943,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "Initiative plan",
+      "summary": "Agenda: 1) Fix M11 Step 24 status (schema was written directly by Krishna in 134), 2) Create + auto-approve Proposal: setup.sh security audit (Hanuman, audit_security), 3) Create + auto-approve Proposal: MAC GTM content arsenal (Vidura + Chanakya, draft_content)",
+      "tags": "'{\"tags\":[\"initiative\",\"session_plan\"]}'",
+      "created_at": "2026-02-19 15:03:39",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1942,
+      "kind": "step_completed",
+      "agent_id": "krishna",
+      "title": "M11 Step 24 complete — Knowledge Layer Schema",
+      "summary": "Schema designed directly by Krishna. Tables: knowledge_items + knowledge_links. Fields: intent, audience_segment, positioning_thesis, outcome, cycle_time_days, confidence. 4 query patterns documented. Saved to projects/ideas/knowledge-layer-schema.md.",
+      "tags": "[\"m11\",\"schema\",\"knowledge-layer\"]",
+      "created_at": "2026-02-19 15:03:23",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1941,
+      "kind": "session_end",
+      "agent_id": "krishna",
+      "title": "Standing order",
+      "summary": "M11 Step 24 in flight (Narada background). Knowledge layer schema will be ready for Vishwa (Step 25) in next.",
+      "tags": "[\"standing_order\",\"m11\"]",
+      "created_at": "2026-02-19 15:02:51",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1940,
+      "kind": "step_started",
+      "agent_id": "narada",
+      "title": "M11 Step 24 — Knowledge Layer Schema (Narada)",
+      "summary": "Narada designing schema for unified knowledge layer. Fields: intent, audience_segment, positioning_thesis, outcome, cycle_time. Output: projects/ideas/knowledge-layer-schema.md. Running as background agent.",
+      "tags": "[\"m11\",\"research\",\"schema\",\"knowledge-layer\"]",
+      "created_at": "2026-02-19 15:02:41",
+      "agent_name": "Narada"
+    },
+    {
+      "id": 1939,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "Proactive M11 schema retry + cleanup",
+      "summary": "Agenda: 1) Run proactive check routine, 2) Run daily routine, 3) Design M11 knowledge layer schema directly (Narada step 24 failed), 4) Queue Vishwa for step 25, 5) Clean stale work items + stale processes",
+      "tags": "[\"proactive\",\"m11\",\"routine\"]",
+      "created_at": "2026-02-19 15:01:56",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1938,
+      "kind": "state_checkpoint",
+      "agent_id": "krishna",
+      "title": "run 133 checkpoint — Narada schema work in progress",
+      "summary": "M11 Step 24 running. Narada designing knowledge-layer-schema.md. Will complete async. Step 25 (Vishwa build) queued for next.",
+      "tags": "[\"m11\",\"checkpoint\"]",
+      "created_at": "2026-02-19 15:00:55",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1937,
+      "kind": "teammate_spawned",
+      "agent_id": "krishna",
+      "title": "Narada spawned — M11 Step 24 (Knowledge Layer Schema)",
+      "summary": "Task: Model schema for unified knowledge layer. Fields: intent, audience segment, positioning thesis, outcome, cycle time. Query patterns: by segment, by thesis, by agent. Output: projects/ideas/knowledge-layer-schema.md",
+      "tags": "[\"spawn\",\"narada\",\"m11\",\"research\"]",
+      "created_at": "2026-02-19 14:59:08",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1936,
+      "kind": "session_plan",
+      "agent_id": "krishna",
+      "title": "Standing order M11 Knowledge Layer Schema",
+      "summary": "Agenda: Advance M11 Unified Knowledge Layer. Spawn Narada (Step 24) to design schema for queryable knowledge layer. Sequential dep: Vishwa Step 25 after schema complete.",
+      "tags": "[\"standing_order\",\"m11\",\"knowledge-layer\"]",
+      "created_at": "2026-02-19 14:59:03",
+      "agent_name": "Krishna"
+    },
+    {
+      "id": 1935,
+      "kind": "daily_digest",
+      "agent_id": "krishna",
+      "title": "Daily Digest Sent — Feb 19",
+      "summary": "Morning briefing sent via iMessage. Covered: M11 (Knowledge Layer) launched, MAC GTM overdue (blocked on Sasi), M9/M10 retry planned.",
+      "tags": "[\"digest\",\"imessage\"]",
+      "created_at": "2026-02-19 14:57:35",
+      "agent_name": "Krishna"
+    },
     {
       "id": 1934,
       "kind": "heartbeat",
@@ -4934,586 +5272,6 @@ var MC_DATA = {
       "tags": null,
       "created_at": "2026-02-12 15:13:24",
       "agent_name": "Dwarka"
-    },
-    {
-      "id": 1634,
-      "kind": "build",
-      "agent_id": "krishna",
-      "title": "Heartbeat dedup — prevent duplicate message responses",
-      "summary": "Added pending/processing check before enqueuing triggers. Prevents race where multiple heartbeats enqueue same trigger. Deployed to source + daemon copy.",
-      "tags": null,
-      "created_at": "2026-02-12 14:30:24",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1633,
-      "kind": "maintenance",
-      "agent_id": "krishna",
-      "title": "Codebase cleanup — audit items resolved",
-      "summary": "Archived 7 Jarvis daemon files to docs/archive/, moved root research files, consolidated lessons, added dedup logic to heartbeat, refreshed standing orders",
-      "tags": null,
-      "created_at": "2026-02-12 14:30:22",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1632,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 13:55:16",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1631,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 12:38:09",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1630,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=2",
-      "tags": null,
-      "created_at": "2026-02-12 08:30:13",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1629,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 04:02:21",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1628,
-      "kind": "message_response",
-      "agent_id": "krishna",
-      "title": "Security hardening plan sent",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-12 03:45:31",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1627,
-      "kind": "message_response",
-      "agent_id": "krishna",
-      "title": "Security hardening advice for Sasi",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-12 03:44:35",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1626,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 03:40:02",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1625,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 03:05:59",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1624,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "security report delivered",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-12 03:04:48",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1623,
-      "kind": "mission_completed",
-      "agent_id": "krishna",
-      "title": "Security report written",
-      "summary": "Wrote detailed security report at memory/security-report.md covering Claude Code capabilities with --dangerously-skip-permissions. Live-tested filesystem access, keychain, network, Chrome password DB. Key finding: behavioral rules only, no OS sandbox active. Recommended enabling Seatbelt sandbox.",
-      "tags": "[\"security\",\"report\"]",
-      "created_at": "2026-02-12 03:04:42",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1622,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 03:01:58",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1621,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "Security implications question",
-      "summary": "Sasi asks about security implications of running Dwarka with --dangerously-skip-permissions in brain folder. Wants detailed report on what Claude Code can/cannot access.",
-      "tags": null,
-      "created_at": "2026-02-12 02:57:10",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1620,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 02:56:57",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1619,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 02:26:54",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1618,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "Standing order: Twitter posts refined (14 ready-now), SwiftUI patterns guide (1454 lines), conversation starvation fixed. Dashboard synced.",
-      "tags": "[\"session\"]",
-      "created_at": "2026-02-12 02:02:26",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1617,
-      "kind": "step_completed",
-      "agent_id": "narada",
-      "title": "SwiftUI patterns guide written",
-      "summary": "1454-line comprehensive guide covering: @Observable, SwiftData, NavigationStack, architecture patterns, performance optimization, UI patterns, testing, production patterns. Code examples throughout.",
-      "tags": "[\"research\",\"swiftui\",\"ios\"]",
-      "created_at": "2026-02-12 02:01:15",
-      "agent_name": "Narada"
-    },
-    {
-      "id": 1616,
-      "kind": "step_completed",
-      "agent_id": "chanakya",
-      "title": "Twitter posts refined for immediate posting",
-      "summary": "Split 18 posts into 14 ready-now (no URL needed) and 4 post-after-domain. Added posting strategy with pre/post-domain cadence, timing, hashtag rotation. Post 15 made spicier.",
-      "tags": "[\"myagentcommander\",\"twitter\",\"content\"]",
-      "created_at": "2026-02-12 02:01:15",
-      "agent_name": "Chanakya"
-    },
-    {
-      "id": 1615,
-      "kind": "step_completed",
-      "agent_id": "krishna",
-      "title": "Fixed conversation trigger starvation",
-      "summary": "Conversation trigger had priority 4 (lower than message=1, standing_order=2, proactive=3). Bumped to priority 2 so conversations compete fairly. Updated both source and deployed copies. Existing work_id 33 (standup) also bumped to priority 2.",
-      "tags": "[\"agentic\",\"fix\",\"conversation\"]",
-      "created_at": "2026-02-12 01:57:22",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1614,
-      "kind": "teammate_spawned",
-      "agent_id": "krishna",
-      "title": "Spawned Narada for SwiftUI patterns research",
-      "summary": "Narada researching latest SwiftUI patterns and best practices for iOS 17+. Output: projects/ideas/swiftui-patterns.md. Memory injected.",
-      "tags": "[\"standing_order\",\"narada\",\"research\"]",
-      "created_at": "2026-02-12 01:56:31",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1613,
-      "kind": "teammate_spawned",
-      "agent_id": "krishna",
-      "title": "Spawned Chanakya for Twitter post refinement",
-      "summary": "Chanakya refining 18 Twitter/X posts: splitting into ready-now (no URL) and post-after-domain groups. Tightening copy for immediate posting. Memory injected.",
-      "tags": "[\"standing_order\",\"chanakya\",\"draft_content\"]",
-      "created_at": "2026-02-12 01:56:31",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1612,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "run 51 plan",
-      "summary": "routine check. Two parallel tasks: (1) Refine Twitter/X posts for immediate posting (no-URL posts ready to go), (2) Research SwiftUI patterns for iOS 17+. Both advance standing orders without needing Sasi input.",
-      "tags": "[\"standing_order\",\"plan\"]",
-      "created_at": "2026-02-12 01:55:34",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1611,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-12 01:54:51",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1610,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "Proactive check + daily digest. Dashboard synced. No new work — all items blocked on Sasi.",
-      "tags": null,
-      "created_at": "2026-02-12 00:55:08",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1609,
-      "kind": "daily_digest",
-      "agent_id": "krishna",
-      "title": "Daily digest sent — Feb 11",
-      "summary": "Summarized 6 accomplishments, 4 blocked items. Sent via iMessage.",
-      "tags": null,
-      "created_at": "2026-02-12 00:55:08",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1608,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "",
-      "summary": "Built my-agent-commander-setup: interactive wizard with 4 team presets, auto-generates config/identity/DB/daemon files. Updated landing page. Mission 7 completed.",
-      "tags": "[\"session\"]",
-      "created_at": "2026-02-12 00:10:54",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1607,
-      "kind": "mission_completed",
-      "agent_id": "krishna",
-      "title": "my-agent-commander-setup complete",
-      "summary": "Built full SaaS onboarding tool: interactive setup.sh wizard with 4 team presets (Standard 6, Solo Dev 3, Content 4, Custom), auto-generates all config/DB/daemon/identity files. Updated landing page to showcase configurable agents and setup experience.",
-      "tags": "[\"myagentcommander\",\"setup\",\"saas\",\"milestone\"]",
-      "created_at": "2026-02-12 00:09:36",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1606,
-      "kind": "mission_created",
-      "agent_id": "krishna",
-      "title": "my-agent-commander-setup",
-      "summary": "SaaS onboarding tool that deploys Dwarka agent system on customer Macs. Configurable agents, interactive wizard.",
-      "tags": "[\"myagentcommander\",\"setup\",\"saas\"]",
-      "created_at": "2026-02-12 00:03:02",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1605,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=3",
-      "tags": null,
-      "created_at": "2026-02-12 00:01:39",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1604,
-      "kind": "review_completed",
-      "agent_id": "krishna",
-      "title": "MyAgentCommander YC launch review",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-11 20:45:22",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1603,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "Sasi: YC launch review",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-11 20:42:47",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1602,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-11 20:42:05",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1601,
-      "kind": "task_completed",
-      "agent_id": "krishna",
-      "title": "MyAgentCommander site redesign",
-      "summary": "Unified nav, light theme, consistent footers across all 4 pages",
-      "tags": "[\"myagentcommander\",\"design\",\"navigation\"]",
-      "created_at": "2026-02-11 20:24:31",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1600,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-11 20:18:02",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1599,
-      "kind": "message_response",
-      "agent_id": "krishna",
-      "title": "Acknowledged Sasi: no changes needed",
-      "summary": null,
-      "tags": null,
-      "created_at": "2026-02-11 20:15:17",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1598,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-11 20:15:02",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1597,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Explained standing orders origin to Sasi",
-      "summary": "Clarified that Krishna creates standing orders derived from Sasi goals. Offered to change the process if Sasi wants more control.",
-      "tags": "[\"message\",\"meta\"]",
-      "created_at": "2026-02-11 20:12:38",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1596,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "Sasi asks about standing orders origin",
-      "summary": "Sasi wants to know where standing orders come from and who created them",
-      "tags": "[\"message\",\"meta\"]",
-      "created_at": "2026-02-11 20:12:22",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1595,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-11 20:12:02",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1594,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Explained iOS app ideas origin to Sasi",
-      "summary": "Told Sasi: standing order created by Krishna, not from standup/proposal. Narada executed it in 41. Asked if he wants to keep or remove such self-initiated orders.",
-      "tags": null,
-      "created_at": "2026-02-11 19:56:50",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1593,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Replied: app ideas origin",
-      "summary": "Explained to Sasi that 10 iOS app ideas came from standing orders (tools/daemon/orders.md), not a proposal or standup. Krishna-initiated, Narada-executed during 41.",
-      "tags": "[\"message\",\"sasi\"]",
-      "created_at": "2026-02-11 19:56:46",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1592,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "Sasi asks about iOS app ideas origin",
-      "summary": "Sasi wants to know: who proposed the 10 iOS app ideas task, and whether it came from standup",
-      "tags": null,
-      "created_at": "2026-02-11 19:56:37",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1591,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-11 19:56:00",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1590,
-      "kind": "message_sent",
-      "agent_id": "krishna",
-      "title": "Replied to Sasi: form + privacy + digest",
-      "summary": "Sent 2 iMessages: (1) form storage options with Formspree recommendation + private repo options, (2) current work summary + daily digest commitment",
-      "tags": "[\"message\",\"sasi\"]",
-      "created_at": "2026-02-11 19:53:49",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1589,
-      "kind": "action",
-      "agent_id": "krishna",
-      "title": "Daily digest trigger built",
-      "summary": "Created daily_digest.js trigger (fires once/day after 8AM) + daily_digest.prompt.txt template. Sasi requested daily iMessage briefings.",
-      "tags": "[\"digest\",\"feature\"]",
-      "created_at": "2026-02-11 19:53:47",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1588,
-      "kind": "message_received",
-      "agent_id": "krishna",
-      "title": "Sasi: form data + privacy + daily digest",
-      "summary": "Sasi asks 3 things: (1) where does form data go, (2) dont want public GitHub, (3) wants daily digest via iMessage",
-      "tags": "[\"message\",\"sasi\"]",
-      "created_at": "2026-02-11 19:52:42",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1587,
-      "kind": "heartbeat",
-      "agent_id": "dwarka",
-      "title": "Heartbeat — work enqueued",
-      "summary": "triggers_checked=5 enqueued=1",
-      "tags": null,
-      "created_at": "2026-02-11 19:51:59",
-      "agent_name": "Dwarka"
-    },
-    {
-      "id": 1851,
-      "kind": "task_completed",
-      "agent_id": "narada",
-      "title": "iOS app ideas research complete",
-      "summary": "Brainstormed 10 iOS app ideas for developers. Report at projects/ideas/app-ideas.md",
-      "tags": null,
-      "created_at": "2026-02-11 18:10:00",
-      "agent_name": "Narada"
-    },
-    {
-      "id": 1850,
-      "kind": "task_completed",
-      "agent_id": "vishwa",
-      "title": "File audit complete",
-      "summary": "Audited brain/ for dead files, redundancy, stale content. Report at memory/audit.md",
-      "tags": null,
-      "created_at": "2026-02-11 18:10:00",
-      "agent_name": "Vishwa"
-    },
-    {
-      "id": 1586,
-      "kind": "session_end",
-      "agent_id": "krishna",
-      "title": "Proactive check complete",
-      "summary": "Fixed heartbeat noise in deployed copy (625 events cleaned). Daily routine: distillation ran (1 memory), goals scanned and updated, SaaS goal renamed to My Agent Commander. Dashboard synced (41 runs). Source-deploy drift noted as new carry-forward.",
-      "tags": null,
-      "created_at": "2026-02-11 17:59:15",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1585,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "proactive check: daily routine + system health",
-      "summary": "Daily routine + proactive check. Fixed heartbeat noise in deployed copy, cleaned 625 stale events, ran distillation, synced dashboard.",
-      "tags": null,
-      "created_at": "2026-02-11 17:58:24",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1855,
-      "kind": "session_start",
-      "agent_id": "narada",
-      "title": "Narada started: iOS app ideas",
-      "summary": "Brainstorming 10 iOS app ideas for developers",
-      "tags": null,
-      "created_at": "2026-02-11 17:57:00",
-      "agent_name": "Narada"
-    },
-    {
-      "id": 1854,
-      "kind": "session_start",
-      "agent_id": "vishwa",
-      "title": "Vishwa started: File audit",
-      "summary": "Auditing brain/ for dead files and redundancy",
-      "tags": null,
-      "created_at": "2026-02-11 17:57:00",
-      "agent_name": "Vishwa"
-    },
-    {
-      "id": 1584,
-      "kind": "teammate_spawned",
-      "agent_id": "krishna",
-      "title": "Spawned Vishwa for file audit",
-      "summary": "Vishwa auditing brain/ for dead files, redundancy, stale content. Output: memory/audit.md. Memory injected.",
-      "tags": "[\"standing_order\",\"vishwa\",\"analyze\"]",
-      "created_at": "2026-02-11 17:56:42",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1583,
-      "kind": "teammate_spawned",
-      "agent_id": "krishna",
-      "title": "Spawned Narada for iOS app ideas",
-      "summary": "Narada researching 10 iOS app ideas for developers. Output: projects/ideas/app-ideas.md",
-      "tags": "[\"standing_order\",\"narada\",\"research\"]",
-      "created_at": "2026-02-11 17:56:42",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1582,
-      "kind": "session_plan",
-      "agent_id": "krishna",
-      "title": "run 41 plan",
-      "summary": "Two parallel standing orders: (1) Narada brainstorms 10 iOS app ideas for Sasi, (2) Audit brain/ for dead files and redundancy. Both are research/analyze — no Sasi input needed.",
-      "tags": "[\"standing_order\",\"plan\"]",
-      "created_at": "2026-02-11 17:55:58",
-      "agent_name": "Krishna"
-    },
-    {
-      "id": 1581,
-      "kind": "session_start",
-      "agent_id": "krishna",
-      "title": "routine check 41",
-      "summary": "Advancing standing orders: iOS app ideas brainstorm + brain/ file audit. Sasi is busy, no blockers to clear.",
-      "tags": "[\"standing_order\",\"session\"]",
-      "created_at": "2026-02-11 17:55:53",
-      "agent_name": "Krishna"
     }
   ],
   "conversations": [
@@ -6049,8 +5807,8 @@ var MC_DATA = {
       "steps": [
         {
           "kind": "research",
-          "status": "queued",
-          "reserved_by": null
+          "status": "succeeded",
+          "reserved_by": "narada"
         },
         {
           "kind": "build",
@@ -6060,27 +5818,50 @@ var MC_DATA = {
       ],
       "progress": {
         "total": 2,
-        "completed": 0
+        "completed": 1
+      }
+    },
+    {
+      "id": 12,
+      "title": "Security Audit: setup.sh Customer Package (M10 Retry)",
+      "status": "succeeded",
+      "created_by": "krishna",
+      "steps": [
+        {
+          "kind": "audit_security",
+          "status": "succeeded",
+          "reserved_by": "hanuman"
+        }
+      ],
+      "progress": {
+        "total": 1,
+        "completed": 1
+      }
+    },
+    {
+      "id": 13,
+      "title": "MAC GTM Content Arsenal — Blog Posts + Twitter Threads",
+      "status": "succeeded",
+      "created_by": "krishna",
+      "steps": [
+        {
+          "kind": "draft_content",
+          "status": "succeeded",
+          "reserved_by": "vidura"
+        },
+        {
+          "kind": "draft_content",
+          "status": "succeeded",
+          "reserved_by": "chanakya"
+        }
+      ],
+      "progress": {
+        "total": 2,
+        "completed": 2
       }
     }
   ],
   "daily_stats": [
-    {
-      "date": "2026-02-13",
-      "count": 53
-    },
-    {
-      "date": "2026-02-14",
-      "count": 2
-    },
-    {
-      "date": "2026-02-15",
-      "count": 69
-    },
-    {
-      "date": "2026-02-16",
-      "count": 28
-    },
     {
       "date": "2026-02-17",
       "count": 37
@@ -6091,28 +5872,28 @@ var MC_DATA = {
     },
     {
       "date": "2026-02-19",
+      "count": 24
+    },
+    {
+      "date": "2026-02-20",
+      "count": 0
+    },
+    {
+      "date": "2026-02-21",
+      "count": 0
+    },
+    {
+      "date": "2026-02-22",
+      "count": 0
+    },
+    {
+      "date": "2026-02-23",
       "count": 1
     }
   ],
   "agent_activity": {
     "chanakya": [
       {
-        "date": "2026-02-13",
-        "count": 0
-      },
-      {
-        "date": "2026-02-14",
-        "count": 0
-      },
-      {
-        "date": "2026-02-15",
-        "count": 3
-      },
-      {
-        "date": "2026-02-16",
-        "count": 0
-      },
-      {
         "date": "2026-02-17",
         "count": 0
       },
@@ -6122,27 +5903,27 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-19",
+        "count": 1
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0
+      },
+      {
+        "date": "2026-02-23",
         "count": 0
       }
     ],
     "hanuman": [
       {
-        "date": "2026-02-13",
-        "count": 0
-      },
-      {
-        "date": "2026-02-14",
-        "count": 0
-      },
-      {
-        "date": "2026-02-15",
-        "count": 0
-      },
-      {
-        "date": "2026-02-16",
-        "count": 2
-      },
-      {
         "date": "2026-02-17",
         "count": 0
       },
@@ -6152,26 +5933,26 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-19",
+        "count": 1
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0
+      },
+      {
+        "date": "2026-02-23",
         "count": 0
       }
     ],
     "krishna": [
-      {
-        "date": "2026-02-13",
-        "count": 45
-      },
-      {
-        "date": "2026-02-14",
-        "count": 0
-      },
-      {
-        "date": "2026-02-15",
-        "count": 58
-      },
-      {
-        "date": "2026-02-16",
-        "count": 16
-      },
       {
         "date": "2026-02-17",
         "count": 30
@@ -6182,27 +5963,27 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-19",
+        "count": 19
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0
+      },
+      {
+        "date": "2026-02-23",
         "count": 0
       }
     ],
     "narada": [
       {
-        "date": "2026-02-13",
-        "count": 0
-      },
-      {
-        "date": "2026-02-14",
-        "count": 0
-      },
-      {
-        "date": "2026-02-15",
-        "count": 3
-      },
-      {
-        "date": "2026-02-16",
-        "count": 2
-      },
-      {
         "date": "2026-02-17",
         "count": 0
       },
@@ -6212,27 +5993,27 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-19",
+        "count": 1
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0
+      },
+      {
+        "date": "2026-02-23",
         "count": 0
       }
     ],
     "vidura": [
       {
-        "date": "2026-02-13",
-        "count": 0
-      },
-      {
-        "date": "2026-02-14",
-        "count": 0
-      },
-      {
-        "date": "2026-02-15",
-        "count": 0
-      },
-      {
-        "date": "2026-02-16",
-        "count": 0
-      },
-      {
         "date": "2026-02-17",
         "count": 0
       },
@@ -6242,27 +6023,27 @@ var MC_DATA = {
       },
       {
         "date": "2026-02-19",
+        "count": 1
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0
+      },
+      {
+        "date": "2026-02-23",
         "count": 0
       }
     ],
     "vishwa": [
       {
-        "date": "2026-02-13",
-        "count": 0
-      },
-      {
-        "date": "2026-02-14",
-        "count": 0
-      },
-      {
-        "date": "2026-02-15",
-        "count": 0
-      },
-      {
-        "date": "2026-02-16",
-        "count": 2
-      },
-      {
         "date": "2026-02-17",
         "count": 0
       },
@@ -6273,67 +6054,82 @@ var MC_DATA = {
       {
         "date": "2026-02-19",
         "count": 0
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0
+      },
+      {
+        "date": "2026-02-23",
+        "count": 0
       }
     ]
   },
   "stats": {
-    "total_tasks": 11,
+    "total_tasks": 13,
     "in_progress": 1,
     "completed_today": 0,
-    "completed_all_time": 8,
+    "completed_all_time": 10,
     "agents_active": 1,
-    "total_sessions": 130,
-    "total_events": 280,
+    "total_sessions": 136,
+    "total_events": 246,
     "events_today": 1,
     "conversations_total": 2,
     "memories_total": 49,
     "insights_total": 4,
     "events_by_kind": {
-      "session_start": 12,
-      "session_plan": 19,
-      "teammate_spawned": 12,
-      "session_end": 22,
-      "task_completed": 5,
-      "heartbeat": 53,
-      "message_received": 9,
-      "action": 1,
-      "message_sent": 9,
-      "message_response": 3,
-      "review_completed": 1,
-      "mission_created": 1,
-      "mission_completed": 4,
-      "daily_digest": 6,
-      "step_completed": 12,
-      "maintenance": 1,
-      "build": 7,
+      "heartbeat": 37,
       "deploy": 1,
+      "daily_digest": 6,
+      "message_received": 4,
       "research_complete": 3,
+      "session_end": 20,
+      "message_sent": 6,
+      "session_start": 8,
+      "build": 6,
       "routine": 5,
       "file_change": 71,
       "conversation": 1,
+      "session_plan": 20,
       "decision_made": 1,
+      "step_completed": 12,
+      "mission_completed": 2,
       "bug_fix": 1,
       "feedback_received": 1,
+      "teammate_spawned": 9,
       "link_received": 2,
       "link_analyzed": 1,
       "message_responded": 1,
-      "proposal_approved": 2,
-      "step_started": 2,
+      "task_completed": 2,
+      "proposal_approved": 4,
+      "step_started": 3,
       "session_skipped": 1,
       "mission_failed": 2,
-      "routine_completed": 4,
+      "routine_completed": 5,
       "fix": 1,
       "system": 1,
       "conversation_completed": 1,
-      "proposal_created": 1
+      "proposal_created": 3,
+      "state_checkpoint": 2,
+      "mission_created": 2,
+      "security_scan": 1
     },
     "events_by_agent": {
-      "krishna": 209,
-      "vishwa": 4,
-      "narada": 8,
-      "dwarka": 53,
+      "dwarka": 37,
+      "krishna": 193,
+      "narada": 6,
       "chanakya": 4,
-      "hanuman": 2
+      "vishwa": 2,
+      "hanuman": 3,
+      "vidura": 1
     }
   }
 };
